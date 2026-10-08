@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIR4 — Private Server 3D Combat Showcase</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; background: #080a12; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; user-select: none; }
+  #app { width: 100%; height: 100%; }
+
+  /* TOP BAR: Private Server Showcase Header */
+  #serverNav {
+    position: fixed; top: 0; left: 0; right: 0; height: 34px;
+    background: linear-gradient(90deg, rgba(12,15,24,.96), rgba(22,28,46,.94), rgba(12,15,24,.96));
+    border-bottom: 1px solid rgba(220,180,90,.38);
+    box-shadow: 0 2px 14px rgba(0,0,0,.75);
+    backdrop-filter: blur(8px);
+    z-index: 25;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px;
+    user-select: none;
+  }
+  .server-brand { display: flex; align-items: center; gap: 10px; }
+  .server-logo { font-weight: 800; font-size: 12px; color: #ffd76a; letter-spacing: .5px; }
+  .server-badge { background: rgba(220,180,90,.2); border: 1px solid rgba(220,180,90,.5); color: #ffe699; padding: 1px 6px; border-radius: 3px; font-weight: 700; font-size: 9px; }
+  .server-rates { color: #8fa8ff; font-weight: 600; font-size: 10px; }
+  .server-status { display: flex; align-items: center; gap: 6px; color: #a0ffb0; font-size: 11px; }
+  .status-dot { width: 7px; height: 7px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 8px #22c55e; }
+  .server-actions { display: flex; align-items: center; gap: 8px; }
+  .nav-btn { text-decoration: none; padding: 3px 9px; border-radius: 4px; font-weight: 700; font-size: 10px; letter-spacing: .5px; transition: all .15s; }
+  .reg-btn { background: linear-gradient(180deg, #d4af37, #aa8210); color: #000; box-shadow: 0 0 10px rgba(212,175,55,.4); }
+  .reg-btn:hover { background: linear-gradient(180deg, #f0c265, #c49a20); }
+  .dl-btn { background: rgba(58,92,190,.4); border: 1px solid rgba(140,160,255,.4); color: #cfd8ff; }
+  .dl-btn:hover { background: rgba(70,110,230,.6); color: #fff; }
+  .dc-btn { background: rgba(88,101,242,.3); border: 1px solid rgba(88,101,242,.6); color: #cfd8ff; }
+  .dc-btn:hover { background: rgba(88,101,242,.6); color: #fff; }
+
+  /* CONTROLS HINT */
+  #controlsHint {
+    position: fixed; bottom: 12px; left: 16px; z-index: 12;
+    display: flex; gap: 8px; background: rgba(10,14,24,.8);
+    border: 1px solid rgba(220,180,90,.3); border-radius: 6px;
+    padding: 4px 10px; font: 10px sans-serif; color: #a4b6df;
+    backdrop-filter: blur(6px); pointer-events: none;
+  }
+  #controlsHint kbd {
+    background: rgba(0,0,0,.6); border: 1px solid rgba(255,215,100,.5);
+    border-radius: 3px; padding: 1px 4px; color: #ffd76a; font: bold 9px monospace; margin-right: 3px;
+  }
+  body.embed #serverNav, body.cinematic #serverNav, body.cinematic #controlsHint { display: none; }
+  body.embed #playerPanel, body.embed #targetPanel, body.embed #topRightBar { top: 16px; }
+
+  /* TOP-LEFT: Authentic MIR4 Player Frame */
+  #playerPanel {
+    position: fixed; top: 44px; left: 16px; z-index: 12;
+    display: flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, rgba(14,18,30,.88), rgba(24,30,48,.78));
+    border: 1px solid rgba(220,180,90,.35); border-radius: 8px;
+    padding: 8px 14px 8px 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.6), inset 0 0 12px rgba(220,180,90,.08);
+    color: #fff;
+  }
+  .player-avatar {
+    position: relative; width: 46px; height: 46px; border-radius: 50%;
+    background: radial-gradient(circle, #2b3a58 30%, #101422 100%);
+    border: 2px solid #d4af37; box-shadow: 0 0 10px rgba(212,175,55,.4);
+    display: flex; align-items: center; justify-content: center; font-size: 20px;
+  }
+  .player-lvl {
+    position: absolute; bottom: -5px; right: -4px;
+    background: linear-gradient(180deg, #d4af37, #855b14);
+    border: 1px solid #fff; border-radius: 4px;
+    font: bold 9px sans-serif; color: #fff; padding: 1px 4px;
+    text-shadow: 0 1px 2px #000;
+  }
+  .player-meta { display: flex; flex-direction: column; gap: 2px; }
+  .player-row1 { display: flex; align-items: center; gap: 8px; }
+  .player-name { font-weight: 700; font-size: 13px; color: #f2f5ff; }
+  .player-guild { font-size: 11px; color: #7f9fd8; }
+  .player-cp {
+    font-weight: 800; font-size: 11px; color: #ffd269;
+    text-shadow: 0 0 6px rgba(255,180,40,.5);
+  }
+  .bar-track {
+    width: 170px; height: 8px; background: rgba(0,0,0,.6);
+    border: 1px solid rgba(255,255,255,.15); border-radius: 4px;
+    overflow: hidden; position: relative; margin-top: 2px;
+  }
+  .bar-fill-hp {
+    height: 100%; width: 100%;
+    background: linear-gradient(90deg, #b81b1b, #ff4d4d);
+    box-shadow: 0 0 8px rgba(255,50,50,.6); transition: width .2s;
+  }
+  .bar-fill-mp {
+    height: 100%; width: 100%;
+    background: linear-gradient(90deg, #1852b8, #42a5ff);
+    box-shadow: 0 0 8px rgba(50,150,255,.6); transition: width .2s;
+  }
+  .bar-num {
+    position: absolute; right: 4px; top: -1px; font: 800 7px sans-serif;
+    color: #fff; text-shadow: 0 1px 2px #000; line-height: 8px;
+  }
+  .player-buffs { display: flex; gap: 4px; margin-top: 3px; }
+  .buff-pill {
+    width: 15px; height: 15px; border-radius: 3px; border: 1px solid rgba(255,215,100,.4);
+    background: rgba(40,30,10,.8); font-size: 9px; display: flex; align-items: center; justify-content: center;
+  }
+
+  /* TOP-CENTER: Authentic MIR4 Boss / Opponent Target Frame */
+  #targetPanel {
+    position: fixed; top: 44px; left: 50%; transform: translateX(-50%); z-index: 12;
+    display: flex; flex-direction: column; align-items: center; pointer-events: none;
+  }
+  .target-title { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .target-badge {
+    background: #9c1515; border: 1px solid #ff5e5e; border-radius: 3px;
+    font: bold 9px sans-serif; color: #fff; padding: 1px 5px; text-shadow: 0 1px 2px #000;
+  }
+  .target-name {
+    font: 700 13px sans-serif; color: #fff; letter-spacing: .5px;
+    text-shadow: 0 1px 4px #000, 0 0 10px rgba(0,0,0,.8);
+  }
+  .target-bar-wrap {
+    width: 380px; height: 13px; background: rgba(10,12,18,.85);
+    border: 1.5px solid rgba(212,175,55,.6); border-radius: 7px;
+    overflow: hidden; position: relative; box-shadow: 0 3px 14px rgba(0,0,0,.7);
+  }
+  .target-bar-fill {
+    height: 100%; width: 100%;
+    background: linear-gradient(90deg, #941313, #e62222, #ff6b3d);
+    box-shadow: 0 0 10px rgba(255,40,40,.8); transition: width .2s;
+  }
+  .target-bar-num {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font: bold 9px sans-serif; color: #fff; text-shadow: 0 1px 3px #000;
+  }
+  .target-debuffs { display: flex; gap: 4px; margin-top: 4px; }
+  .debuff-pill {
+    width: 15px; height: 15px; border-radius: 3px; border: 1px solid rgba(255,60,60,.5);
+    background: rgba(40,10,10,.8); font-size: 9px; display: flex; align-items: center; justify-content: center;
+  }
+
+  /* TOP-RIGHT: Match Info & Compact Quick Controls */
+  #topRightBar {
+    position: fixed; top: 44px; right: 16px; z-index: 12;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  }
+  .arena-card {
+    background: linear-gradient(135deg, rgba(14,18,30,.88), rgba(24,30,48,.78));
+    border: 1px solid rgba(220,180,90,.3); border-radius: 8px;
+    padding: 6px 12px; text-align: right; box-shadow: 0 4px 14px rgba(0,0,0,.6);
+  }
+  .arena-loc { font: 700 11px sans-serif; color: #f0c265; letter-spacing: 1px; }
+  .arena-mode { font: 10px sans-serif; color: #9bb0db; }
+  .arena-timer { font: bold 12px monospace; color: #fff; margin-top: 2px; }
+  .top-btns { display: flex; gap: 6px; }
+  .top-btn {
+    font: bold 10px sans-serif; color: #eaf0ff; cursor: pointer;
+    background: rgba(30,42,70,.65); border: 1px solid rgba(180,200,255,.35);
+    border-radius: 5px; padding: 5px 10px; transition: .15s;
+  }
+  .top-btn:hover { background: rgba(60,85,140,.85); border-color: rgba(220,180,90,.6); }
+  .top-btn.active { background: rgba(220,160,40,.35); border-color: #ffd76a; color: #ffd76a; }
+
+  /* SLIDE-OUT ROSTER DRAWER */
+  #rosterDrawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 340px; z-index: 25;
+    background: rgba(10,13,22,.94); border-left: 1px solid rgba(212,175,55,.4);
+    box-shadow: -8px 0 28px rgba(0,0,0,.8); backdrop-filter: blur(12px);
+    padding: 20px 18px; display: flex; flex-direction: column; gap: 14px;
+    transform: translateX(100%); transition: transform .25s ease-out;
+  }
+  #rosterDrawer.open { transform: translateX(0); }
+  .drawer-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,.12); padding-bottom: 10px; }
+  .drawer-header h3 { font: 700 13px sans-serif; color: #f0c265; letter-spacing: 1px; }
+  .drawer-header button { background: none; border: none; color: #fff; font-size: 16px; cursor: pointer; }
+  .drawer-section label { display: block; font: 600 11px sans-serif; color: #8fa8ff; margin-bottom: 4px; }
+  .drawer-section select { width: 100%; padding: 6px 10px; background: rgba(25,32,54,.8); border: 1px solid rgba(140,160,255,.35); border-radius: 6px; color: #fff; font: 12px sans-serif; }
+  .anims-list { display: flex; flex-wrap: wrap; gap: 5px; max-height: 380px; overflow-y: auto; padding-right: 4px; }
+  .anims-list::-webkit-scrollbar { width: 4px; } .anims-list::-webkit-scrollbar-thumb { background: #3a5cbe; border-radius: 2px; }
+  .anims-list button { font: 10px sans-serif; padding: 4px 8px; border-radius: 4px; background: rgba(45,60,110,.35); border: 1px solid rgba(140,160,255,.25); color: #cfd8ff; cursor: pointer; }
+  .anims-list button:hover { background: rgba(70,95,170,.6); }
+  .anims-list .lbl { width: 100%; font: bold 10px sans-serif; color: #f0c265; margin-top: 6px; }
+
+  /* BOTTOM-RIGHT: Authentic Circular Action Wheel */
+  #actionWheel {
+    position: fixed; bottom: 18px; right: 20px; width: 280px; height: 260px;
+    z-index: 12; user-select: none;
+  }
+  .attack-btn {
+    position: absolute; bottom: 8px; right: 8px; width: 84px; height: 84px; border-radius: 50%;
+    background: radial-gradient(circle, #3d2315 20%, #150d09 70%, #2e1a12 100%);
+    border: 3px solid #f0c265; box-shadow: 0 0 20px rgba(240,194,101,.6), inset 0 0 14px rgba(255,160,40,.5);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
+    transition: transform .08s;
+  }
+  .attack-btn:active { transform: scale(.92); }
+  .atk-icon { font-size: 32px; filter: drop-shadow(0 0 6px rgba(255,200,60,.8)); }
+  .atk-hotkey { position: absolute; bottom: -6px; background: rgba(0,0,0,.85); border: 1px solid #f0c265; border-radius: 3px; font: bold 8px monospace; color: #ffd76a; padding: 1px 4px; }
+  .dodge-btn {
+    position: absolute; bottom: 94px; right: 14px; width: 52px; height: 52px; border-radius: 50%;
+    background: radial-gradient(circle, #1a2a45 20%, #0d1525 100%);
+    border: 2px solid #5aa5ff; box-shadow: 0 0 12px rgba(90,165,255,.5);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
+    transition: transform .08s;
+  }
+  .dodge-btn:active { transform: scale(.92); }
+  .dodge-icon { font-size: 20px; }
+  .dodge-hotkey { position: absolute; bottom: -5px; background: rgba(0,0,0,.85); border: 1px solid #5aa5ff; border-radius: 3px; font: bold 8px monospace; color: #8ec3ff; padding: 1px 3px; }
+  .skill-btn {
+    position: absolute; width: 56px; height: 56px; border-radius: 50%;
+    background: radial-gradient(circle, #2d2238 20%, #120e18 100%);
+    border: 2px solid #e0b050; box-shadow: 0 0 14px rgba(224,176,80,.4), inset 0 0 8px rgba(0,0,0,.7);
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    transition: transform .08s; overflow: visible;
+  }
+  .skill-btn:active { transform: scale(.92); }
+  .skill-btn.ready { animation: sklReady 2s infinite ease-in-out; }
+  @keyframes sklReady { 0%, 100% { box-shadow: 0 0 12px rgba(224,176,80,.4); } 50% { box-shadow: 0 0 20px rgba(255,215,90,.8), 0 0 6px #fff; } }
+  .skill-btn.on-cd { filter: grayscale(.6); opacity: .7; cursor: default; }
+  #sklBtn1 { bottom: 12px; right: 106px; }
+  #sklBtn2 { bottom: 64px; right: 102px; }
+  #sklBtn3 { bottom: 124px; right: 76px; }
+  #sklBtn4 { bottom: 172px; right: 28px; }
+  #sklBtn5 { bottom: 154px; right: 140px; }
+  .skl-icon {
+    font-size: 25px;
+    line-height: 1;
+    filter: drop-shadow(0 0 8px rgba(255,215,90,.95)) drop-shadow(0 0 16px rgba(255,140,20,.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  .skl-cd-mask { position: absolute; inset: -2px; border-radius: 50%; pointer-events: none; opacity: 0; }
+  .skill-btn.on-cd .skl-cd-mask { opacity: 1; }
+  .skl-cd-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: bold 17px monospace; color: #fff; text-shadow: 0 2px 6px #000; pointer-events: none; }
+  .skl-hotkey { position: absolute; bottom: -5px; right: -2px; font: bold 9px monospace; color: #ffd76a; background: rgba(0,0,0,.88); border: 1px solid rgba(255,215,100,.6); border-radius: 4px; padding: 1px 4px; }
+
+  /* BOTTOM-CENTER: Potion Belt */
+  #potionBelt {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 12;
+    display: flex; gap: 14px;
+  }
+  .potion-slot {
+    position: relative; width: 48px; height: 48px; border-radius: 50%;
+    background: radial-gradient(circle, #222a3d 30%, #0d121c 100%);
+    border: 2px solid rgba(220,180,90,.6); box-shadow: 0 3px 12px rgba(0,0,0,.7);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
+    transition: transform .08s;
+  }
+  .potion-slot:active { transform: scale(.92); }
+  .potion-slot.hp-pot { border-color: #ff5555; }
+  .potion-slot.mp-pot { border-color: #55aaff; }
+  .pot-icon { font-size: 20px; }
+  .pot-count { position: absolute; bottom: -5px; font: bold 9px sans-serif; color: #fff; background: rgba(0,0,0,.85); border-radius: 3px; padding: 1px 4px; border: 1px solid rgba(255,255,255,.3); }
+  .pot-hotkey { position: absolute; top: -5px; right: -4px; font: bold 8px monospace; color: #ffd76a; background: rgba(0,0,0,.85); border-radius: 3px; padding: 1px 3px; border: 1px solid rgba(255,215,100,.5); }
+
+  /* OVERHEAD PLATES */
+  .plate { position: fixed; transform: translate(-50%, -100%); text-align: center; pointer-events: none; z-index: 10; display: flex; flex-direction: column; align-items: center; }
+  .plate-inner { display: flex; align-items: center; gap: 5px; background: rgba(10,12,18,.8); border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: 2px 6px; box-shadow: 0 2px 6px rgba(0,0,0,.8); }
+  .plate .badge { font: 800 9px sans-serif; color: #fff; border-radius: 3px; padding: 1px 4px; }
+  .plate.hero .badge { background: #1c5ec2; border: 1px solid #4da0ff; }
+  .plate:not(.hero) .badge { background: #b81b1b; border: 1px solid #ff5a5a; }
+  .plate b { font: 700 11px sans-serif; color: #fff; letter-spacing: .5px; text-shadow: 0 1px 3px #000; }
+  .plate i { display: block; width: 96px; height: 5px; margin: 3px auto 0; background: rgba(0,0,0,.75); border: 1px solid rgba(255,255,255,.3); border-radius: 3px; overflow: hidden; }
+  .plate i u { display: block; height: 100%; transition: width .15s; }
+  .plate.hero i u { background: linear-gradient(90deg, #1c5ec2, #4da0ff); }
+  .plate:not(.hero) i u { background: linear-gradient(90deg, #b81b1b, #ff5a5a); }
+
+  /* FLOATING DAMAGE NUMBERS */
+  .dmg {
+    position: fixed; z-index: 20; font: bold 24px 'Segoe UI', sans-serif; color: #ffd76a;
+    text-shadow: 0 0 10px #ff4400, 0 2px 5px #000; pointer-events: none;
+    animation: dmgfloat .9s ease-out forwards;
+  }
+  .dmg.heal { color: #55ff88; text-shadow: 0 0 10px #0a4, 0 2px 5px #000; }
+  .dmg.crit { font-size: 32px; color: #ff9020; text-shadow: 0 0 16px #ff3300, 0 2px 6px #000; }
+  @keyframes dmgfloat { to { transform: translateY(-75px); opacity: 0; } }
+
+  /* VIGNETTES & BANNERS */
+  #vignette { position: fixed; inset: 0; z-index: 15; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at center, transparent 55%, rgba(255,20,10,.55) 100%); }
+  #vignette.hit { animation: vig .5s ease-out; }
+  #vig2 { position: fixed; inset: 0; z-index: 4; pointer-events: none; opacity: .45; background: radial-gradient(ellipse at center, transparent 65%, rgba(0,0,10,.6) 100%); }
+  @keyframes vig { 0% { opacity: 1; } 100% { opacity: 0; } }
+  #skillBanner { position: fixed; top: 22%; left: 50%; transform: translateX(-50%); z-index: 16; pointer-events: none; font: bold 26px 'Segoe UI'; color: #ff5a4a; text-shadow: 0 0 12px #000, 0 0 20px currentColor; letter-spacing: 1px; opacity: 0; }
+  #skillBanner.on { animation: sb 1.1s ease-out; }
+  #skillBanner.hero { color: #ffd76a; }
+  #castBar { position: fixed; top: calc(22% + 34px); left: 50%; transform: translateX(-50%); width: 220px; height: 4px; z-index: 16; pointer-events: none; background: rgba(255,255,255,.12); border-radius: 2px; overflow: hidden; opacity: 0; }
+  #castBar.on { opacity: 1; }
+  #castBar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #ffd76a, #fff0b0); box-shadow: 0 0 8px #ffd76a; }
+  #castBar.enemy i { background: linear-gradient(90deg, #ff5a4a, #ff9a7a); box-shadow: 0 0 8px #ff5a4a; }
+  @keyframes sb { 0% { opacity: 0; transform: translateX(-50%) translateY(12px) scale(.8); } 15% { opacity: 1; transform: translateX(-50%) scale(1.05); } 80% { opacity: 1; } 100% { opacity: 0; transform: translateX(-50%) translateY(-14px); } }
+  #combo { position: fixed; right: 8%; top: 34%; z-index: 14; pointer-events: none; font: 800 32px 'Segoe UI'; color: #ffd76a; font-style: italic; text-shadow: 0 2px 6px #000, 0 0 24px rgba(255,140,40,.7); opacity: 0; transition: opacity .15s, transform .1s; transform-origin: right center; }
+  #combo.on { opacity: 1; }
+  #combo small { display: block; font-size: 13px; font-style: normal; letter-spacing: .25em; color: #ffb04a; }
+  #roundBanner { position: fixed; top: 38%; left: 50%; transform: translateX(-50%); z-index: 18; pointer-events: none; font: 900 64px 'Segoe UI'; letter-spacing: .12em; opacity: 0; color: #ffd76a; text-shadow: 0 0 30px rgba(255,180,60,.9), 0 3px 8px #000; }
+  #roundBanner.on { animation: rb 1.8s ease-out; }
+  #roundBanner.lose { color: #ff5040; }
+  @keyframes rb { 0% { opacity: 0; transform: translateX(-50%) scale(1.6); } 15% { opacity: 1; transform: translateX(-50%) scale(1); } 75% { opacity: 1; } 100% { opacity: 0; transform: translateX(-50%) translateY(-10px); } }
+  #fade { position: fixed; inset: 0; background: #000; z-index: 16; pointer-events: none; opacity: 0; transition: opacity .45s; }
+  #fade.on { opacity: 1; }
+  #vsBanner { position: fixed; top: 24%; left: 0; right: 0; text-align: center; z-index: 17; pointer-events: none; font: 800 26px 'Segoe UI'; letter-spacing: .3em; color: #eaf2ff; text-shadow: 0 0 18px rgba(120,160,255,.8), 0 2px 6px #000; opacity: 0; transition: opacity .3s; }
+  #vsBanner.on { opacity: 1; }
+  #vsBanner b { color: #ff5a4a; padding: 0 .5em; }
+  #status { position: fixed; bottom: 8px; left: 16px; font: 10px monospace; color: #6d7bb0; opacity: .7; pointer-events: none; }
+  body.cinematic #playerPanel, body.cinematic #targetPanel, body.cinematic #topRightBar, body.cinematic #actionWheel, body.cinematic #potionBelt { opacity: 0; pointer-events: none; transition: opacity .6s; }
+  body.cinematic { cursor: none; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<!-- TOP BAR: Private Server Showcase Header -->
+<header id="serverNav">
+  <div class="server-brand">
+    <span class="server-logo">⚔ MIR4 PRIVATE SERVER</span>
+    <span class="server-badge">3D WEB ARENA</span>
+    <span class="server-rates">EXP x5 • DROP x3 • DARKSTEEL x2</span>
+  </div>
+  <div class="server-status">
+    <span class="status-dot"></span> <b>ONLINE:</b> 1,480 PLAYERS
+  </div>
+  <div class="server-actions">
+    <a href="https://api.astymir.com/passport/register?promo=AYC4255C0FD3FC" target="_blank" class="nav-btn reg-btn">REGISTRATION</a>
+    <a href="https://www.mediafire.com/file/1ql7vv215yrixlv/WWW.YMIRASTRAL.COM.rar/file" target="_blank" class="nav-btn dl-btn">DOWNLOAD LAUNCHER</a>
+    <a href="https://discord.gg/play-astral" target="_blank" class="nav-btn dc-btn">DISCORD</a>
+  </div>
+</header>
+
+<!-- CONTROLS HINT (Bottom-Left) -->
+<div id="controlsHint">
+  <span><kbd>WASD</kbd> Run</span>
+  <span><kbd>SPACE</kbd> Attack</span>
+  <span><kbd>1-5</kbd> Skills</span>
+  <span><kbd>SHIFT</kbd> Roll</span>
+  <span><kbd>Q/E</kbd> Potions</span>
+  <span><kbd>TAB</kbd> Roster</span>
+</div>
+
+<!-- TOP-LEFT: Authentic MIR4 Player Frame -->
+<div id="playerPanel">
+  <div class="player-avatar">
+    <span id="playerAvatarIcon">⚔</span>
+    <span class="player-lvl">Lv.141</span>
+  </div>
+  <div class="player-meta">
+    <div class="player-row1">
+      <span class="player-name" id="heroPlayerName">WARRIOR ♀</span>
+      <span class="player-guild">[A032] MIR4</span>
+      <span class="player-cp">⚔ 322,413</span>
+    </div>
+    <div class="bar-track hp-track">
+      <div class="bar-fill-hp" id="playerHpFill"></div>
+      <span class="bar-num" id="playerHpText">50,000 / 50,000</span>
+    </div>
+    <div class="bar-track mp-track">
+      <div class="bar-fill-mp" id="playerMpFill"></div>
+      <span class="bar-num" id="playerMpText">18,730 / 18,730</span>
+    </div>
+    <div class="player-buffs">
+      <div class="buff-pill" title="Physical ATK +18%">⚔</div>
+      <div class="buff-pill" title="Defense +25%">🛡</div>
+      <div class="buff-pill" title="Dragon Wrath">🔥</div>
+      <div class="buff-pill" title="Invincible Frame">✨</div>
+    </div>
+  </div>
+</div>
+
+<!-- TOP-CENTER: Authentic MIR4 Boss / Opponent Target Frame -->
+<div id="targetPanel">
+  <div class="target-title">
+    <span class="target-badge">BOSS</span>
+    <span class="target-name" id="targetName">Lv. 165 CERBERUS</span>
+  </div>
+  <div class="target-bar-wrap">
+    <div class="target-bar-fill" id="targetHpFill"></div>
+    <span class="target-bar-num" id="targetHpText">81,893 / 81,893</span>
+  </div>
+  <div class="target-debuffs">
+    <div class="debuff-pill" title="Bleed">🩸</div>
+    <div class="debuff-pill" title="Stun">⚡</div>
+    <div class="debuff-pill" title="Armor Break">🛡</div>
+  </div>
+</div>
+
+<!-- TOP-RIGHT: Match Info & Compact Quick Controls -->
+<div id="topRightBar">
+  <div class="arena-card">
+    <div class="arena-loc">🏛 BICHEON CASTLE ARENA</div>
+    <div class="arena-mode">Sparring Match · Ch. 1</div>
+    <div class="arena-timer" id="matchTimer">⏱ 04:43</div>
+  </div>
+  <div class="top-btns">
+    <button id="sfxBtn" class="top-btn">🔊 SFX: ON</button>
+    <button id="autoBtn" class="top-btn">▶ AUTO</button>
+    <button id="respawn" class="top-btn">↻ RESPAWN</button>
+    <button id="rosterToggleBtn" class="top-btn">⚙ ROSTER</button>
+  </div>
+</div>
+
+<!-- SLIDE-OUT ROSTER DRAWER (Hidden by default, open on ⚙ ROSTER or Tab) -->
+<div id="rosterDrawer">
+  <div class="drawer-header">
+    <h3>BATTLE ROSTER & DEBUG</h3>
+    <button id="closeDrawerBtn">✕</button>
+  </div>
+  <div class="drawer-section">
+    <label>HERO CLASS:</label>
+    <select id="heroSel"></select>
+  </div>
+  <div class="drawer-section">
+    <label>OPPONENT:</label>
+    <select id="monSel"></select>
+  </div>
+  <div class="drawer-section">
+    <label>RAW ANIMATIONS:</label>
+    <div id="anims" class="anims-list"></div>
+  </div>
+</div>
+
+<!-- BOTTOM-RIGHT: Authentic Circular Action Wheel -->
+<div id="actionWheel">
+  <!-- 5 Circular Skill Buttons -->
+  <div class="skill-btn ready" id="sklBtn1" data-slot="1">
+    <div class="skl-icon">🔥</div>
+    <div class="skl-cd-mask"></div>
+    <span class="skl-cd-text"></span>
+    <span class="skl-hotkey">1</span>
+  </div>
+  <div class="skill-btn ready" id="sklBtn2" data-slot="2">
+    <div class="skl-icon">⚡</div>
+    <div class="skl-cd-mask"></div>
+    <span class="skl-cd-text"></span>
+    <span class="skl-hotkey">2</span>
+  </div>
+  <div class="skill-btn ready" id="sklBtn3" data-slot="3">
+    <div class="skl-icon">🗡</div>
+    <div class="skl-cd-mask"></div>
+    <span class="skl-cd-text"></span>
+    <span class="skl-hotkey">3</span>
+  </div>
+  <div class="skill-btn ready" id="sklBtn4" data-slot="4">
+    <div class="skl-icon">🌪</div>
+    <div class="skl-cd-mask"></div>
+    <span class="skl-cd-text"></span>
+    <span class="skl-hotkey">4</span>
+  </div>
+  <div class="skill-btn ready" id="sklBtn5" data-slot="5">
+    <div class="skl-icon">🛡</div>
+    <div class="skl-cd-mask"></div>
+    <span class="skl-cd-text"></span>
+    <span class="skl-hotkey">5</span>
+  </div>
+
+  <!-- Dodge / Roll Button -->
+  <div class="dodge-btn" id="roll" title="Evade / Roll [SHIFT]">
+    <div class="dodge-icon">💨</div>
+    <span class="dodge-hotkey">SHIFT</span>
+  </div>
+
+  <!-- Main Attack Button -->
+  <div class="attack-btn" id="mainAtkBtn" title="Attack Combo [SPACE]">
+    <div class="atk-icon">⚔</div>
+    <span class="atk-hotkey">SPACE</span>
+  </div>
+</div>
+
+<!-- BOTTOM-CENTER: Potion Belt -->
+<div id="potionBelt">
+  <div class="potion-slot hp-pot" id="hpPotBtn" title="HP Potion (+8,000 HP) [Q]">
+    <div class="pot-icon">🧪</div>
+    <span class="pot-count" id="hpPotCount">120</span>
+    <span class="pot-hotkey">Q</span>
+  </div>
+  <div class="potion-slot mp-pot" id="mpPotBtn" title="MP Potion (+4,000 MP) [E]">
+    <div class="pot-icon">🍶</div>
+    <span class="pot-count" id="mpPotCount">60</span>
+    <span class="pot-hotkey">E</span>
+  </div>
+</div>
+
+<!-- Hidden fallback DOM elements for backward compatibility -->
+<div style="display:none">
+  <span id="heroName">WARRIOR ♀</span>
+  <span id="monName">CERBERUS</span>
+  <span id="heroHpNum"></span>
+  <span id="monHpNum"></span>
+  <div id="hpHero"><div></div></div>
+  <div id="hpMon"><div></div></div>
+</div>
+
+<div id="status">loading…</div>
+<div id="vig2"></div>
+<div id="vignette"></div>
+<div id="skillBanner"></div>
+<div id="castBar"><i></i></div>
+<div class="plate hero" id="plateHero"><div class="plate-inner"><span class="badge">1</span><b></b></div><i><u></u></i></div>
+<div class="plate" id="plateMon"><div class="plate-inner"><span class="badge">2</span><b></b></div><i><u></u></i></div>
+<div id="combo"><span id="comboN"></span><small>COMBO</small></div>
+<div id="roundBanner"></div>
+<div id="fade"></div>
+<div id="vsBanner"></div>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+// ловим источник TimeoutNaNWarning — логируем стек, если delay не число
+const _st = window.setTimeout;
+window.setTimeout = (fn, d, ...r) => {
+  if (typeof d !== 'number' || !Number.isFinite(d)) {
+    console.warn('[NaN timer]', d, new Error().stack);
+    d = 0;
+  }
+  return _st(fn, d, ...r);
+};
+
+const status = document.getElementById('status');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.getElementById('app').appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0e1424);
+scene.fog = new THREE.Fog(0x1a2236, 18, 95);
+scene.environment = new THREE.PMREMGenerator(renderer)
+  .fromScene(new RoomEnvironment(), 0.04).texture;
+
+// Sky dome gradient for authentic Arena_Bicheon atmosphere
+const skyGeo = new THREE.SphereGeometry(220, 32, 16);
+const skyMat = new THREE.ShaderMaterial({
+  uniforms: {
+    topColor: { value: new THREE.Color(0x10172a) },
+    bottomColor: { value: new THREE.Color(0x405072) },
+    offset: { value: 12.0 },
+    exponent: { value: 0.65 }
+  },
+  vertexShader: `
+    varying vec3 vWorldPosition;
+    void main() {
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform vec3 topColor;
+    uniform vec3 bottomColor;
+    uniform float offset;
+    uniform float exponent;
+    varying vec3 vWorldPosition;
+    void main() {
+      float h = normalize(vWorldPosition + offset).y;
+      gl_FragColor = vec4(mix(bottomColor, topColor, max(pow(max(h, 0.0), exponent), 0.0)), 1.0);
+    }
+  `,
+  side: THREE.BackSide,
+  depthWrite: false
+});
+const skyMesh = new THREE.Mesh(skyGeo, skyMat);
+scene.add(skyMesh);
+
+const camera = new THREE.PerspectiveCamera(38, innerWidth/innerHeight, 0.1, 600);
+camera.position.set(-5.6, 4.2, 4.6);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0.3, 1.1, 0);
+controls.enableDamping = true;
+
+// bloom — свечение эффектов как в UE (мягкий bloom на ярких пикселях)
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), .65, .5, .82);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+// arena: процедурный каменный пол + колонны с огнём
+function stoneTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 1024;
+  const x = c.getContext('2d');
+  x.fillStyle = '#14161d'; x.fillRect(0, 0, 1024, 1024);
+  const N = 8, s = 1024 / N;
+  for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+    const v = 18 + Math.random() * 16;
+    x.fillStyle = `rgb(${v + 6 | 0},${v + 4 | 0},${v + 12 | 0})`;
+    x.fillRect(i * s + 3, j * s + 3, s - 6, s - 6);
+    for (let k = 0; k < 40; k++) {   // зерно в плите
+      x.fillStyle = `rgba(${Math.random() > .5 ? '255,255,255' : '0,0,0'},${Math.random() * .05})`;
+      x.fillRect(i * s + Math.random() * s, j * s + Math.random() * s, 2 + Math.random() * 14, 1 + Math.random() * 3);
+    }
+    if (Math.random() < .3) {        // трещина
+      x.strokeStyle = 'rgba(0,0,0,.45)'; x.lineWidth = 1.5;
+      x.beginPath();
+      let px = i * s + Math.random() * s, py = j * s + Math.random() * s;
+      x.moveTo(px, py);
+      for (let k = 0; k < 4; k++) { px += (Math.random() - .5) * 60; py += (Math.random() - .5) * 60; x.lineTo(px, py); }
+      x.stroke();
+    }
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(3, 3);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+const stoneTex = stoneTexture();
+const procEnv = [];   // процедурная арена — прячем после загрузки настоящей
+const floor = new THREE.Mesh(
+  new THREE.CircleGeometry(7, 72),
+  new THREE.MeshStandardMaterial({ map: stoneTex, bumpMap: stoneTex, bumpScale: .6,
+    color: 0xb8c0d8, roughness: .9, metalness: .05 })
+);
+floor.rotation.x = -Math.PI/2; floor.receiveShadow = true; scene.add(floor); procEnv.push(floor);
+const ring = new THREE.Mesh(
+  new THREE.RingGeometry(6.7, 7.0, 72),
+  new THREE.MeshBasicMaterial({ color: 0x3a55cc, transparent: true, opacity: .6, side: THREE.DoubleSide })
+);
+ring.rotation.x = -Math.PI/2; ring.position.y = .01; scene.add(ring); procEnv.push(ring);
+// колонны по краю арены + огонь
+const pillarMat = new THREE.MeshStandardMaterial({ map: stoneTex, color: 0x8890a8, roughness: .95 });
+const flameSprites = [];
+for (let i = 0; i < 6; i++) {
+  const a = i / 6 * Math.PI * 2 + .26;
+  const px = Math.cos(a) * 10.5, pz = Math.sin(a) * 10.5;   // за камерой — силуэты в тумане
+  const p = new THREE.Mesh(new THREE.BoxGeometry(.55, 3.4, .55), pillarMat);
+  p.position.set(px, 1.7, pz); p.rotation.y = -a; scene.add(p); procEnv.push(p);
+  const cap = new THREE.Mesh(new THREE.BoxGeometry(.8, .2, .8), pillarMat);
+  cap.position.set(px, 3.5, pz); scene.add(cap); procEnv.push(cap);
+  const fl = new THREE.Sprite(new THREE.SpriteMaterial({ map: null, color: 0xff9030,
+    transparent: true, opacity: .9, blending: THREE.AdditiveBlending, depthWrite: false }));
+  fl.position.set(px, 3.9, pz); fl.scale.setScalar(.9); scene.add(fl);
+  procEnv.push(fl); flameSprites.push(fl);
+}
+
+const hemi = new THREE.HemisphereLight(0xb0c4ff, 0x28201a, .85);
+scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfff2dd, 2.6); key.position.set(-9, 15, 11); scene.add(key);
+key.castShadow = true;
+key.shadow.mapSize.set(2048, 2048);
+key.shadow.camera.left = key.shadow.camera.bottom = -13;
+key.shadow.camera.right = key.shadow.camera.top = 13;
+key.shadow.camera.far = 40; key.shadow.bias = -0.0005;
+const rim = new THREE.DirectionalLight(0x7598ff, 1.6); rim.position.set(6, 4, -8); scene.add(rim);
+
+// Global GLTF loader and texture caches
+const loader = new GLTFLoader();
+function gltfLoad(f) {
+  return new Promise((res, rej) => loader.load(f, res, undefined, rej));
+}
+const texLoader = new THREE.TextureLoader();
+const fxTex = {};
+for (const [k, p] of Object.entries({
+  glow: 'fx/Effect/S_Tex/circle/T_Glow_Sphere_Soft.png',
+  aura: 'fx/Effect/S_Tex/Aura/T_Tex_Aura_16.png',
+  fire: 'fx/Effect/S_Tex/Fire/P_TEX_Fire_02.png',
+  spark: 'fx/Effect/S_Tex/Spark/P_TEX_Spark_01.png',
+  shock: 'fx/Effect/S_Tex/Mask/P_tex_MeshShockWave_01.png',
+  ice: 'fx/Effect/S_Tex/Ice/T_ice_011.png',
+  smoke: 'fx/Effect/S_Tex/JS_Tex/T_SmokeBall_Single_03.png',
+})) fxTex[k] = texLoader.load(p, t => t.colorSpace = THREE.SRGBColorSpace);
+
+// ---------- REAL ARENA: Arena_Bicheon из карты клиента ----------
+// раскладка акторов 1-в-1 из Arena_Bicheon.umap, меши+текстуры экспортированы
+const arenaReady = (async () => {
+  try {
+    const a = await fetch('./env/arena.json').then(r => r.json());
+    const grp = new THREE.Group();
+    const glbCache = {}, texCache = {};
+    const getTex = (f, tiling) => {
+      const k2 = f + '|' + (tiling || 1);
+      if (!texCache[k2]) {
+        const t = texLoader.load('./env/tex/' + f);
+        t.flipY = false; t.colorSpace = THREE.SRGBColorSpace;
+        t.wrapS = t.wrapT = THREE.RepeatWrapping;
+        if (tiling && tiling !== 1) t.repeat.set(tiling, tiling);
+        texCache[k2] = t;
+      }
+      return texCache[k2];
+    };
+    const D2R = Math.PI / 180;
+    // Preload unique arena GLBs in parallel
+    const uniqueMeshes = [...new Set(a.actors.map(act => act.mesh.split('/').pop()))];
+    await Promise.all(uniqueMeshes.map(mname =>
+      gltfLoad('./env/' + mname + '.glb')
+        .then(g => { glbCache[mname] = g; })
+        .catch(e => console.warn('Arena mesh load failed:', mname, e))
+    ));
+    for (const act of a.actors) {
+      const mname = act.mesh.split('/').pop();
+      const g = glbCache[mname];
+      if (!g) continue;
+      const inst = g.scene.clone(true);
+      const slots = a.tex[mname] || [];
+      let mi = 0;
+      inst.traverse(o => {
+        if (!o.isMesh) return;
+        const st = slots[mi++] || slots[0];
+        if (st && st.d) o.material = new THREE.MeshStandardMaterial({
+          map: getTex(st.d, st.tiling), roughness: .68, metalness: .12 });
+        else o.material = new THREE.MeshStandardMaterial({ color: 0x8a8f9c, roughness: .9 });
+        o.castShadow = o.receiveShadow = true;
+        o.frustumCulled = true;
+      });
+      // UE (cm, Z-up, LH) -> three (m, Y-up, RH): (x,y,z)ue -> (y, z, -x)
+      inst.position.set(act.pos[1], act.pos[2], -act.pos[0]);
+      inst.quaternion.copy(new THREE.Quaternion()
+        .multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0), -act.rot[1] * D2R))
+        .multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1,0,0), -act.rot[0] * D2R))
+        .multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,0,1),  act.rot[2] * D2R)));
+      inst.scale.set(act.scale[1], act.scale[2], act.scale[0]);
+      inst.userData.mesh = mname;
+      grp.add(inst);
+    }
+    grp.scale.setScalar(.01);   // акторы в сантиметрах
+    scene.add(grp);
+    // центр арены к (0,0): пол — самый большой меш, его центр и верхняя грань
+    grp.updateMatrixWorld(true);
+    let floorObj = null, best = 0;
+    grp.traverse(o => {
+      if (o.userData.mesh && /floor/i.test(o.userData.mesh)) {
+        const b = new THREE.Box3().setFromObject(o);
+        const sz = b.getSize(new THREE.Vector3());
+        if (sz.x * sz.z > best) { best = sz.x * sz.z; floorObj = { o, b }; }
+      }
+    });
+    if (floorObj) {
+      const c = floorObj.b.getCenter(new THREE.Vector3());
+      grp.position.x = -c.x; grp.position.z = -c.z;
+      grp.position.y = -floorObj.b.max.y + .0;   // верх пола на y=0
+      // кольцо арены (ворота/гонг/статуи) в карте на z≈270 — переносим в точку боя
+      const ringN = [], ringS = [];
+      grp.traverse(o => { if (o.userData.mesh) {
+        const w = new THREE.Vector3(); o.getWorldPosition(w);
+        if (/Gate|Gong|Pillar_002|dragonstatue|CowStatue/i.test(o.userData.mesh)) ringN.push(w.z);
+      }});
+      if (ringN.length) grp.position.z -= ringN.reduce((a2,b2)=>a2+b2,0)/ringN.length;
+      // бойцы должны стоять НА подиуме ринга (SM_FG009_MK_Bottom) — поднимаем его верх к y=0
+      grp.updateMatrixWorld(true);
+      grp.traverse(o => {
+        if (o.userData.mesh && /MK_Bottom_001/i.test(o.userData.mesh)) {
+          const bb = new THREE.Box3().setFromObject(o);
+          if (isFinite(bb.max.y)) grp.position.y -= bb.max.y;
+        }
+      });
+      // итоговая центровка: гонг+ворота стоят на оси ринга — доводим её z до 0
+      grp.updateMatrixWorld(true);
+      const gzs = [];
+      grp.traverse(o => {
+        if (o.userData.mesh && /JY_Gong|MK_Gate_001|MK_Bottom_001/i.test(o.userData.mesh)) {
+          const w = new THREE.Vector3(); o.getWorldPosition(w); gzs.push(w.z);
+        }
+      });
+      if (gzs.length) grp.position.z -= gzs.reduce((a2,b2)=>a2+b2,0)/gzs.length;
+    }
+    // свет карты: солнце + туман + небо из umap
+    if (a.lights?.sun) {
+      const s = a.lights.sun;
+      key.color.set(s.color); key.intensity = Math.min(3.2, s.intensity * .45);
+      const [pt, yw] = [s.rot[0] * D2R, s.rot[1] * D2R];
+      const fwd = new THREE.Vector3(-Math.cos(pt) * Math.sin(yw) * -1, -Math.sin(pt), -Math.cos(pt) * Math.cos(yw));
+      key.position.copy(fwd.clone().multiplyScalar(-40));
+    }
+    if (a.lights?.fog) {
+      scene.fog.color.set(a.lights.fog.color);
+      scene.fog.near = Math.max(10, a.lights.fog.start * .01 * .35);
+      scene.fog.far = a.lights.fog.start * .01 * 1.6;
+      scene.background = new THREE.Color(a.lights.fog.color).multiplyScalar(1.15);
+    }
+    if (a.lights?.sky) hemi && hemi.color.set(a.lights.sky.color);
+    // факелы карты -> наши живые огни
+    flameSprites.length = 0;
+    for (const em of a.emitters || []) {
+      if (!/fire|flame|torch|smoke/i.test(em.ps)) continue;
+      const fp = new THREE.Vector3(em.pos[1], em.pos[2], -em.pos[0])
+        .multiplyScalar(.01).add(grp.position);
+      const fl = new THREE.Sprite(new THREE.SpriteMaterial({ map: fxTex.fire, color: 0xff9030,
+        transparent: true, opacity: .9, blending: THREE.AdditiveBlending, depthWrite: false }));
+      fl.position.copy(fp); fl.scale.setScalar(1.4); scene.add(fl); flameSprites.push(fl);
+    }
+    // процедурные костыль-элементы прячем
+    procEnv.forEach(o => o.visible = false);
+    document.getElementById('status').textContent = 'ready · Arena_Bicheon';
+    return grp;
+  } catch (e) {
+    console.warn('arena load failed', e);
+    return null;
+  }
+})();
+
+flameSprites.forEach(f => { f.material.map = fxTex.fire; f.material.needsUpdate = true; });
+
+// эффект появления бойца: вспышка + кольцо + дым (как спавн в игре)
+function spawnIn(u, color = 0x8fb4ff) {
+  const p = u.group.position.clone(); p.y += u.size.y * .5;
+  burst(p, 'aura', color, 2.2, .6);
+  const g = p.clone(); g.y = .04;
+  burst(g, 'smoke', 0x9aa8cc, 2.6, .9, true);
+  burst(g, 'smoke', 0x9aa8cc, 1.8, 1.2, true);
+  flashAt(p, color, 45);
+  ringFx(g, color);
+}
+
+const fxPool = [];
+function burst(pos, tex, color, size, dur = .5, flat = false) {
+  const m = new THREE.SpriteMaterial({
+    map: fxTex[tex], color, transparent: true, opacity: 1,
+    blending: THREE.AdditiveBlending, depthWrite: false,
+  });
+  const s = new THREE.Sprite(m);
+  s.position.copy(pos); s.scale.setScalar(size);
+  if (flat) { s.material.rotation = Math.random()*6.28; }
+  scene.add(s);
+  fxPool.push({ s, t: 0, dur, grow: size * 1.8 });
+}
+function ringFx(pos, color) {
+  const m = new THREE.MeshBasicMaterial({ map: fxTex.shock, color, transparent: true,
+    blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
+  const g = new THREE.Mesh(new THREE.PlaneGeometry(1,1), m);
+  g.rotation.x = -Math.PI/2; g.position.copy(pos); g.position.y += .05;
+  g.scale.setScalar(.3); scene.add(g);
+  fxPool.push({ s: g, t: 0, dur: .6, grow: 4 });
+}
+const flash = new THREE.PointLight(0xffffff, 0, 8); scene.add(flash);
+function flashAt(pos, color, power = 30) {
+  flash.position.copy(pos); flash.position.y += .5;
+  flash.color.set(color); flash.intensity = power;
+  fxPool.push({ light: true, t: 0, dur: .4 });
+}
+
+// ---------- weapon trails (ribbon по траектории клинка) ----------
+const TRAIL_N = 26, trails = [];
+function startTrail(u, dur, color) {
+  if (!u.weaponBone || !u.weapon || !u.weaponTip) return;
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(TRAIL_N * 2 * 3), 3));
+  geo.setAttribute('alpha', new THREE.BufferAttribute(new Float32Array(TRAIL_N * 2), 1));
+  const idx = [];
+  for (let i = 0; i < TRAIL_N - 1; i++) { const a = i * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
+  geo.setIndex(idx);
+  const mat = new THREE.ShaderMaterial({
+    uniforms: { color: { value: new THREE.Color(color) } },
+    vertexShader: 'attribute float alpha; varying float vA;\nvoid main(){ vA=alpha; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }',
+    fragmentShader: 'uniform vec3 color; varying float vA;\nvoid main(){ gl_FragColor=vec4(color*1.6, vA*0.8); }',
+    transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide,
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.frustumCulled = false;
+  scene.add(mesh);
+  trails.push({ mesh, u, pts: [], sample: dur, life: .3 });
+}
+function updateTrails(dt) {
+  const bp = new THREE.Vector3(), tp = new THREE.Vector3();
+  for (let i = trails.length - 1; i >= 0; i--) {
+    const tr = trails[i];
+    if (tr.sample > 0) {
+      tr.sample -= dt;
+      tr.u.weaponBone.getWorldPosition(bp);
+      tp.copy(tr.u.weaponTip);
+      tr.u.weapon.localToWorld(tp);
+      tr.pts.push({ b: bp.clone(), t: tp.clone(), a: 0 });
+      if (tr.pts.length > TRAIL_N) tr.pts.shift();
+    }
+    for (const p of tr.pts) p.a += dt;
+    while (tr.pts.length && tr.pts[0].a > tr.life) tr.pts.shift();
+    const pos = tr.mesh.geometry.attributes.position.array;
+    const al = tr.mesh.geometry.attributes.alpha.array;
+    tr.pts.forEach((p, i) => {
+      const f = 1 - p.a / tr.life;
+      pos.set([p.b.x, p.b.y, p.b.z, p.t.x, p.t.y, p.t.z], i * 6);
+      al[i * 2] = al[i * 2 + 1] = f;
+    });
+    tr.mesh.geometry.attributes.position.needsUpdate = true;
+    tr.mesh.geometry.attributes.alpha.needsUpdate = true;
+    tr.mesh.geometry.setDrawRange(0, Math.max(0, (tr.pts.length - 1) * 6));
+    if (!tr.pts.length && tr.sample <= 0) {
+      scene.remove(tr.mesh); tr.mesh.geometry.dispose(); tr.mesh.material.dispose();
+      trails.splice(i, 1);
+    }
+  }
+}
+// снаряды: светящийся сгусток летит кастер -> цель (bullet=1 в SKILL_ATTACK)
+const projs = [];
+function projectile(from, to, color, dur = .3) {
+  const m = new THREE.SpriteMaterial({ map: fxTex.spark, color, transparent: true,
+    opacity: 1, blending: THREE.AdditiveBlending, depthWrite: false });
+  const s = new THREE.Sprite(m); s.position.copy(from); s.scale.setScalar(.55); scene.add(s);
+  const l = new THREE.PointLight(color, 14, 5); l.position.copy(from); scene.add(l);
+  projs.push({ s, l, from: from.clone(), to: to.clone(), t: 0, dur });
+}
+function updateProjs(dt) {
+  for (let i = projs.length - 1; i >= 0; i--) {
+    const p = projs[i]; p.t += dt;
+    const k = Math.min(1, p.t / p.dur);
+    p.s.position.lerpVectors(p.from, p.to, k);
+    p.s.position.y += Math.sin(k * Math.PI) * .25;
+    p.l.position.copy(p.s.position);
+    p.l.intensity = 14 * (1 - k * .5);
+    if (k >= 1) { scene.remove(p.s); scene.remove(p.l); projs.splice(i, 1); }
+  }
+}
+// сближение при ударе: mvT/mvR/mvTime из SKILL_ATTACK — рывок к цели
+const lunges = [];
+function faceTo(u, targetPos) {
+  const d = targetPos.clone().sub(u.group.position);
+  if (d.lengthSq() < .01) return;
+  u.group.rotation.y = Math.atan2(d.x, d.z);
+}
+function lunge(u, targetPos, dist, dur, stopAt = 1.7) {
+  if (!u) return;
+  const dir = targetPos.clone().sub(u.group.position); dir.y = 0;
+  const gap = dir.length() - stopAt;
+  if (gap <= 0.05) return;
+  dir.normalize();
+  lunges.push({ u, from: u.group.position.clone(),
+    to: u.group.position.clone().addScaledVector(dir, Math.min(dist, gap)),
+    t: 0, dur: Math.max(.12, dur || .25), dustT: 0 });
+}
+function updateLunges(dt) {
+  for (let i = lunges.length - 1; i >= 0; i--) {
+    const l = lunges[i]; l.t += dt;
+    const k = Math.min(1, l.t / l.dur), e = k * k * (3 - 2 * k);
+    l.u.group.position.lerpVectors(l.from, l.to, e);
+    // пыль из-под ног при рывке
+    l.dustT += dt;
+    if (l.dustT > .09) {
+      l.dustT = 0;
+      const fp = l.u.group.position.clone(); fp.y = .05;
+      burst(fp, 'smoke', 0x8a7a5a, .8, .7, true);
+    }
+    if (k >= 1) lunges.splice(i, 1);
+  }
+}
+// телеграф: пульсирующее красное кольцо под целью до первого удара (как в игре)
+function telegraph(pos, r, dur) {
+  const m = new THREE.MeshBasicMaterial({ map: fxTex.shock, color: 0xff2818,
+    transparent: true, opacity: .5, blending: THREE.AdditiveBlending,
+    depthWrite: false, side: THREE.DoubleSide });
+  const g = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), m);
+  g.rotation.x = -Math.PI / 2;
+  g.position.set(pos.x, .04, pos.z);
+  g.scale.setScalar(r * 2);
+  scene.add(g);
+  fxPool.push({ s: g, t: 0, dur, grow: r * 2, pulse: true });
+}
+// прожжённое пятно на полу после сильных/огненных ударов — держится ~7с
+const scorchTex = (() => {
+  const c = document.createElement('canvas'); c.width = c.height = 128;
+  const x = c.getContext('2d');
+  const g = x.createRadialGradient(64, 64, 8, 64, 64, 62);
+  g.addColorStop(0, 'rgba(10,6,4,.95)'); g.addColorStop(.55, 'rgba(20,10,6,.7)');
+  g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(0, 0, 128, 128);
+  return new THREE.CanvasTexture(c);
+})();
+function scorch(pos, r = 1.3) {
+  const m = new THREE.MeshBasicMaterial({ map: scorchTex, transparent: true,
+    opacity: .6, depthWrite: false });
+  const g = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), m);
+  g.rotation.x = -Math.PI / 2; g.rotation.z = Math.random() * 6.28;
+  g.position.set(pos.x, .015, pos.z);
+  g.scale.setScalar(r * 2);
+  scene.add(g);
+  fxPool.push({ s: g, t: 0, dur: 7, fixed: true, baseOp: .6 });
+}
+
+// ---------- real MIR4 skill VFX (from ParticleEffectNotify + ParticleSystem assets) ----------
+let FX_MANIFEST = {};        // anim name -> [{ps,t,sock,off,scale,emitters:[{tex,color,type}]}]
+const fxMeshCache = {};
+async function getFxMeshGeo(name) {
+  if (!name) return null;
+  const base = name.split('/').pop().replace(/\.glb$/i, '');
+  if (fxMeshCache[base]) return fxMeshCache[base];
+  try {
+    const gltf = await gltfLoad('./fxmesh/' + base + '.glb');
+    let geo = null;
+    gltf.scene.traverse(o => {
+      if (!geo && o.isMesh && o.geometry) geo = o.geometry.clone();
+    });
+    if (geo) {
+      fxMeshCache[base] = geo;
+      return geo;
+    }
+  } catch (e) {}
+  return null;
+}
+
+function preloadFxMeshes(manifest) {
+  const meshNames = new Set();
+  for (const list of Object.values(manifest)) {
+    for (const fx of list) {
+      for (const em of (fx.emitters || [])) {
+        if (em.type === 'mesh' && em.mesh) {
+          meshNames.add(em.mesh.split('/').pop().replace(/\.glb$/i, ''));
+        }
+      }
+    }
+  }
+  for (const name of meshNames) {
+    getFxMeshGeo(name);
+  }
+}
+
+fetch('./fx_manifest.json').then(r => r.json()).then(j => {
+  FX_MANIFEST = j;
+  preloadFxMeshes(j);
+});
+
+// ---------- real MIR4 hit effects (from EFFECT.csv -> hit_fx.json) ----------
+let HIT_MANIFEST = {};
+fetch('./hit_fx.json').then(r => r.json()).then(j => HIT_MANIFEST = j);
+
+function spawnHitFx(targetUnit, hitFxId) {
+  if (!targetUnit) return;
+  const hf = HIT_MANIFEST[hitFxId];
+  const pos = center(targetUnit.name);
+  if (!hf || !hf.emitters || !hf.emitters.length) {
+    burst(pos, 'spark', 0xffd070, 1.4, .4);
+    flashAt(pos, 0xffaa50, 25);
+    return;
+  }
+  flashAt(pos, 0xffeedd, 35);
+  for (const em of hf.emitters) {
+    const col = em.color ? new THREE.Color(...em.color) : new THREE.Color(1.0, 0.75, 0.3);
+    const tex = em.tex ? getPsTex(em.tex) : fxTex.spark;
+    const count = 4;
+    for (let i = 0; i < count; i++) {
+      const m = new THREE.SpriteMaterial({
+        map: tex, color: col, transparent: true, opacity: 0.95,
+        blending: THREE.AdditiveBlending, depthWrite: false,
+        rotation: Math.random() * 6.28
+      });
+      const s = new THREE.Sprite(m);
+      s.position.copy(pos).add(new THREE.Vector3(
+        (Math.random() - .5) * 0.45,
+        (Math.random() - .5) * 0.45,
+        (Math.random() - .5) * 0.45
+      ));
+      s.scale.setScalar(0.7 + Math.random() * 0.7);
+      scene.add(s);
+      fxPool.push({ s, t: 0, dur: 0.35 + Math.random() * 0.25, grow: s.scale.x * 1.8, spin: true });
+    }
+  }
+}
+
+// ---------- real MIR4 combat SFX (Web Audio API Engine) ----------
+let SFX_MANIFEST = {};       // anim name -> [{t, vol, files:[ogg]}]
+fetch('./sfx_manifest.json').then(r => r.json()).then(j => SFX_MANIFEST = j);
+
+let audioCtx = null;
+let sfxEnabled = true;
+const audioBufCache = {};
+
+function ensureAudioCtx() {
+  if (!audioCtx) {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (AC) audioCtx = new AC();
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  return audioCtx;
+}
+window.addEventListener('pointerdown', ensureAudioCtx, { once: false });
+window.addEventListener('keydown', ensureAudioCtx, { once: false });
+
+const sfxBtn = document.getElementById('sfxBtn');
+if (sfxBtn) {
+  sfxBtn.onclick = () => {
+    ensureAudioCtx();
+    sfxEnabled = !sfxEnabled;
+    sfxBtn.textContent = sfxEnabled ? '🔊 SFX: Enabled' : '🔇 SFX: Muted';
+  };
+}
+
+async function playAudioBuffer(fileName, vol = 0.5) {
+  if (!sfxEnabled) return;
+  const ctx = ensureAudioCtx();
+  if (!ctx || ctx.state !== 'running') return;
+  let buf = audioBufCache[fileName];
+  if (!buf) {
+    try {
+      const res = await fetch('sfx/' + fileName);
+      const ab = await res.arrayBuffer();
+      buf = await ctx.decodeAudioData(ab);
+      audioBufCache[fileName] = buf;
+    } catch (e) {
+      return;
+    }
+  }
+  try {
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    const gain = ctx.createGain();
+    gain.gain.value = Math.min(1, vol);
+    src.connect(gain);
+    gain.connect(ctx.destination);
+    src.start(0);
+  } catch (e) {}
+}
+
+function playSfx(animName) {
+  const list = SFX_MANIFEST[animName];
+  if (!list) return;
+  for (const s of list) {
+    setTimeout(() => {
+      const f = s.files[Math.random() * s.files.length | 0];
+      if (f) playAudioBuffer(f, (s.vol || 1) * 0.45);
+    }, s.t * 1000);
+  }
+}
+
+const psTex = {};
+function getPsTex(name) {
+  if (!name) return fxTex.aura;
+  if (!psTex[name]) {
+    psTex[name] = texLoader.load('fx/ps/' + name, t => t.colorSpace = THREE.SRGBColorSpace);
+  }
+  return psTex[name];
+}
+
+// ищем кость для сокета: WPN_*/FX_Weapon -> кость оружия, Hand_R -> кисть, Root/пусто -> юнит
+function findSocketBone(u, sock) {
+  if (!sock || /^root$/i.test(sock)) return null;
+  const s = sock.toLowerCase();
+  let bone = null;
+  u.model.traverse(o => { if (!bone && o.isBone && o.name.toLowerCase() === s) bone = o; });
+  if (!bone && /wpn|weapon|fx_weapon/.test(s))
+    u.model.traverse(o => { if (!bone && o.isBone && /weapon/i.test(o.name)) bone = o; });
+  if (!bone && /hand/.test(s))
+    u.model.traverse(o => { if (!bone && o.isBone && /hand.*_?r|r.*hand/i.test(o.name)) bone = o; });
+  return bone;
+}
+
+// проигрывание эффектов конкретной анимации на юните
+function spawnSkillFx(unitName, animName) {
+  const list = FX_MANIFEST[animName];
+  if (!list) return false;
+  const u = units[unitName]; if (!u) return false;
+  const fwd = new THREE.Vector3(1,0,0).applyQuaternion(u.group.quaternion);
+  const base = u.group.position.clone();
+  for (const fx of list) {
+    const bone = findSocketBone(u, fx.sock);
+    let boneScale = 1;
+    if (bone) { const ws = new THREE.Vector3(); bone.getWorldScale(ws); boneScale = ws.x || 1; }
+    for (const t of fx.t.length ? fx.t : [0]) {
+      setTimeout(() => {
+        if (hp.mon <= 0 && hp.hero <= 0) return;
+        const sc = Math.min((fx.scale || 1) * u.height * 1.1, 4);
+        const emAll = (fx.emitters || []).filter(e => e.tex || (e.type === 'mesh' && e.mesh));
+        const em = emAll.filter(e => e.type === 'mesh' && e.mesh).slice(0, 3)
+          .concat(emAll.filter(e => !(e.type === 'mesh' && e.mesh)).slice(0, 6));
+        if (!em.length) return;
+        for (const e of em) {
+          const col = e.color && (e.color[0]+e.color[1]+e.color[2]) > .05
+            ? new THREE.Color(...e.color.map(c => Math.min(1, c))) : null;
+          
+          // real GLB mesh-эмиттер с UV-скроллингом
+          if (e.type === 'mesh' && e.mesh) {
+            const meshName = e.mesh.split('/').pop().replace(/\.glb$/i, '');
+            const realGeo = fxMeshCache[meshName];
+            if (!realGeo) {
+              getFxMeshGeo(meshName);
+              continue;
+            }
+            const tex = e.tex ? getPsTex(e.tex) : fxTex.aura;
+            const mat = new THREE.ShaderMaterial({
+              uniforms: {
+                map: { value: tex },
+                color: { value: col || new THREE.Color(1.0, 0.85, 0.45) },
+                uOpacity: { value: 0.9 },
+                uProgress: { value: 0.0 },
+                uPan: { value: new THREE.Vector2(2.2, 0.0) }
+              },
+              vertexShader: `
+                varying vec2 vUv;
+                void main() {
+                  vUv = uv;
+                  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+              `,
+              fragmentShader: `
+                uniform sampler2D map;
+                uniform vec3 color;
+                uniform float uOpacity;
+                uniform float uProgress;
+                uniform vec2 uPan;
+                varying vec2 vUv;
+                void main() {
+                  vec2 uv = vUv + uPan * uProgress;
+                  vec4 tex = texture2D(map, uv);
+                  float lum = max(tex.r, max(tex.g, tex.b));
+                  float a = (tex.a > 0.08 ? tex.a : lum) * uOpacity;
+                  gl_FragColor = vec4(tex.rgb * color * 2.2, a);
+                }
+              `,
+              transparent: true,
+              blending: THREE.AdditiveBlending,
+              depthWrite: false,
+              side: THREE.DoubleSide
+            });
+            const sm = new THREE.Mesh(realGeo, mat);
+            if (bone) {
+              bone.add(sm);
+              sm.scale.setScalar(1.0 * (fx.scale || 1.0));
+              sm.position.set((fx.off.X || 0) * 0.01, (fx.off.Z || 0) * 0.01, (fx.off.Y || 0) * 0.01);
+              if (fx.rot) {
+                sm.rotation.set((fx.rot.Roll || 0) * (Math.PI/180), (fx.rot.Yaw || 0) * (Math.PI/180), (fx.rot.Pitch || 0) * (Math.PI/180));
+              }
+            } else {
+              const p = base.clone()
+                .addScaledVector(fwd, (fx.off.Y || 0) * 0.01)
+                .add(new THREE.Vector3((fx.off.X || 0) * 0.01, (fx.off.Z || 0) * 0.01, 0));
+              sm.position.copy(p);
+              sm.quaternion.copy(u.group.quaternion);
+              if (fx.rot) {
+                const rQ = new THREE.Quaternion().setFromEuler(
+                  new THREE.Euler((fx.rot.Roll || 0)*(Math.PI/180), (fx.rot.Yaw || 0)*(Math.PI/180), (fx.rot.Pitch || 0)*(Math.PI/180))
+                );
+                sm.quaternion.multiply(rQ);
+              }
+              sm.scale.setScalar(0.01 * (fx.scale || 1.0));
+              scene.add(sm);
+            }
+            fxPool.push({ s: sm, t: 0, dur: 0.45 + Math.random() * 0.2,
+              mesh: true, base: sm.scale.x, baseOp: 0.9 });
+            continue;
+          }
+          const n = bone ? 7 : 5;
+          for (let i = 0; i < n; i++) {
+            const m = new THREE.SpriteMaterial({
+              map: getPsTex(e.tex), transparent: true, opacity: .95,
+              blending: THREE.AdditiveBlending, depthWrite: false,
+              rotation: Math.random() * 6.28,
+              ...(col ? { color: col } : {}),
+            });
+            const s = new THREE.Sprite(m);
+            if (bone) {
+              bone.add(s);
+              s.position.set(
+                (fx.off.X || 0) * .3 + (Math.random()-.5) * 60,
+                (fx.off.Z || 0) * .3 + (Math.random()-.5) * 60,
+                (fx.off.Y || 0) * .3 + (Math.random()-.5) * 60);
+              s.scale.setScalar(Math.min(sc * (0.6 + Math.random() * .8) / boneScale, 1.6));
+            } else {
+              const p = base.clone()
+                .addScaledVector(fwd, (fx.off.Y || 0) * .01)
+                .add(new THREE.Vector3((fx.off.X || 0) * .01, (fx.off.Z || 0) * .01, 0));
+              s.position.copy(p).add(new THREE.Vector3(
+                (Math.random()-.5)*.5, Math.random()*.4, (Math.random()-.5)*.5));
+              s.scale.setScalar(Math.min(sc * (0.6 + Math.random()*.8), 2.2));
+              scene.add(s);
+            }
+            fxPool.push({ s, t: 0, dur: .5 + Math.random() * .4,
+              grow: s.scale.x * 1.7, spin: true });
+          }
+        }
+      }, t * 1000);
+    }
+  }
+  return true;
+}
+function updateFx(dt) {
+  flash.intensity = Math.max(0, flash.intensity - dt * 90);
+  for (let i = fxPool.length - 1; i >= 0; i--) {
+    const f = fxPool[i]; if (f.light) { f.t += dt; if (f.t > f.dur) fxPool.splice(i,1); continue; }
+    f.t += dt;
+    const k = f.t / f.dur;
+    if (f.pulse) { // телеграф: фикс. размер, мигает
+      f.s.material.opacity = .2 + .35 * Math.abs(Math.sin(f.t * 14));
+      if (f.t >= f.dur) { (f.s.parent || scene).remove(f.s); fxPool.splice(i, 1); }
+      continue;
+    }
+    if (f.mesh) { // mesh-оболочка: анимация UV и плавное затухание
+      if (f.s.material && f.s.material.uniforms) {
+        f.s.material.uniforms.uProgress.value = k;
+        f.s.material.uniforms.uOpacity.value = (f.baseOp ?? 0.9) * (1.0 - k * k);
+      } else if (f.s.material) {
+        f.s.material.opacity = (f.baseOp ?? 0.9) * (1.0 - k * k);
+      }
+      f.s.scale.setScalar(f.base * (1.0 + 0.25 * k));
+      if (f.t >= f.dur) { (f.s.parent || scene).remove(f.s); fxPool.splice(i, 1); }
+      continue;
+    }
+    if (f.fixed) { // декаль: размер не меняется, медленно гаснет
+      f.s.material.opacity = (f.baseOp ?? 1) * (1 - k);
+      if (f.t >= f.dur) { (f.s.parent || scene).remove(f.s); fxPool.splice(i, 1); }
+      continue;
+    }
+    f.s.scale.setScalar(f.grow * (0.3 + 0.7 * k));
+    f.s.material.opacity = 1 - k;
+    if (f.s.material.rotation !== undefined && f.spin) f.s.material.rotation += dt * 4;
+    if (f.t >= f.dur) { (f.s.parent || scene).remove(f.s); fxPool.splice(i, 1); }
+  }
+}
+// всплывающее имя скилла (красное у врага, золотое у героя — как в игре)
+const skillBannerEl = document.getElementById('skillBanner');
+const castBarEl = document.getElementById('castBar');
+let sbT = null, cbT = null;
+function skillBanner(name, isHero) {
+  if (!name) return;
+  skillBannerEl.textContent = name;
+  skillBannerEl.className = isHero ? 'hero on' : 'on';
+  clearTimeout(sbT);
+  sbT = setTimeout(() => skillBannerEl.className = '', 1100);
+}
+// заполняющийся каст-бар на время windup скилла
+function castBar(dur, isHero) {
+  if (dur < .3) return;
+  const i = castBarEl.firstElementChild;
+  castBarEl.className = isHero ? 'on' : 'on enemy';
+  i.style.transition = 'none'; i.style.width = '0';
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    i.style.transition = `width ${dur}s linear`; i.style.width = '100%';
+  }));
+  clearTimeout(cbT);
+  cbT = setTimeout(() => castBarEl.className = '', dur * 1000 + 150);
+}
+// красная виньетка по краям при уроне по герою
+const vigEl = document.getElementById('vignette');
+function vignetteHit() {
+  vigEl.classList.remove('hit'); void vigEl.offsetWidth; vigEl.classList.add('hit');
+}
+// золотое свечение кастера (как в PvP-видео — персонаж вспыхивает на касте)
+function glowCaster(u, dur = .8) {
+  const mats = [];
+  u.model.traverse(o => {
+    if (o.isSkinnedMesh || o.isMesh) for (const m of [].concat(o.material || []))
+      if (m.emissive) mats.push(m);
+  });
+  for (const m of mats) {
+    if (m.userData._g0 === undefined) { m.userData._g0 = m.emissive.getHex(); m.userData._i0 = m.emissiveIntensity ?? 1; }
+    m.emissive.setHex(0xbb7a20); m.emissiveIntensity = .9;
+  }
+  setTimeout(() => mats.forEach(m => {
+    m.emissive.setHex(m.userData._g0); m.emissiveIntensity = m.userData._i0;
+  }), dur * 1000);
+}
+// тряска камеры на сильных попаданиях
+let shakeAmp = 0;
+function camShake(a) { shakeAmp = Math.min(.6, shakeAmp + a); }
+// белая вспышка на модели жертвы при попадании
+function hitFlash(u) {
+  if (!u) return;
+  const mats = [];
+  u.model.traverse(o => { if (o.material?.emissive && !mats.includes(o.material)) mats.push(o.material); });
+  mats.forEach(m => { m.userData._hf ??= { e: m.emissive.getHex(), i: m.emissiveIntensity };
+    m.emissive.setHex(0x666666); m.emissiveIntensity = .5; });
+  setTimeout(() => mats.forEach(m => { m.emissive.setHex(m.userData._hf.e); m.emissiveIntensity = m.userData._hf.i; }), 90);
+}
+function dmgNum(pos, text, heal, crit) {
+  const v = pos.clone();
+  v.x += (Math.random() - .5) * .7;
+  v.y += Math.random() * .55;
+  v.project(camera);
+  const el = document.createElement('div');
+  el.className = 'dmg' + (heal ? ' heal' : crit ? ' crit' : '');
+  el.textContent = text;
+  el.style.left = ((v.x*.5+.5)*innerWidth) + 'px';
+  el.style.top = ((-v.y*.5+.5)*innerHeight) + 'px';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 950);
+}
+// надголовные таблички (имя + hp), проецируются из 3D каждый кадр
+const plateHero = document.getElementById('plateHero'), plateMon = document.getElementById('plateMon');
+const monName = () => enemyDef(monKey()).player
+  ? (HEROES[monKey()]?.label || enemyDef(monKey()).label).toUpperCase() + ' · PVP'
+  : document.getElementById('monName').textContent;
+function updPlate(el, unitName, label, cur, max) {
+  const u = units[unitName];
+  if (!u) { el.style.display = 'none'; return; }
+  const v = u.group.position.clone();
+  v.y += Math.min(u.height, 1.85) + 0.25;
+  v.project(camera);
+  if (v.z > 1) { el.style.display = 'none'; return; }
+  el.style.display = 'block';
+  el.style.left = ((v.x * .5 + .5) * innerWidth) + 'px';
+  el.style.top = ((-v.y * .5 + .5) * innerHeight) + 'px';
+  el.querySelector('b').textContent = label;
+  el.querySelector('u').style.width = Math.max(0, cur / max * 100) + '%';
+}
+// счётчик комбо (серия ударов героя)
+const comboEl = document.getElementById('combo'), comboN = document.getElementById('comboN');
+let combo = 0, comboUntil = 0;
+function comboHit() {
+  combo++;
+  comboUntil = performance.now() + 2400;
+  comboN.textContent = combo;
+  comboEl.classList.add('on');
+  comboEl.style.transform = `scale(${1 + Math.min(combo, 30) * .02})`;
+}
+// slow-mo при смерти + панч камеры на кастах + баннер результата + хитстоп
+let slowmo = 0, fovKick = 0, hitstop = 0, deathFocus = null;
+const roundEl = document.getElementById('roundBanner');
+function roundBanner(win) {
+  roundEl.textContent = win ? 'VICTORY' : 'DEFEAT';
+  roundEl.className = win ? 'on' : 'on lose';
+}
+// летящие угольки в воздухе
+const emberGeo = new THREE.BufferGeometry();
+const EMBERS = 60;
+{
+  const pos = new Float32Array(EMBERS * 3), spd = new Float32Array(EMBERS);
+  for (let i = 0; i < EMBERS; i++) {
+    pos.set([(Math.random() - .5) * 14, Math.random() * 4, (Math.random() - .5) * 10], i * 3);
+    spd[i] = .15 + Math.random() * .45;
+  }
+  emberGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  emberGeo.userData.spd = spd;
+}
+const embers = new THREE.Points(emberGeo, new THREE.PointsMaterial({
+  map: fxTex.spark, color: 0xff8040, size: .045, transparent: true, opacity: .55,
+  blending: THREE.AdditiveBlending, depthWrite: false, sizeAttenuation: true }));
+embers.frustumCulled = false; scene.add(embers);
+
+// ---------- roster ----------
+const HEROES = {
+  pcw: { label: 'Warrior ♀',  color: 0xffa54a, h: 1.75 },
+  pcm: { label: 'Sorcerer ♂', color: 0x6ab8ff, h: 1.8 },
+  pca: { label: 'Arbalist ♀', color: 0xffd76a, h: 1.7 },
+  pct: { label: 'Taoist ♂',   color: 0x7dffb0, h: 1.8 },
+  pcz: { label: 'Lancer ♀',   color: 0xc07dff, h: 1.75 },
+};
+let MONSTERS = {
+  cerberus:  { label: 'Cerberus',  file: 'cerberus_battle.glb',  h: 2.6,  x: 2.0 },
+  dragona01: { label: 'Dragon',    file: 'dragona01_battle.glb', h: 4.4,  x: 3.6, fit: 'max' },
+  golem01:   { label: 'Golem',     file: 'golem01_battle.glb',   h: 2.8,  x: 1.9 },
+  danbo:     { label: 'Danbo',     file: 'danbo_battle.glb',     h: 2.0,  x: 1.8 },
+};
+// реальные статы из MONSTER.csv (hp/atk/level/monsterId)
+const monsReady = fetch('./monsters.json').then(r => r.json())
+  .then(j => Object.assign(MONSTERS, j)).catch(() => {});
+
+// враг = монстр ИЛИ класс (PvP)
+const enemyDef = k => MONSTERS[k] ||
+  { label: HEROES[k].label + ' — PvP', file: k + '_battle.glb', h: HEROES[k].h, x: 2.2,
+    hp: 50000, atk: 2400, player: true };
+const enemyKeys = () => Object.keys(MONSTERS).concat(Object.keys(HEROES));
+
+const units = {}, cache = {};
+window.THREE = THREE; window.units = units; window.scene = scene;
+async function loadUnit(name, file, pos, facing, targetH, fit, addToScene = true) {
+  const gltf = await gltfLoad('./' + file);
+  const group = new THREE.Group();
+  group.position.copy(pos); group.rotation.y = facing;
+  const model = gltf.scene;
+  model.traverse(o => { if (o.isSkinnedMesh) { o.frustumCulled = false; o.castShadow = true; o.receiveShadow = true; } });
+  const box = new THREE.Box3().setFromObject(model);
+  const size0 = box.getSize(new THREE.Vector3());
+  const s = targetH / (fit === 'max' ? Math.max(size0.x, size0.y, size0.z) : size0.y);
+  model.scale.setScalar(s);
+  const bc = box.getCenter(new THREE.Vector3());
+  model.position.set(-bc.x * s, -box.min.y * s, -bc.z * s);
+  group.add(model); if (addToScene) scene.add(group);
+  const mixer = new THREE.AnimationMixer(model);
+  const actions = {};
+  for (const c of gltf.animations) actions[c.name] = mixer.clipAction(c);
+  return { name, model, group, mixer, actions, clips: gltf.animations,
+    height: targetH, size: size0.multiplyScalar(s) };
+}
+
+async function attachWeapon(unit, cls) {
+  try {
+    const w = await gltfLoad('./weapon_' + cls + '.glb');
+    const wm = w.scene;
+    // find weapon bone (preferred) then hand
+    let bone = null;
+    for (const rx of [/^weapon/i, /weapon_r|cos_weapon/i, /hand_r/i]) {
+      unit.model.traverse(o => { if (!bone && o.isBone && rx.test(o.name)) bone = o; });
+      if (bone) break;
+    }
+    if (!bone) { console.warn('no weapon bone for', cls); return; }
+    // weapon glb is in meters; bone lives in the model's cm-space (scaled ~0.01) → compensate ×100
+    // кончик клинка: самая дальняя точка bbox по доминантной оси — до скейла/привязки (weapon-local)
+    const lb = new THREE.Box3().setFromObject(wm);
+    const sz = lb.getSize(new THREE.Vector3());
+    const ax = sz.x > sz.y ? (sz.x > sz.z ? 'x' : 'z') : (sz.y > sz.z ? 'y' : 'z');
+    unit.weaponTip = new THREE.Vector3();
+    unit.weaponTip[ax] = Math.abs(lb.max[ax]) > Math.abs(lb.min[ax]) ? lb.max[ax] : lb.min[ax];
+    wm.scale.setScalar(100);
+    bone.add(wm);
+    unit.weapon = wm;
+    unit.weaponBone = bone;
+    const wp = new THREE.Vector3(); bone.getWorldPosition(wp);
+    const wb = new THREE.Box3().setFromObject(wm);
+    console.log('weapon attached to', bone.name,
+      '| bone world pos:', wp.toArray().map(v=>v.toFixed(2)),
+      '| weapon bbox size:', wb.getSize(new THREE.Vector3()).toArray().map(v=>v.toFixed(2)));
+  } catch (e) { console.warn('weapon load fail', cls); }
+}
+
+function play(name, clipName, once = false) {
+  const u = units[name]; if (!u) return null;
+  const clip = u.clips.find(c => c.name === clipName) || u.clips.find(c => c.name.toLowerCase().includes(clipName.toLowerCase()));
+  if (!clip) return null;
+  const act = u.actions[clip.name];
+  Object.values(u.actions).forEach(a => { if (a !== act) a.fadeOut(.22); });
+  act.reset();
+  if (once) { act.setLoop(THREE.LoopOnce); act.clampWhenFinished = true; }
+  else act.setLoop(THREE.LoopRepeat, Infinity);
+  act.fadeIn(.22).play();
+  return act;
+}
+function idleOf(name) {
+  const u = units[name]; if (!u) return;
+  const c = u.clips.find(c => /Std01|Idle|Int/i.test(c.name)) || u.clips[0];
+  play(name, c.name);
+}
+function center(name) {
+  const u = units[name];
+  const v = new THREE.Vector3();
+  u.group.getWorldPosition(v); v.y += u.height * .6;
+  return v;
+}
+
+// ---------- battle (data-driven from SKILL.csv / SKILL_ATTACK.csv) ----------
+let SKILLS = {};        // skills.json: class -> skillId -> {name,anim,cd,aniT,sections[{sec,hits[{t,tw,mul,...}]}]}
+fetch('./skills.json').then(r => r.json()).then(j => { SKILLS = j; rebuildButtons(); });
+
+// статы: герой — демо; монстр — реальные строки из MONSTER.csv (monsters.json)
+const STATS = { hero: { hpMax: 50000, atk: 2400 } };
+// HP монстров даунскейлится для темпа витрины — бой ~30-60с, а не 5 минут
+const monStats = () => { const d = enemyDef(monKey());
+  return d.player ? d : { ...d, hp: Math.round(d.hp * .22) }; };
+const hp = { hero: STATS.hero.hpMax, mon: 0 };
+const cds = {};  // skillId -> timestamp когда откатится
+const heroSel = document.getElementById('heroSel');
+const monSel = document.getElementById('monSel');
+const heroKey = () => heroSel.value, monKey = () => monSel.value;
+const setHp = (el, v, mx) => {
+  const pct = Math.max(0, Math.min(100, (v / mx) * 100));
+  const fallback = document.querySelector(el + ' > div');
+  if (fallback) fallback.style.width = pct + '%';
+  const num = document.getElementById(el === '#hpHero' ? 'heroHpNum' : 'monHpNum');
+  if (num) num.textContent = Math.max(0, Math.round(v)).toLocaleString('en-US');
+  if (el === '#hpHero') {
+    const f = document.getElementById('playerHpFill');
+    if (f) f.style.width = pct + '%';
+    const t = document.getElementById('playerHpText');
+    if (t) t.textContent = `${Math.max(0, Math.round(v)).toLocaleString('en-US')} / ${Math.round(mx).toLocaleString('en-US')}`;
+  } else {
+    const f = document.getElementById('targetHpFill');
+    if (f) f.style.width = pct + '%';
+    const t = document.getElementById('targetHpText');
+    if (t) t.textContent = `${Math.max(0, Math.round(v)).toLocaleString('en-US')} / ${Math.round(mx).toLocaleString('en-US')}`;
+  }
+};
+const fmt = n => Math.round(n).toLocaleString('en-US');
+
+// все удары скилла с таймингами из таблицы
+function allHits(skill) {
+  const hits = [];
+  for (const s of skill.sections) for (const h of s.hits) hits.push(h);
+  return hits.sort((a, b) => a.t - b.t);
+}
+
+function heroAttack(skillId) {
+  if (hp.mon <= 0 || hp.hero <= 0) return;
+  const hero = heroKey(), mon = monKey();
+  if (!units[hero] || !units[mon]) return;
+  const sk = SKILLS[hero]?.[skillId];
+  if (!sk || !sk.anim) return;
+  const now = performance.now();
+  if (cds[skillId] && cds[skillId] > now) return;   // на кулдауне
+  faceTo(units[hero], units[mon].group.position);
+  // авто-сближение (gap-close): в MIR4 герой моментально делает рывок/шаг к цели, если вне melee-дистанции
+  const radH = Math.max(units[hero].size.x, units[hero].size.z);
+  const radM = Math.max(units[mon].size.x, units[mon].size.z);
+  const closeReach = 1.35 + (radH + radM) * 0.45;
+  const curDist = units[hero].group.position.distanceTo(units[mon].group.position);
+  const isRanged = allHits(sk).some(h => h.bullet === '1');
+  if (!isRanged && curDist > closeReach) {
+    lunge(units[hero], units[mon].group.position, curDist - closeReach, 0.16, closeReach);
+  }
+  const act = play(hero, sk.anim, true);
+  const dur = act ? act.getClip().duration : (sk.aniT || 1);
+  const col = HEROES[hero].color;
+  const isSkill = sk.cd > 3;
+  // реальные эффекты скилла из ParticleEffectNotify (иначе generic)
+  const hasFx = spawnSkillFx(hero, sk.anim);
+  playSfx(sk.anim);
+  startTrail(units[hero], Math.min(dur, 1.4), col);
+  const firstHitT = allHits(sk).filter(h => h.mul > 0).reduce((m, h) => Math.min(m, h.t), 99);
+  if (isSkill && firstHitT > 0.15 && firstHitT < 90) {
+    telegraph(center(mon), 1.1, firstHitT);
+    castBar(firstHitT, true);
+    // враг-игрок читает телеграф и иногда уворачивается
+    if (enemyDef(mon).player && firstHitT > .45 && Math.random() < .18)
+      setTimeout(monRoll, (firstHitT - .35) * 1000);
+  }
+  if (isSkill) fovKick -= 2.6;   // приближение камеры на касте
+  if (isSkill) { skillBanner(sk.name, true); glowCaster(units[hero]); }
+  if (!hasFx) {
+    burst(center(hero), 'aura', col, isSkill ? 1.7 : .7, .5);
+    if (isSkill) { ringFx(center(hero).setY(.02), col); flashAt(center(hero), col, 40); }
+  }
+  // удары — по реальным ImpactStartTime из SKILL_ATTACK
+  for (const h of allHits(sk)) {
+    // движение персонажа (рывок вперёд / прыжок / отскок назад) — выполняется для ВСЕХ фаз скилла (даже с mul=0)
+    if (h.mvT !== '0' && h.mvR && h.mvR !== 0) {
+      const dist = Math.abs(h.mvR) / 100;
+      const isBackward = h.mvR < 0;
+      setTimeout(() => {
+        if (!units[hero] || !units[mon]) return;
+        if (isBackward) {
+          const away = units[hero].group.position.clone().sub(units[mon].group.position).setY(0).normalize();
+          lunge(units[hero], units[hero].group.position.clone().addScaledVector(away, dist), dist, h.mvTime || 0.22, 0.05);
+        } else {
+          lunge(units[hero], units[mon].group.position, dist, h.mvTime || 0.22,
+            (units[hero].size.x + (units[mon]?.size.x || 1)) * 0.55 + 0.2);
+        }
+      }, h.t * 1000);
+    }
+    if (h.mul <= 0) continue;
+    // снаряд летит к цели до момента удара (bullet=1 в таблице)
+    if (h.bullet === '1') {
+      const launch = Math.max(0, h.t - .3);
+      setTimeout(() => { if (hp.mon > 0) projectile(center(hero), center(mon), col); }, launch * 1000);
+    }
+    setTimeout(() => {
+      if (hp.mon <= 0 || !units[mon] || !units[hero]) return;
+      // mul в базисных пунктах: 25000 = 250.00%
+      const crit = Math.random() < .15;
+      const dmg = Math.round(STATS.hero.atk * h.mul / 10000 * (0.9 + Math.random() * 0.2) * (crit ? 1.6 : 1));
+      // melee-промах вне дистанции (кроме bullet/рывковых ударов)
+      const rad2 = un => Math.max(un.size.x, un.size.z);
+      const reach = 2.4 + (rad2(units[hero]) + rad2(units[mon])) * .6;
+      if (h.bullet !== '1' && (h.mvT === '0' || !h.mvR) &&
+          units[hero].group.position.distanceTo(units[mon].group.position) > reach) {
+        dmgNum(center(mon), 'MISS');
+        return;
+      }
+      if (performance.now() < monIframes) { dmgNum(center(mon), 'MISS'); return; }
+      hp.mon -= dmg;
+      hitFlash(units[mon]);
+      spawnHitFx(units[mon], h.hitFx);
+      // CC из SKILL_ATTACK: cc!=0 -> knockdown/stun анимация вместо обычного Hit
+      const u = units[mon];
+      const ccClip = h.cc && h.cc !== '0' && u
+        ? (u.clips.find(c => /Dmg_Dwn|Dmg_Stu/i.test(c.name))?.name || 'Hit')
+        : 'Hit';
+      play(mon, ccClip, true);
+      // отброс при knockdown-эффекте
+      if (ccClip !== 'Hit') {
+        const away = u.group.position.clone().sub(units[hero].group.position).setY(0).normalize().multiplyScalar(.55);
+        lunge(u, u.group.position.clone().add(away), .3, .22);
+      }
+      // кольцо под целью на сильных ударах (как ground-AoE в игре) + подпалина
+      if (h.mul >= 4000 || isSkill) {
+        const gp = center(mon); gp.y = .03;
+        ringFx(gp, col);
+        if (h.mul >= 9000 || /flame|fire|blast|smash/i.test(sk.anim)) scorch(gp, 1.4);
+      }
+      camShake(Math.min(.5, h.mul / 20000));
+      fovKick += .8;
+      if (h.mul >= 9000 || crit) hitstop = .055;   // микро-фриз на сильном ударе
+      comboHit();
+      dmgNum(center(mon), '-' + fmt(dmg), false, crit);
+      setHp('#hpMon', hp.mon, monStats().hp);
+      if (hp.mon <= 0) { slowmo = .8; roundBanner(true); deathFocus = mon;
+        setTimeout(() => play(mon, 'Die', true), 500); }
+    }, h.t * 1000);
+  }
+  // монстр входит в бой и атакует по своему таймеру
+  const lastT = allHits(sk).reduce((m, h) => Math.max(m, h.t), 0);
+  startCombat();
+  setTimeout(() => { if (hp.mon > 0) idleOf(mon); }, (lastT + .6) * 1000);
+  setTimeout(() => { if (hp.hero > 0) idleOf(hero); }, dur * 1000 + 150);
+  // кулдаун
+  if (sk.cd > 0) {
+    cds[skillId] = now + sk.cd * 1000;
+    const b = document.querySelector(`button[data-sid="${skillId}"]`);
+    if (b) { b.disabled = true; let left = sk.cd;
+      b.dataset.txt = b.textContent;
+      const iv = setInterval(() => {
+        left -= 1;
+        if (left <= 0) { b.disabled = false; b.textContent = b.dataset.txt; clearInterval(iv); }
+        else b.textContent = `${b.dataset.txt} · ${left}`;
+      }, 1000);
+    }
+  }
+}
+
+let monNextAtk = 0, combatTimer = null, monChain = 0, monIframes = 0;
+function startCombat() {
+  if (combatTimer) return;
+  monNextAtk = performance.now() + 1200;   // монстру нужна секунда, чтобы среагировать
+  combatTimer = setInterval(() => {
+    if (hp.hero <= 0 || hp.mon <= 0) { clearInterval(combatTimer); combatTimer = null; return; }
+    monAttack();
+  }, 700);
+}
+function monAttack() {
+  if (hp.hero <= 0 || hp.mon <= 0) return;
+  const now = performance.now();
+  if (now < monNextAtk) return;
+  monNextAtk = now + 2600 + Math.random() * 1800;
+  const hero = heroKey(), mon = monKey();
+  const u = units[mon];
+  const ms = monStats();
+  if (!u || !units[hero]) return;
+
+  // сближение: далеко — бежим к герою с анимацией бега, а не бьём в воздух
+  const mSkills = SKILLS[mon] ? Object.values(SKILLS[mon]).filter(s => s.anim && allHits(s).some(h => h.mul > 0)) : null;
+  const ranged = mSkills && mSkills.some(s => allHits(s).some(h => h.bullet === '1'));
+  // melee-дистанция от тел, а не от центров: радиус = макс. горизонтальный размер
+  const rad = un => Math.max(un.size.x, un.size.z);
+  const want = ranged ? 6.5 : Math.min(4.2, (rad(u) + rad(units[hero])) * .55 + .4);
+  const gap = u.group.position.distanceTo(units[hero].group.position);
+  faceTo(u, units[hero].group.position);
+  if (gap > want) {
+    const run = u.clips.find(c => /Btl_Run|_Run|Btl_Walk|_Walk/i.test(c.name));
+    if (run) play(mon, run.name);
+    lunge(u, units[hero].group.position, Math.min(gap - want + .3, 2.8), .95);
+    monNextAtk = now + 650;
+    return;
+  }
+
+  // PvP: враг-класс бьёт реальными скиллами с табличными таймингами
+  if (mSkills && mSkills.length) {
+    // иногда делает шаг в сторону — бой выглядит живым
+    if (Math.random() < .22) {
+      const side = new THREE.Vector3().subVectors(units[hero].group.position, u.group.position)
+        .cross(new THREE.Vector3(0, 1, 0)).normalize()
+        .multiplyScalar(Math.random() < .5 ? .7 : -.7);
+      const walk = u.clips.find(c => /Btl_Walk|_Walk|Btl_Run|_Run/i.test(c.name));
+      if (walk) play(mon, walk.name);
+      lunge(u, u.group.position.clone().add(side), .7, .5);
+      monNextAtk = now + 600;
+      return;
+    }
+    // серия базовых атак идёт подряд (1->2->3 как в игре), иначе случайный скилл
+    const basics = mSkills.filter(s => s.cd <= 3).sort((a, b) => (a.id || 0) - (b.id || 0));
+    const rest = mSkills.filter(s => s.cd > 3);
+    let sk;
+    if (basics.length && (monChain > 0 || Math.random() < .45)) {
+      sk = basics[monChain % basics.length]; monChain++;
+      if (monChain >= basics.length + 1) monChain = 0;
+    } else {
+      const pool = rest.length ? rest : mSkills;
+      sk = pool[Math.random() * pool.length | 0]; monChain = 0;
+    }
+    const act = play(mon, sk.anim, true);
+    const dur = act ? act.getClip().duration : (sk.aniT || 1);
+    spawnSkillFx(mon, sk.anim); playSfx(sk.anim);
+    startTrail(units[mon], Math.min(dur, 1.4), 0xff4433);
+    const fh = allHits(sk).filter(h => h.mul > 0).reduce((m, h) => Math.min(m, h.t), 99);
+    if (fh > 0.15 && fh < 90) { telegraph(center(hero), 1.1, fh); castBar(fh, false); }
+    skillBanner(sk.name, false); glowCaster(units[mon]);
+    for (const h of allHits(sk)) {
+      if (h.mvT !== '0' && h.mvR && h.mvR !== 0) {
+        const dist = Math.abs(h.mvR) / 100;
+        const isBackward = h.mvR < 0;
+        setTimeout(() => {
+          if (!units[mon] || !units[hero]) return;
+          if (isBackward) {
+            const away = units[mon].group.position.clone().sub(units[hero].group.position).setY(0).normalize();
+            lunge(units[mon], units[mon].group.position.clone().addScaledVector(away, dist), dist, h.mvTime || 0.22, 0.05);
+          } else {
+            lunge(units[mon], units[hero]?.group.position, dist, h.mvTime || 0.22,
+              ((units[mon]?.size.x || 1) + units[hero].size.x) * .55 + .2);
+          }
+        }, h.t * 1000);
+      }
+      if (h.mul <= 0) continue;
+      if (h.bullet === '1') {
+        const launch = Math.max(0, h.t - .3);
+        setTimeout(() => { if (hp.hero > 0) projectile(center(mon), center(hero), 0xff4433); }, launch * 1000);
+      }
+      setTimeout(() => {
+        if (hp.hero <= 0 || !units[hero] || !units[mon]) return;
+        if (performance.now() < heroIframes) { dmgNum(center(hero), 'MISS'); return; }
+        // melee-промах вне дистанции
+        const reach2 = 2.4 + (rad(units[mon]) + rad(units[hero])) * .6;
+        if (h.bullet !== '1' && (h.mvT === '0' || !h.mvR) &&
+            units[mon].group.position.distanceTo(units[hero].group.position) > reach2) {
+          dmgNum(center(hero), 'MISS'); return;
+        }
+        vignetteHit();
+        hitFlash(units[hero]);
+        spawnHitFx(units[hero], h.hitFx);
+        play(hero, 'Hit', true);
+        const dmg = Math.round(ms.atk * h.mul / 10000 * (0.9 + Math.random() * 0.2));
+        hp.hero -= dmg;
+        dmgNum(center(hero), '-' + fmt(dmg));
+        setHp('#hpHero', hp.hero, STATS.hero.hpMax);
+        if (hp.hero <= 0) { slowmo = .8; roundBanner(false); deathFocus = hero;
+          setTimeout(() => play(hero, 'Die', true), 400); }
+      }, h.t * 1000);
+    }
+    const lastT = allHits(sk).reduce((m, h) => Math.max(m, h.t), 0);
+    setTimeout(() => { if (hp.hero > 0) setTimeout(() => idleOf(hero), 300); }, (lastT + .4) * 1000);
+    setTimeout(() => { if (hp.mon > 0) idleOf(mon); }, dur * 1000 + 150);
+    return;
+  }
+
+  // монстр: случайная атака/скилл из клипов
+  const atk = u.clips.filter(c => /Atk|Skl/i.test(c.name));
+  const c = atk[Math.random() * atk.length | 0];
+  const act = play(mon, c.name, true);
+  const dur = act ? act.getClip().duration : 1;
+  spawnSkillFx(mon, c.name);
+  playSfx(c.name);
+  telegraph(center(hero), 1.2, dur * .55);   // красное кольцо-телеграф под героем
+  setTimeout(() => {
+    if (hp.hero <= 0 || !units[hero] || !units[mon]) return;
+    if (performance.now() < heroIframes) { dmgNum(center(hero), 'MISS'); return; }
+    // промах, если герой успел отойти
+    const radM = un => Math.max(un.size.x, un.size.z);
+    if (u.group.position.distanceTo(units[hero].group.position) > 1.5 + (radM(u) + radM(units[hero])) * .55) {
+      dmgNum(center(hero), 'MISS'); return;
+    }
+    vignetteHit();
+    hitFlash(units[hero]);
+    spawnHitFx(units[hero], '2010040');
+    play(hero, 'Hit', true);
+    const dmg = Math.round(ms.atk * (0.9 + Math.random() * 0.4));
+    hp.hero -= dmg;
+    dmgNum(center(hero), '-' + fmt(dmg));
+    setHp('#hpHero', hp.hero, STATS.hero.hpMax);
+    if (hp.hero <= 0) { slowmo = .8; roundBanner(false); deathFocus = hero;
+      setTimeout(() => play(hero, 'Die', true), 400); return; }
+    setTimeout(() => idleOf(hero), 600);
+  }, dur * 550);
+  setTimeout(() => idleOf(mon), dur * 850);
+}
+
+function healSelf() {
+  const hero = heroKey();
+  hp.hero = Math.min(STATS.hero.hpMax, hp.hero + 8000);
+  setHp('#hpHero', hp.hero, STATS.hero.hpMax);
+  burst(center(hero), 'aura', 0x7dffb0, 1.8, .8);
+  dmgNum(center(hero), '+' + fmt(8000), true);
+}
+
+function respawn() {
+  hp.hero = STATS.hero.hpMax; hp.mon = monStats().hp;
+  setHp('#hpHero', hp.hero, STATS.hero.hpMax); setHp('#hpMon', hp.mon, monStats().hp);
+  for (const k in cds) delete cds[k];
+  if (combatTimer) { clearInterval(combatTimer); combatTimer = null; }
+  monNextAtk = 0; heroIframes = 0; slowmo = 0; combo = 0; comboEl.classList.remove('on');
+  autoChain = 0; monChain = 0; monIframes = 0; deathFocus = null;
+  // вернуть бойцов на спавн-точки (после рывков они разъезжаются)
+  const uh = units[heroKey()], um = units[monKey()];
+  if (uh?.spawnPos) uh.group.position.copy(uh.spawnPos);
+  if (um?.spawnPos) um.group.position.copy(um.spawnPos);
+  if (uh) uh.group.rotation.y = Math.PI / 2;
+  if (um) um.group.rotation.y = -Math.PI / 2;
+  idleOf(heroKey()); idleOf(monKey());
+}
+document.getElementById('respawn').onclick = respawn;
+
+// враг-класс уворачивается от заряженного скилла — как игроки в PvP
+function monRoll() {
+  const mon = monKey(), u = units[mon];
+  if (!u || hp.mon <= 0) return;
+  const roll = u.clips.find(c => /Btl_Roll|_Roll/i.test(c.name));
+  if (!roll) return;
+  play(mon, roll.name, true);
+  monIframes = performance.now() + 800;
+  const side = u.group.position.clone().sub(units[heroKey()]?.group.position || u.group.position)
+    .setY(0).normalize().multiplyScalar(.9);
+  lunge(u, u.group.position.clone().add(side), .5, .4);
+  setTimeout(() => { if (hp.mon > 0) idleOf(mon); }, 700);
+}
+
+// уклонение — реальные Roll/BackRoll анимации + i-frames
+let heroIframes = 0;
+function heroRoll(back) {
+  const hero = heroKey();
+  if (hp.hero <= 0) return;
+  const clip = back ? 'BackRoll' : 'Roll';
+  if (!play(hero, clip, true)) play(hero, 'Roll', true);
+  heroIframes = performance.now() + 800;
+  setTimeout(() => { if (hp.hero > 0) idleOf(hero); }, 700);
+}
+document.getElementById('roll').onclick = () => heroRoll(false);
+
+// ---------- AUTO BATTLE / SHOWCASE ----------
+// ?auto — бот дерётся сам; ?show — ещё и ротация сцен/классов каждые ~40с
+const qp = new URLSearchParams(location.search);
+let auto = qp.has('auto') || qp.has('show');
+const SHOW = qp.has('show');
+if (qp.has('embed')) document.body.classList.add('embed');
+if (auto) controls.autoRotate = true, controls.autoRotateSpeed = .6;
+if (SHOW) document.body.classList.add('cinematic');
+let autoT = 0, sceneT = 0, autoChain = 0;
+const SCENES = [
+  ['pcw', 'cerberus'], ['pcm', 'dragona01'], ['pct', 'golem01'],
+  ['pca', 'danbo'], ['pcz', 'cerberus'], ['pcw', 'pcm'], ['pcz', 'pca'],
+];
+let sceneIdx = -1;
+async function nextScene() {
+  sceneIdx = (sceneIdx + 1) % SCENES.length;
+  let [h, m] = SCENES[sceneIdx];
+  if (m === h) m = 'golem01';
+  const fade = document.getElementById('fade');
+  if (SHOW) { fade.classList.add('on'); await new Promise(r => setTimeout(r, 480)); }
+  heroSel.value = h; await setHero(h);
+  monSel.value = m; await setMon(m);
+  respawn(); rebuildButtons();
+  // анонс пары как в PvP-ролике
+  const vs = document.getElementById('vsBanner');
+  vs.innerHTML = `${HEROES[h].label.toUpperCase()} <b>VS</b> ${enemyDef(m).label.toUpperCase()}`;
+  vs.classList.add('on');
+  if (SHOW) { fade.classList.remove('on'); setTimeout(() => vs.classList.remove('on'), 2600); }
+}
+function autoTick(now) {
+  if (SHOW && now - sceneT > 40000) { sceneT = now; nextScene(); return; }
+  if (!auto) return;
+  if (hp.hero <= 0 || hp.mon <= 0) {
+    if (now > autoT) { respawn(); autoT = now + 2500; }
+    return;
+  }
+  if (now < autoT) return;
+  // бот тоже сближается, если далеко (кастеры держат дистанцию)
+  const hk = heroKey(), uh = units[hk], um = units[monKey()];
+  if (uh && um) {
+    const gap = uh.group.position.distanceTo(um.group.position);
+    const rangedCls = /pca|pct|pcm/.test(hk);
+    const rad = un => Math.max(un.size.x, un.size.z);
+    const want = rangedCls ? 7 : Math.min(4.2, (rad(uh) + rad(um)) * .55 + .4);
+    if (gap > want) {
+      const run = uh.clips.find(c => /Btl_Run|_Run/i.test(c.name));
+      if (run) play(hk, run.name);
+      faceTo(uh, um.group.position);
+      lunge(uh, um.group.position, Math.min(gap - want + .3, 2.8), .9);
+      autoT = now + 600;
+      return;
+    }
+  }
+  autoT = now + 800 + Math.random() * 1100;
+  const skl = SKILLS[heroKey()]; if (!skl) return;
+  const ready = Object.keys(skl).filter(sid => skl[sid].anim && !(cds[sid] > now));
+  const dmg = ready.filter(sid => allHits(skl[sid]).some(h => h.mul > 0));
+  const buffs = ready.filter(sid => !dmg.includes(sid) && skl[sid].cd > 0);
+  // серия базовых атак идёт подряд (1->2->3), иначе случайный скилл; иногда бафф/стойка
+  const basics = dmg.filter(sid => skl[sid].cd <= 3).sort((a, b) => +a - +b);
+  let sid;
+  if (basics.length && (autoChain > 0 || Math.random() < .5)) {
+    sid = basics[autoChain % basics.length]; autoChain++;
+    if (autoChain >= basics.length + 1) autoChain = 0;
+  } else if (buffs.length && Math.random() < .22) {
+    sid = buffs[Math.random() * buffs.length | 0]; autoChain = 0;
+  } else if (dmg.length) {
+    sid = dmg[Math.random() * dmg.length | 0]; autoChain = 0;
+  }
+  if (sid) { heroAttack(sid); return; }
+  if (Math.random() < .25) heroRoll(Math.random() < .5);
+}
+document.getElementById('autoBtn').onclick = () => {
+  auto = !auto; controls.autoRotate = auto;
+  document.getElementById('autoBtn').textContent = auto ? '■ AUTO' : '▶ AUTO BATTLE';
+};
+
+// ---------- UI & Combat Action Wheel ----------
+let activeSkillSlots = [];
+let baseAttackId = null;
+
+function setupActionWheel() {
+  const hero = heroKey();
+  const skl = SKILLS[hero] || {};
+  const order = Object.keys(skl).sort((a,b) => +a - +b);
+  const seenNames = new Set();
+  const heavySkills = [];
+  baseAttackId = null;
+
+  for (const sid of order) {
+    const s = skl[sid];
+    if (!s.anim || sid.startsWith('19')) continue;
+    if (/^[1-5]00\d0$/.test(sid)) {
+      if (!baseAttackId) baseAttackId = sid;
+      continue;
+    }
+    if (seenNames.has(s.name)) continue;
+    seenNames.add(s.name);
+    heavySkills.push({ sid, s });
+  }
+  if (!baseAttackId && heavySkills.length) baseAttackId = heavySkills[0].sid;
+
+  // Class elemental emblems for authentic buttons
+  const classIcons = {
+    pcw: ['⚔', '💥', '🛡', '🌪', '⚡'],
+    pcm: ['🔥', '❄', '⚡', '☄', '✨'],
+    pct: ['⚔', '🌿', '☯', '💥', '🔮'],
+    pcz: ['🐉', '⚡', '🛡', '💥', '🌪'],
+    pca: ['🏹', '🎯', '❄', '💥', '💨']
+  };
+  const icons = classIcons[hero] || ['🔥', '⚡', '⚔', '🌪', '🛡'];
+
+  activeSkillSlots = [];
+  for (let i = 1; i <= 5; i++) {
+    const btn = document.getElementById(`sklBtn${i}`);
+    if (!btn) continue;
+    const item = heavySkills[i - 1];
+    if (item) {
+      activeSkillSlots.push(item);
+      const iconEl = btn.querySelector('.skl-icon');
+      if (iconEl) iconEl.textContent = icons[i - 1] || '✨';
+      btn.title = `${item.s.name} (${Math.round(item.s.mul || 100)}% DMG, CD ${Math.round(item.s.cd)}s) [${i}]`;
+      btn.onclick = () => heroAttack(item.sid);
+      btn.style.display = 'flex';
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+
+  const mainAtk = document.getElementById('mainAtkBtn');
+  if (mainAtk) {
+    mainAtk.onclick = () => {
+      if (baseAttackId) heroAttack(baseAttackId);
+      else if (activeSkillSlots[0]) heroAttack(activeSkillSlots[0].sid);
+    };
+  }
+}
+
+const animsEl = document.getElementById('anims');
+function rebuildButtons() {
+  setupActionWheel();
+  if (animsEl) animsEl.innerHTML = '';
+  const hero = heroKey(), mon = monKey();
+
+  // --- скиллы из таблиц (для дебаг-панели в дровере) ---
+  const skl = SKILLS[hero];
+  if (skl && animsEl) {
+    const lbl = document.createElement('div'); lbl.className = 'lbl';
+    lbl.textContent = 'SKILLS — ' + HEROES[hero].label;
+    animsEl.appendChild(lbl);
+    const order = Object.keys(skl).sort((a,b) => +a - +b);
+    const seenNames = new Set();
+    for (const sid of order) {
+      const s = skl[sid];
+      if (!s.anim || sid.startsWith('19') || seenNames.has(s.name)) continue;
+      seenNames.add(s.name);
+      const b = document.createElement('button');
+      const isBase = /^[1-5]00\d0$/.test(sid);
+      b.className = isBase ? 'hero' : 'hero skl';
+      const tot = s.mul || allHits(s).reduce((m,h)=>m+h.mul,0)/100;
+      b.textContent = `${s.name}${s.cd > 3 ? ' · ' + Math.round(s.cd) + 's' : ''}`;
+      b.dataset.sid = sid;
+      b.title = `id ${sid} · ${tot}% dmg · anim ${s.anim}`;
+      b.onclick = () => heroAttack(sid);
+      animsEl.appendChild(b);
+    }
+  }
+  // --- raw clips ---
+  const mk = (u, cls, tag) => {
+    if (!animsEl) return;
+    const lbl = document.createElement('div'); lbl.className = 'lbl';
+    lbl.textContent = tag; animsEl.appendChild(lbl);
+    for (const c of u.clips) {
+      const b = document.createElement('button');
+      b.textContent = c.name.replace(/^P[cwmtza]+_|^PC[A-Z]?_|Mon_[A-Za-z0-9]+_/g, '');
+      const isAtk = /Attack|Skl|Atk/i.test(c.name);
+      b.className = cls === 'hero' && isAtk ? 'hero' : cls === 'mon' ? 'mon' : '';
+      b.onclick = () => {
+        if (cls === 'hero') {
+          spawnSkillFx(hero, c.name); playSfx(c.name);
+          if (/heal|bless/i.test(c.name)) { play(hero, c.name, true); healSelf(); }
+          else play(hero, c.name, /Die|Dmg|Hit|Skl|Attack/i.test(c.name));
+        } else { spawnSkillFx(mon, c.name); playSfx(c.name); play(mon, c.name, /Die|Hit|Atk|Skl/i.test(c.name)); }
+      };
+      animsEl.appendChild(b);
+    }
+  };
+  if (units[hero]) mk(units[hero], 'hero', 'ANIMS');
+  if (units[mon]) mk(units[mon], 'mon', 'ENEMY — ' + enemyDef(mon).label);
+}
+
+// Drawer & Potions & Hotkeys
+const rosterDrawer = document.getElementById('rosterDrawer');
+const rosterToggleBtn = document.getElementById('rosterToggleBtn');
+const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+if (rosterToggleBtn) rosterToggleBtn.onclick = () => rosterDrawer?.classList.toggle('open');
+if (closeDrawerBtn) closeDrawerBtn.onclick = () => rosterDrawer?.classList.remove('open');
+
+let hpPotions = 120, mpPotions = 60;
+function useHpPotion() {
+  if (hpPotions <= 0 || hp.hero >= STATS.hero.hpMax) return;
+  hpPotions--;
+  const countEl = document.getElementById('hpPotCount');
+  if (countEl) countEl.textContent = hpPotions;
+  healSelf();
+}
+function useMpPotion() {
+  if (mpPotions <= 0) return;
+  mpPotions--;
+  const countEl = document.getElementById('mpPotCount');
+  if (countEl) countEl.textContent = mpPotions;
+  const hero = heroKey();
+  if (units[hero]) burst(center(hero), 'aura', 0x42a5ff, 1.8, .8);
+  dmgNum(center(hero), '+MP', true);
+}
+const hpPotBtn = document.getElementById('hpPotBtn');
+if (hpPotBtn) hpPotBtn.onclick = useHpPotion;
+const mpPotBtn = document.getElementById('mpPotBtn');
+if (mpPotBtn) mpPotBtn.onclick = useMpPotion;
+
+const keysDown = {};
+window.addEventListener('keydown', e => {
+  if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+  if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+    keysDown[e.code] = true;
+  }
+  const k = e.key.toLowerCase();
+  if (k === ' ' || e.code === 'Space') {
+    e.preventDefault();
+    if (baseAttackId) heroAttack(baseAttackId);
+    else if (activeSkillSlots[0]) heroAttack(activeSkillSlots[0].sid);
+  } else if (e.key === 'Shift') {
+    e.preventDefault();
+    heroRoll(false);
+  } else if (['1', '2', '3', '4', '5'].includes(k)) {
+    const idx = parseInt(k) - 1;
+    if (activeSkillSlots[idx]) heroAttack(activeSkillSlots[idx].sid);
+  } else if (k === 'q') {
+    useHpPotion();
+  } else if (k === 'e') {
+    useMpPotion();
+  } else if (k === 'x') {
+    const autoBtn = document.getElementById('autoBtn');
+    if (autoBtn) autoBtn.click();
+  } else if (k === 'r') {
+    respawn();
+  } else if (k === 'tab') {
+    e.preventDefault();
+    rosterDrawer?.classList.toggle('open');
+  }
+});
+window.addEventListener('keyup', e => {
+  if (keysDown[e.code]) delete keysDown[e.code];
+});
+
+let isRunning = false;
+function updatePlayerMovement(dt) {
+  const hk = heroKey(), u = units[hk];
+  if (!u || hp.hero <= 0) {
+    if (isRunning) isRunning = false;
+    return;
+  }
+  const isAttacking = u.clips.some(c => /Skl|Atk|Hit|Roll/i.test(c.name) && u.actions[c.name]?.isRunning() && !u.actions[c.name]?.paused);
+  if (isAttacking) {
+    if (isRunning) isRunning = false;
+    return;
+  }
+
+  let dx = 0, dz = 0;
+  if (keysDown['KeyW'] || keysDown['ArrowUp']) dz -= 1;
+  if (keysDown['KeyS'] || keysDown['ArrowDown']) dz += 1;
+  if (keysDown['KeyA'] || keysDown['ArrowLeft']) dx -= 1;
+  if (keysDown['KeyD'] || keysDown['ArrowRight']) dx += 1;
+
+  if (dx !== 0 || dz !== 0) {
+    const len = Math.hypot(dx, dz);
+    dx /= len; dz /= len;
+
+    const camFwd = new THREE.Vector3();
+    camera.getWorldDirection(camFwd);
+    camFwd.y = 0; camFwd.normalize();
+    const camRight = new THREE.Vector3().crossVectors(camFwd, new THREE.Vector3(0, 1, 0)).negate();
+
+    const moveDir = new THREE.Vector3()
+      .addScaledVector(camRight, dx)
+      .addScaledVector(camFwd, -dz)
+      .normalize();
+
+    const speed = 4.2;
+    const nextPos = u.group.position.clone().addScaledVector(moveDir, speed * dt);
+    if (nextPos.length() < 6.5) {
+      u.group.position.copy(nextPos);
+    }
+
+    const targetAngle = Math.atan2(moveDir.x, moveDir.z);
+    u.group.rotation.y = targetAngle;
+
+    if (!isRunning) {
+      isRunning = true;
+      const runClip = u.clips.find(c => /Btl_Run|_Run/i.test(c.name));
+      if (runClip) play(hk, runClip.name);
+    }
+  } else if (isRunning) {
+    isRunning = false;
+    idleOf(hk);
+  }
+}
+
+async function setHero(k) {
+  for (const key of Object.keys(HEROES)) if (units[key] && key !== k && key !== monKey()) {
+    scene.remove(units[key].group); cache[key] = units[key]; delete units[key];
+  }
+  if (!units[k]) {
+    units[k] = cache[k] || await loadUnit(k, k + '_battle.glb',
+      new THREE.Vector3(-1.0, 0, 0), Math.PI / 2, HEROES[k].h);
+    if (!cache[k]) await attachWeapon(units[k], k);
+    if (cache[k]) scene.add(units[k].group);
+  }
+  // юнит мог быть закэширован как враг — вернуть позицию/поворот героя
+  units[k].group.position.set(-1.0, 0, 0);
+  units[k].group.rotation.y = Math.PI / 2;
+  units[k].spawnPos = units[k].group.position.clone();
+  const heroEl = document.getElementById('heroName'); if (heroEl) heroEl.textContent = HEROES[k].label.toUpperCase();
+  const playerEl = document.getElementById('heroPlayerName'); if (playerEl) playerEl.textContent = HEROES[k].label.toUpperCase();
+  const iconEl = document.getElementById('playerAvatarIcon');
+  if (iconEl) iconEl.textContent = k === 'pcw' ? '⚔' : k === 'pcm' ? '🔮' : k === 'pct' ? '☯' : k === 'pcz' ? '🐉' : '🏹';
+  idleOf(k);
+  spawnIn(units[k]);
+}
+
+async function setMon(k) {
+  if (k === heroKey()) return;   // нельзя сражаться с самим собой (один инстанс модели)
+  for (const key of enemyKeys()) if (units[key] && key !== k && key !== heroKey()) {
+    scene.remove(units[key].group); cache[key] = units[key]; delete units[key];
+  }
+  const M = enemyDef(k);
+  if (!units[k]) {
+    if (cache[k]) { units[k] = cache[k]; scene.add(units[k].group); }
+    else {
+      units[k] = await loadUnit(k, M.file,
+        new THREE.Vector3(M.x, 0, 0), -Math.PI / 2, M.h, M.fit);
+      if (M.player) await attachWeapon(units[k], k);
+    }
+  }
+  // near edge of the enemy at ~1.5m from center (models are centered on group origin)
+  units[k].group.position.x = Math.max(M.x, 1.5 + units[k].size.x / 2);
+  units[k].spawnPos = units[k].group.position.clone();
+  units[k].group.rotation.y = -Math.PI / 2;   // враг смотрит на героя
+  // aim camera between fighters in authentic MIR4 third-person isometric framing
+  const mx = units[k].group.position.x;
+  const mid = (mx - 1.0) / 2 + 0.5;
+  controls.target.set(mid, 0.9, 0);
+  camera.position.set(mid - 4.5, 5.4, 3.8);
+  const monTitle = (M.level ? `Lv. ${M.level} ` : '') + (M.label || k).toUpperCase() + (M.player ? ' · PVP' : '');
+  const monEl = document.getElementById('monName'); if (monEl) monEl.textContent = monTitle;
+  const targetEl = document.getElementById('targetName'); if (targetEl) targetEl.textContent = monTitle;
+  hp.mon = monStats().hp || M.hp || 100000;
+  setHp('#hpMon', hp.mon, monStats().hp);
+  idleOf(k);
+  spawnIn(units[k], 0xff4433);
+}
+heroSel.onchange = () => { setHero(heroSel.value).then(rebuildButtons); };
+monSel.onchange = () => {
+  if (monSel.value === heroSel.value) {          // зеркальный матч: один экземпляр модели
+    status.textContent = 'mirror match: pick another class';
+    monSel.value = [...monSel.options].find(o => o.value !== heroSel.value)?.value || 'cerberus';
+  }
+  setMon(monSel.value).then(rebuildButtons);
+};
+
+(async () => {
+  for (const [k, v] of Object.entries(HEROES)) heroSel.add(new Option(v.label, k));
+  const ogM = document.createElement('optgroup'); ogM.label = 'MONSTERS';
+  const ogP = document.createElement('optgroup'); ogP.label = 'PLAYERS (PvP)';
+  for (const [k, v] of Object.entries(MONSTERS)) ogM.appendChild(new Option(v.label, k));
+  for (const [k, v] of Object.entries(HEROES)) ogP.appendChild(new Option(v.label + ' — PvP', k));
+  monSel.add(ogM); monSel.add(ogP);
+  status.textContent = 'loading models…';
+  await monsReady;
+  await Promise.all([setHero('pcw'), setMon('cerberus')]);
+  setHp('#hpHero', hp.hero, STATS.hero.hpMax);
+  rebuildButtons();
+  status.textContent = 'ready · 5 classes · 4 monsters · PvP · real MIR4 skills/vfx/sfx';
+  // background preload of the rest
+  (async () => {
+    for (const k of Object.keys(HEROES)) if (!units[k] && !cache[k]) {
+      try { cache[k] = await loadUnit(k, k + '_battle.glb', new THREE.Vector3(-1.0,0,0), Math.PI/2, HEROES[k].h, undefined, false); await attachWeapon(cache[k], k); } catch(e){}
+    }
+    for (const k of Object.keys(MONSTERS)) if (!units[k] && !cache[k]) {
+      try { const M = MONSTERS[k]; cache[k] = await loadUnit(k, M.file, new THREE.Vector3(M.x,0,0), -Math.PI/2, M.h, M.fit, false); } catch(e){}
+    }
+    status.textContent = 'ready · all cached';
+  })();
+  // debug hooks
+  const q = new URLSearchParams(location.search);
+  if (q.get('hero')) { heroSel.value = q.get('hero'); await setHero(heroSel.value); rebuildButtons(); }
+  if (q.get('mon')) { monSel.value = q.get('mon'); await setMon(monSel.value); rebuildButtons(); }
+  if (q.get('heroAnim')) play(heroKey(), q.get('heroAnim'));
+  if (q.get('monAnim')) play(monKey(), q.get('monAnim'));
+})();
+
+// debug/probe hooks
+window.__dbg = { units, cache, hp, camera, controls, scene, THREE, trails, projs, fxPool, lunges, get SKILLS() { return SKILLS }, get MONSTERS() { return MONSTERS }, monStats, heroKey, monKey, play, heroAttack, monAttack };
+
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => {
+  const dt = clock.getDelta();
+  const ft = performance.now() * .001;
+  const sdt = slowmo > 0 ? dt * .14 : dt;   // slow-mo при смерти
+  if (slowmo > 0) slowmo -= dt;
+  autoTick(performance.now());
+  if (shakeAmp > .001) {
+    camera.position.x += (Math.random() - .5) * shakeAmp * .12;
+    camera.position.y += (Math.random() - .5) * shakeAmp * .08;
+    shakeAmp *= Math.max(0, 1 - dt * 6);
+  }
+  if (Math.abs(fovKick) > .02) {            // панч фокуса на кастах/ударах
+    camera.fov = 38 + fovKick;
+    camera.updateProjectionMatrix();
+    fovKick *= Math.max(0, 1 - dt * 4.5);
+  } else if (camera.fov !== 38) { camera.fov = 38; camera.updateProjectionMatrix(); }
+  Object.values(units).forEach(u => u.mixer.update(sdt));
+  Object.values(cache).forEach(u => u.mixer.update(0));
+  updateFx(sdt);
+  updateTrails(sdt);
+  updateProjs(sdt);
+  updateLunges(sdt);
+  updatePlayerMovement(sdt);
+  // угольки плывут вверх и мерцают
+  {
+    const pos = emberGeo.attributes.position.array, spd = emberGeo.userData.spd;
+    for (let i = 0; i < EMBERS; i++) {
+      pos[i * 3 + 1] += spd[i] * dt;
+      pos[i * 3] += Math.sin(ft * 1.3 + i) * dt * .25;
+      if (pos[i * 3 + 1] > 4.2) { pos[i * 3 + 1] = 0; pos[i * 3] = (Math.random() - .5) * 14; pos[i * 3 + 2] = (Math.random() - .5) * 10; }
+    }
+    emberGeo.attributes.position.needsUpdate = true;
+  }
+  // надголовные таблички
+  updPlate(plateHero, heroKey(), heroSel.selectedOptions[0]?.textContent || 'HERO', hp.hero, STATS.hero.hpMax);
+  updPlate(plateMon, monKey(), monName(), hp.mon, monStats().hp);
+  if (combo > 0 && performance.now() > comboUntil) { combo = 0; comboEl.classList.remove('on'); }
+  // Cooldown sweep animations on Action Wheel
+  {
+    const now = performance.now();
+    for (let i = 1; i <= 5; i++) {
+      const btn = document.getElementById(`sklBtn${i}`);
+      const item = activeSkillSlots[i - 1];
+      if (!btn || !item) continue;
+      const cdExp = cds[item.sid] || 0;
+      const left = (cdExp - now) / 1000;
+      const cdMask = btn.querySelector('.skl-cd-mask');
+      const cdText = btn.querySelector('.skl-cd-text');
+      if (left > 0.05) {
+        btn.classList.add('on-cd');
+        btn.classList.remove('ready');
+        const pct = Math.min(1, left / (item.s.cd || 1));
+        if (cdMask) cdMask.style.background = `conic-gradient(rgba(0,0,0,0.85) ${pct * 360}deg, transparent ${pct * 360}deg)`;
+        if (cdText) cdText.textContent = Math.ceil(left);
+      } else {
+        btn.classList.remove('on-cd');
+        btn.classList.add('ready');
+        if (cdMask) cdMask.style.background = 'none';
+        if (cdText) cdText.textContent = '';
+      }
+    }
+    const timerEl = document.getElementById('matchTimer');
+    if (timerEl) {
+      const elap = Math.floor(clock.getElapsedTime());
+      const m = String(Math.floor(elap / 60)).padStart(2, '0');
+      const s = String(elap % 60).padStart(2, '0');
+      timerEl.textContent = `⏱ ${m}:${s}`;
+    }
+  }
+  // камера плавно следит за серединой боя (бойцы сдвигаются рывками)
+  {
+    const uh = units[heroKey()], um = units[monKey()];
+    if (slowmo > 0 && deathFocus && units[deathFocus]) {
+      // на финише камера наезжает на поверженного
+      const p = units[deathFocus].group.position.clone(); p.y = .7;
+      controls.target.lerp(p, Math.min(1, dt * 3));
+      camera.position.lerp(p.clone().add(new THREE.Vector3(2.2, 1.6, 2.6)), Math.min(1, dt * 1.2));
+    } else if (uh && um) {
+      const mid = uh.group.position.clone().lerp(um.group.position, .5); mid.y = 0.9;
+      const prevT = controls.target.clone();
+      controls.target.lerp(mid, Math.min(1, dt * 2.5));
+      const deltaT = controls.target.clone().sub(prevT);
+      camera.position.add(deltaT);
+    }
+  }
+  flameSprites.forEach((f, i) => {
+    f.material.opacity = .65 + Math.sin(ft * 9 + i * 1.7) * .25;
+    f.scale.setScalar(.55 + Math.sin(ft * 13 + i * 2.3) * .14);
+  });
+  controls.update();
+  composer.render();
+});
+addEventListener('resize', () => {
+  camera.aspect = innerWidth/innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

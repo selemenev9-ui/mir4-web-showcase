@@ -1,0 +1,931 @@
+{
+"PCW": {
+"1602": "Pcw_Btl_Skl_Taunt",
+"1602_all": [
+"Pcw_Fmv_Land02",
+"Pcw_Fmv_Land01",
+"Pcw_Btl_Std01",
+"Pcw_Fmv_Landstart",
+"Pcw_Fmv_Airwalk05",
+"Pcw_Fmv_Airwalk06",
+"Pcw_Fmv_Dash_Start01",
+"Pcw_Fmv_Land01",
+"Pcw_Fmv_Landstart",
+"Pcw_Fmv_Airwalk06",
+"Pcw_Fmv_Airwalk05",
+"Pcw_Fmv_Airwalk02",
+"Pcw_Fmv_Airwalk02",
+"Pcw_Fmv_Airwalk01",
+"Pcw_Btl_Std01",
+"Pcw_Warp_End",
+"Pcw_Warp_Start",
+"Pcw_Warp_Casting",
+"Pcw_Lby_Med01",
+"Pcw_ADV_Mine01",
+"Pcw_ADV_Collection02",
+"Pcw_Btl_Std01",
+"Pcw_Fmv_Dash_Ready02",
+"Pcw_Fmv_Dash_Ready01",
+"Pcw_Fmv_Dash_Start02",
+"Pcw_Fmv_Airwalk02",
+"Pcw_Fmv_Airwalk01",
+"Pcw_Fmv_Land02",
+"Pcw_Fmv_Airwalk04",
+"Pcw_Fmv_Airwalk02",
+"Pcw_Fmv_Land01",
+"Pcw_Fmv_Dash_Start01",
+"Pcw_Fmv_Airwalk02",
+"Pcw_Fmv_Landstart",
+"Pcw_Fmv_Airwalk06",
+"Pcw_Fmv_Airwalk05",
+"Pcw_Fmv_Airwalk01",
+"Pcw_Btl_Skl_Taunt"
+],
+"1603": "Pcw_Btl_Skl_OnRush",
+"1603_all": [
+"Pcw_Btl_Skl_OnRush"
+],
+"1601": "Pcw_Btl_Skl_HalfMoon",
+"1601_all": [
+"Pcw_Btl_Skl_HalfMoon"
+],
+"19011": "Pcw_Btl_BackRoll",
+"19011_all": [
+"Pcw_Btl_BackRoll"
+],
+"19010": "Pcw_Btl_Roll",
+"19010_all": [
+"Pcw_Btl_Roll"
+],
+"1502": "Pcw_Btl_Skl_Berserker",
+"1502_all": [
+"Pcw_Btl_Skl_Berserker"
+],
+"1501": "Pcw_Btl_Skl_MadWind",
+"1501_all": [
+"Pcw_Btl_Skl_MadWind"
+],
+"1403": "Pcw_Btl_Skl_Special",
+"1403_all": [
+"Pcw_Btl_Skl_Counter",
+"Pcw_Btl_Skl_Special"
+],
+"1401": "Pcw_Btl_Skl_EarthBlast",
+"1401_all": [
+"Pcw_Btl_Skl_EarthBlast"
+],
+"1205": "Pcw_Btl_Skl_CrossSlash",
+"1205_all": [
+"Pcw_Btl_Skl_CrossSlash"
+],
+"1201": "Pcw_Btl_Skl_IronChain",
+"1201_all": [
+"Pcw_Btl_Skl_IronChain"
+],
+"1306": "Pcw_Btl_Skl_LionRoar",
+"1306_all": [
+"Pcw_Btl_Skl_LionRoar"
+],
+"1305": "Pcw_Btl_Skl_Counter",
+"1305_all": [
+"Pcw_Btl_Skl_Counter"
+],
+"1304": "Pcw_Btl_Skl_BodySlam",
+"1304_all": [
+"Pcw_Btl_Skl_BodySlam"
+],
+"1302": "Pcw_Btl_Skl_LionRoar",
+"1302_all": [
+"Pcw_Btl_Skl_LionRoar"
+],
+"1301": "Pcw_Btl_Skl_CounterReady",
+"1301_all": [
+"Pcw_Btl_Skl_CounterReady"
+],
+"1104": "Pcw_Btl_Skl_Cutter",
+"1104_all": [
+"Pcw_Btl_Skl_Cutter"
+],
+"1103": "Pcw_Btl_Skl_Mutae",
+"1103_all": [
+"Pcw_Btl_Skl_Mutae"
+],
+"1102": "Pcw_Btl_Skl_AirSlash",
+"1102_all": [
+"Pcw_Btl_Skl_AirSlash"
+],
+"1101": "Pcw_Btl_Skl_OverDrive",
+"1101_all": [
+"Pcw_Btl_Skl_OverDrive"
+],
+"10070": "Pcw_Btl_Attack07",
+"10070_all": [
+"Pcw_Btl_Std01",
+"Pcw_Btl_Attack07"
+],
+"10060": "Pcw_Btl_Attack06",
+"10060_all": [
+"Pcw_Btl_Attack06"
+],
+"10050": "Pcw_Btl_Attack05",
+"10050_all": [
+"Pcw_Btl_Attack05"
+],
+"10040": "Pcw_Btl_Attack04",
+"10040_all": [
+"Pcw_Btl_Attack04"
+],
+"10030": "Pcw_Btl_Attack03",
+"10030_all": [
+"Pcw_Btl_Attack03"
+],
+"10020": "Pcw_Btl_Attack02",
+"10020_all": [
+"Pcw_Btl_Std01",
+"Pcw_Btl_Attack02"
+],
+"10010": "Pcw_Btl_Attack01",
+"10010_all": [
+"Pcw_Btl_Attack01"
+],
+"51": "Pcw_Dmg_Stu01",
+"51_all": [
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Btl_Std01",
+"Pcw_Dmg_Stu01"
+],
+"41": "Pcw_Dmg_Stu01",
+"41_all": [
+"Pcw_Dmg_Stu01"
+],
+"33": "Pcw_Dmg_Dwn21",
+"33_all": [
+"Pcw_Dmg_Dwn21"
+],
+"21": "Pcw_Dmg_Stu01",
+"21_all": [
+"Pcw_Dmg_Stu01"
+],
+"13": "Pcw_Dmg_Hit01",
+"13_all": [
+"Pcw_Dmg_Hit01"
+],
+"32": "Pcw_Dmg_Dwn11",
+"32_all": [
+"Pcw_Dmg_Dwn11"
+],
+"31": "Pcw_Dmg_Dwn01",
+"31_all": [
+"Pcw_Dmg_Dwn01"
+],
+"12": "Pcw_Dmg_Hit02",
+"12_all": [
+"Pcw_Dmg_Hit02"
+],
+"11": "Pcw_Dmg_Hit01",
+"11_all": [
+"Pcw_Dmg_Hit01"
+]
+},
+"PCM": {
+"51": "Pcm_Dmg_Stu01",
+"51_all": [
+"Pcm_Fmv_Land01",
+"Pcm_Fmv_Landstart",
+"Pcm_Fmv_Airwalk06",
+"Pcm_Fmv_Airwalk05",
+"Pcm_Fmv_Airwalk02",
+"Pcm_Fmv_Airwalk01",
+"Pcm_Fmv_Dash_Start01",
+"Pcm_Btl_Std01",
+"Pcm_Warp_End",
+"Pcm_Warp_Start",
+"Pcm_Warp_Casting",
+"Pcm_Fmv_Dash_Ready02",
+"Pcm_Fmv_Dash_Ready01",
+"Pcm_Fmv_Dash_Start02",
+"Pcm_Fmv_Airwalk02",
+"Pcm_Fmv_Airwalk01",
+"Pcm_Fmv_Land02",
+"Pcm_Fmv_Airwalk04",
+"Pcm_Fmv_Airwalk02",
+"Pcm_Fmv_Land01",
+"Pcm_Fmv_Dash_Start01",
+"Pcm_Fmv_Airwalk02",
+"Pcm_Fmv_Landstart",
+"Pcm_Fmv_Airwalk06",
+"Pcm_Fmv_Airwalk05",
+"Pcm_Fmv_Airwalk01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Dmg_Stu01"
+],
+"41": "Pcm_Dmg_Stu01",
+"41_all": [
+"Pcm_Dmg_Stu01"
+],
+"33": "Pcm_Dmg_Dwn21",
+"33_all": [
+"Pcm_Dmg_Dwn21"
+],
+"21": "Pcm_Dmg_Stu01",
+"21_all": [
+"Pcm_Dmg_Stu01"
+],
+"13": "Pcm_Dmg_Hit01",
+"13_all": [
+"Pcm_Dmg_Hit01"
+],
+"32": "Pcm_Dmg_Dwn11",
+"32_all": [
+"Pcm_Dmg_Dwn11"
+],
+"31": "Pcm_Dmg_Dwn01",
+"31_all": [
+"Pcm_Dmg_Dwn01"
+],
+"12": "Pcm_Dmg_Hit02",
+"12_all": [
+"Pcm_Dmg_Hit02"
+],
+"11": "Pcm_Dmg_Hit01",
+"11_all": [
+"Pcm_Dmg_Hit01"
+],
+"20100": "Pcm_Btl_AttackNear07",
+"20100_all": [
+"Pcm_Btl_Std01",
+"Pcm_Lby_Std01",
+"Pcm_Btl_Std01",
+"Pcm_Btl_BackRoll",
+"Pcm_Btl_Roll",
+"Pcm_Lby_Med01",
+"Pcm_ADV_Mine01",
+"Pcm_ADV_Collection02",
+"Pcm_Btl_Std01",
+"Pcm_Btl_AttackNear07"
+],
+"20090": "Pcm_Btl_AttackNear06",
+"20090_all": [
+"Pcm_Btl_AttackNear06"
+],
+"20080": "Pcm_Btl_AttackNear05",
+"20080_all": [
+"Pcm_Btl_AttackNear05"
+],
+"20070": "Pcm_Btl_AttackNear04",
+"20070_all": [
+"Pcm_Btl_AttackNear04"
+],
+"20060": "Pcm_Btl_AttackNear03",
+"20060_all": [
+"Pcm_Btl_AttackNear03"
+],
+"20021": "Pcm_Btl_Attack02",
+"20021_all": [
+"Pcm_Btl_Attack02"
+],
+"20032": "Pcm_Btl_Attack03",
+"20032_all": [
+"Pcm_Btl_Attack03"
+],
+"20031": "Pcm_Btl_Attack03",
+"20031_all": [
+"Pcm_Btl_Attack03"
+],
+"20050": "Pcm_Btl_AttackNear02",
+"20050_all": [
+"Pcm_Btl_AttackNear02"
+],
+"20040": "Pcm_Btl_AttackNear01",
+"20040_all": [
+"Pcm_Btl_AttackNear01"
+],
+"20030": "Pcm_Btl_Attack03",
+"20030_all": [
+"Pcm_Btl_Attack03"
+],
+"20020": "Pcm_Btl_Attack02",
+"20020_all": [
+"Pcm_Btl_Attack02"
+],
+"20010": "Pcm_Btl_Attack01",
+"20010_all": [
+"Pcm_Btl_Attack01"
+],
+"2602": "Pcm_Btl_Skl_Blink",
+"2602_all": [
+"Pcm_Btl_Std01",
+"Pcm_Btl_Skl_Blink"
+],
+"2601": "Pcm_Btl_Skl_IceArmor",
+"2601_all": [
+"Pcm_Btl_Skl_IceArmor"
+],
+"2503": "Pcm_Btl_Skl_ManaShield",
+"2503_all": [
+"Pcm_Btl_Skl_ManaShield"
+],
+"2502": "Pcm_Btl_Skl_Strike",
+"2502_all": [
+"Pcm_Btl_Skl_Strike"
+],
+"2501": "Pcm_Btl_Skl_Tornado",
+"2501_all": [
+"Pcm_Btl_Skl_Tornado"
+],
+"2112": "Pcm_Btl_Skl_FireBall",
+"2112_all": [
+"Pcm_Btl_Skl_FireBall"
+],
+"2403": "Pcm_Btl_Skl_Special",
+"2403_all": [
+"Pcm_Btl_Skl_Special"
+],
+"2303": "Pcm_Btl_Skl_ChainLightning",
+"2303_all": [
+"Pcm_Btl_Skl_ChainLightning"
+],
+"2301": "Pcm_Btl_Skl_Thunder",
+"2301_all": [
+"Pcm_Btl_Skl_Thunder"
+],
+"2204": "Pcm_Btl_Skl_Enchant",
+"2204_all": [
+"Pcm_Btl_Skl_Enchant"
+],
+"2203": "Pcm_Btl_Skl_Blizzard",
+"2203_all": [
+"Pcm_Btl_Skl_Blizzard"
+],
+"2202": "Pcm_Btl_Skl_Freezing",
+"2202_all": [
+"Pcm_Btl_Skl_Freezing"
+],
+"2201": "Pcm_Btl_Skl_Meteor",
+"2201_all": [
+"Pcm_Btl_Skl_Meteor"
+],
+"2111": "Pcm_Btl_Skl_IceBall",
+"2111_all": [
+"Pcm_Btl_Skl_IceBall"
+],
+"2103": "Pcm_Btl_Skl_Laser",
+"2103_all": [
+"Pcm_Btl_Skl_Laser"
+],
+"2101": "Pcm_Btl_Skl_FireBall",
+"2101_all": [
+"Pcm_Btl_Skl_FireBall"
+]
+},
+"PCT": {
+"3603": "Pct_Btl_Skl_Silence",
+"3603_all": [
+"Pct_Fmv_Dash_Start01",
+"Pct_Fmv_Land01",
+"Pct_Fmv_Landstart",
+"Pct_Fmv_Airwalk06",
+"Pct_Fmv_Airwalk05",
+"Pct_Fmv_Airwalk02",
+"Pct_Fmv_Airwalk01",
+"Pct_Btl_Std01",
+"Pct_Warp_End",
+"Pct_Warp_Start",
+"Pct_Warp_Casting",
+"Pct_Lby_Med01",
+"Pct_ADV_Mine01",
+"Pct_ADV_Collection02",
+"Pct_Lby_Std01",
+"Pct_Fmv_Dash_Start02",
+"Pct_Fmv_Dash_Start01",
+"Pct_Fmv_Dash_Ready02",
+"Pct_Fmv_Dash_Ready01",
+"Pct_Fmv_Airwalk02",
+"Pct_Fmv_Airwalk01",
+"Pct_Fmv_Land02",
+"Pct_Fmv_Land01",
+"Pct_Fmv_Airwalk04",
+"Pct_Fmv_Airwalk02",
+"Pct_Fmv_Airwalk02",
+"Pct_Fmv_Landstart",
+"Pct_Fmv_Airwalk06",
+"Pct_Fmv_Airwalk05",
+"Pct_Fmv_Airwalk01",
+"Pct_Btl_Skl_Silence"
+],
+"3602": "Pct_Btl_Skl_CriDetection",
+"3602_all": [
+"Pct_Btl_Skl_CriDetection"
+],
+"3601": "Pct_Btl_Skl_Hide",
+"3601_all": [
+"Pct_Btl_Skl_Hide"
+],
+"3506": "Pct_Btl_Skl_MoonWave",
+"3506_all": [
+"Pct_Btl_Skl_MoonWave"
+],
+"3505": "Pct_Btl_Skl_DarkBurst",
+"3505_all": [
+"Pct_Btl_Skl_DarkBurst"
+],
+"3504": "Pct_Btl_Skl_GrandHeal",
+"3504_all": [
+"Pct_Btl_Skl_GrandHeal"
+],
+"3503": "Pct_Btl_Skl_Heal",
+"3503_all": [
+"Pct_Btl_Skl_Heal"
+],
+"3501": "Pct_Btl_Skl_Bless",
+"3501_all": [
+"Pct_Btl_Skl_Bless"
+],
+"3303": "Pct_Btl_Skl_Special",
+"3303_all": [
+"Pct_Btl_Skl_Special"
+],
+"3001": "Pct_Btl_Skl_Atkbuff_01",
+"3001_all": [
+"Pct_Btl_Skl_Atkbuff_01"
+],
+"3404": "Pct_Btl_Skl_Resist",
+"3404_all": [
+"Pct_Btl_Skl_Resist"
+],
+"3403": "Pct_Btl_Skl_MagicBarrier03",
+"3403_all": [
+"Pct_Btl_Skl_MagicBarrier03"
+],
+"3401": "Pct_Btl_Skl_GrandHeal",
+"3401_all": [
+"Pct_Btl_Skl_GrandHeal"
+],
+"3304": "Pct_Btl_Skl_MoonSpirit04",
+"3304_all": [
+"Pct_Btl_Skl_MoonSpirit04"
+],
+"3302": "Pct_Btl_Skl_MoonOrb",
+"3302_all": [
+"Pct_Btl_Skl_MoonOrb"
+],
+"3301": "Pct_Btl_Skl_MoonOrb",
+"3301_all": [
+"Pct_Btl_Skl_MoonOrb"
+],
+"3203": "Pct_Btl_Skl_PiercingAtk",
+"3203_all": [
+"Pct_Btl_Skl_PiercingAtk"
+],
+"3201": "Pct_Btl_Skl_Taegeuk",
+"3201_all": [
+"Pct_Btl_Skl_Taegeuk"
+],
+"3104": "Pct_Btl_Skl_SwordRain",
+"3104_all": [
+"Pct_Btl_Skl_SwordRain"
+],
+"3103": "Pct_Btl_Skl_SwordBlast",
+"3103_all": [
+"Pct_Btl_Skl_SwordBlast"
+],
+"3101": "Pct_Btl_Skl_SunLight",
+"3101_all": [
+"Pct_Btl_Skl_SunLight"
+],
+"30030": "Pct_Btl_AttackLong03",
+"30030_all": [
+"Pct_Btl_Std01",
+"Pct_Btl_AttackLong03"
+],
+"30020": "Pct_Btl_AttackLong02",
+"30020_all": [
+"Pct_Btl_AttackLong02"
+],
+"30010": "Pct_Btl_AttackLong01",
+"30010_all": [
+"Pct_Btl_AttackLong01"
+],
+"30100": "Pct_Btl_Attack07",
+"30100_all": [
+"Pct_Btl_Attack07"
+],
+"30090": "Pct_Btl_Attack06",
+"30090_all": [
+"Pct_Btl_Attack06"
+],
+"30080": "Pct_Btl_Attack05",
+"30080_all": [
+"Pct_Btl_Attack05"
+],
+"30070": "Pct_Btl_Attack04",
+"30070_all": [
+"Pct_Btl_Attack04"
+],
+"30060": "Pct_Btl_Attack03",
+"30060_all": [
+"Pct_Btl_Attack03"
+],
+"30050": "Pct_Btl_Attack02",
+"30050_all": [
+"Pct_Btl_Attack02"
+],
+"30040": "Pct_Btl_Attack01",
+"30040_all": [
+"Pct_Btl_Attack01"
+],
+"51": "Pct_Dmg_Stu01",
+"51_all": [
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Btl_Std01",
+"Pct_Dmg_Stu01"
+],
+"41": "Pct_Dmg_Stu01",
+"41_all": [
+"Pct_Dmg_Stu01"
+],
+"33": "Pct_Dmg_Dwn21",
+"33_all": [
+"Pct_Dmg_Dwn21"
+],
+"21": "Pct_Dmg_Stu01",
+"21_all": [
+"Pct_Dmg_Stu01"
+],
+"13": "Pct_Dmg_Hit01",
+"13_all": [
+"Pct_Dmg_Hit01"
+],
+"32": "Pct_Dmg_Dwn11",
+"32_all": [
+"Pct_Dmg_Dwn11"
+],
+"31": "Pct_Dmg_Dwn01",
+"31_all": [
+"Pct_Dmg_Dwn01"
+],
+"12": "Pct_Dmg_Hit02",
+"12_all": [
+"Pct_Dmg_Hit02"
+],
+"11": "Pct_Dmg_Hit01",
+"11_all": [
+"Pct_Dmg_Hit01"
+]
+},
+"PCA": {
+"4114": "PCA_Btl_Skl09",
+"4114_all": [
+"Pca_Fmv_Dash_Start01",
+"Pca_Fmv_Land01",
+"Pca_Fmv_Landstart",
+"Pca_Fmv_Airwalk06",
+"Pca_Fmv_Airwalk05",
+"Pca_Fmv_Airwalk02",
+"Pca_Fmv_Airwalk02",
+"Pca_Fmv_Airwalk01",
+"Pca_Btl_Std01",
+"PCA_Warp_End",
+"PCA_Warp_Start",
+"PCA_Warp_Casting",
+"Pca_Lby_Med01",
+"Pca_ADV_Mine01",
+"Pca_ADV_Collection02",
+"Pca_Btl_Std01",
+"Pca_Fmv_Land02",
+"Pca_Fmv_Dash_Ready02",
+"Pca_Fmv_Dash_Ready01",
+"Pca_Fmv_Dash_Start02",
+"Pca_Fmv_Airwalk02",
+"Pca_Fmv_Airwalk01",
+"Pca_Fmv_Airwalk04",
+"Pca_Fmv_Airwalk02",
+"Pca_Fmv_Land01",
+"Pca_Fmv_Dash_Start01",
+"Pca_Fmv_Airwalk02",
+"Pca_Fmv_Landstart",
+"Pca_Fmv_Airwalk06",
+"Pca_Fmv_Airwalk05",
+"Pca_Fmv_Airwalk01",
+"PCA_Btl_Skl09"
+],
+"4113": "PCA_Btl_Special",
+"4113_all": [
+"PCA_Btl_Special"
+],
+"4112": "PCA_Btl_Skl12",
+"4112_all": [
+"PCA_Btl_Skl12"
+],
+"4111": "PCA_Btl_Skl11",
+"4111_all": [
+"PCA_Btl_Skl11"
+],
+"4110": "PCA_Btl_Skl10",
+"4110_all": [
+"PCA_Btl_Skl10"
+],
+"4109": "PCA_Btl_Skl09",
+"4109_all": [
+"PCA_Btl_Skl09"
+],
+"4108": "PCA_Btl_Skl08",
+"4108_all": [
+"PCA_Btl_Skl08"
+],
+"4107": "PCA_Btl_Skl07",
+"4107_all": [
+"PCA_Btl_Skl07"
+],
+"4106": "PCA_Btl_Skl06",
+"4106_all": [
+"PCA_Btl_Skl06"
+],
+"4105": "PCA_Btl_Skl05",
+"4105_all": [
+"PCA_Btl_Skl05"
+],
+"4103": "PCA_Btl_Skl03",
+"4103_all": [
+"PCA_Btl_Skl03"
+],
+"4104": "PCA_Btl_Skl04",
+"4104_all": [
+"PCA_Btl_Skl04"
+],
+"4102": "PCA_Btl_Skl02",
+"4102_all": [
+"PCA_Btl_Skl02"
+],
+"4101": "PCA_Btl_Skl01",
+"4101_all": [
+"PCA_Btl_Skl01"
+],
+"40050": "Pca_Btl_Attack05",
+"40050_all": [
+"Pca_Btl_Std01",
+"Pca_Btl_Attack05"
+],
+"40040": "Pca_Btl_Attack04",
+"40040_all": [
+"Pca_Btl_Attack04"
+],
+"40030": "Pca_Btl_Attack03",
+"40030_all": [
+"Pca_Btl_Attack03"
+],
+"40020": "Pca_Btl_Attack02",
+"40020_all": [
+"Pca_Btl_Std01",
+"Pca_Btl_Attack02"
+],
+"40010": "Pca_Btl_Attack01",
+"40010_all": [
+"Pca_Btl_Attack01"
+],
+"51": "Pca_Dmg_Stu01",
+"51_all": [
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Btl_Std01",
+"Pca_Dmg_Stu01"
+],
+"41": "Pca_Dmg_Stu01",
+"41_all": [
+"Pca_Dmg_Stu01"
+],
+"33": "Pca_Dmg_Dwn21",
+"33_all": [
+"Pca_Dmg_Dwn21"
+],
+"21": "Pca_Dmg_Stu01",
+"21_all": [
+"Pca_Dmg_Stu01"
+],
+"13": "Pca_Dmg_Hit01",
+"13_all": [
+"Pca_Dmg_Hit01"
+],
+"32": "Pca_Dmg_Dwn11",
+"32_all": [
+"Pca_Dmg_Dwn11"
+],
+"31": "Pca_Dmg_Dwn01",
+"31_all": [
+"Pca_Dmg_Dwn01"
+],
+"12": "Pca_Dmg_Hit02",
+"12_all": [
+"Pca_Dmg_Hit02"
+],
+"11": "Pca_Dmg_Hit01",
+"11_all": [
+"Pca_Dmg_Hit01"
+]
+},
+"PCZ": {
+"5502": "Pcz_Btl_Skl_TurnSpear04",
+"5502_all": [
+"Pcz_Fmv_Dash_Start01",
+"Pcz_Fmv_Land01",
+"Pcz_Fmv_Landstart",
+"Pcz_Fmv_Airwalk06",
+"Pcz_Fmv_Airwalk05",
+"Pcz_Fmv_Airwalk02",
+"Pcz_Fmv_Airwalk01",
+"Pcz_Btl_Std01",
+"Pcz_Warp_End",
+"Pcz_Warp_Start",
+"Pcz_Warp_Casting",
+"Pcz_Fmv_Dash_Ready02",
+"Pcz_Fmv_Dash_Ready01",
+"Pcz_Fmv_Dash_Start02",
+"Pcz_Fmv_Airwalk02",
+"Pcz_Fmv_Airwalk01",
+"Pcz_Fmv_Land02",
+"Pcz_Fmv_Airwalk04",
+"Pcz_Fmv_Airwalk02",
+"Pcz_Fmv_Land01",
+"Pcz_Fmv_Dash_Start01",
+"Pcz_Fmv_Airwalk02",
+"Pcz_Fmv_Landstart",
+"Pcz_Fmv_Airwalk06",
+"Pcz_Fmv_Airwalk05",
+"Pcz_Fmv_Airwalk01",
+"Pcz_ADV_Mine01",
+"PCZ_Lby_Med01",
+"Pcz_ADV_Collection02",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Skl_DashSpear06",
+"Pcz_Btl_Skl_TurnSpear04"
+],
+"5501": "Pcz_Btl_Skl_CircleMoon05",
+"5501_all": [
+"Pcz_Btl_Skl_CircleMoon05"
+],
+"5503": "Pcz_Lby_teleport",
+"5503_all": [
+"Pcz_Lby_teleport"
+],
+"5403": "Pcz_Btl_Skl_Tornado_03",
+"5403_all": [
+"Pcz_Btl_Skl_Tornado_03"
+],
+"5401": "Pcz_Btl_Skl_Tornado_01",
+"5401_all": [
+"Pcz_Btl_Skl_Tornado_01"
+],
+"5304": "Pcz_Btl_Skl_TurnSpear04",
+"5304_all": [
+"Pcz_Btl_Skl_TurnSpear04"
+],
+"5303": "Pcz_Btl_Skl_TurnSpear03",
+"5303_all": [
+"Pcz_Btl_Skl_TurnSpear03"
+],
+"5301": "Pcz_Btl_Skl_TurnSpear01",
+"5301_all": [
+"Pcz_Btl_Skl_TurnSpear01"
+],
+"5206": "Pcz_Btl_Skl_DashSpear06",
+"5206_all": [
+"Pcz_Btl_Skl_DashSpear06"
+],
+"5205": "Pcz_Btl_Skl_CircleMoon05",
+"5205_all": [
+"Pcz_Btl_Skl_CircleMoon05"
+],
+"5203": "Pcz_Btl_Skl_DashSpear03",
+"5203_all": [
+"Pcz_Btl_Skl_DashSpear03"
+],
+"5202": "Pcz_Btl_Skl_DashSpear02",
+"5202_all": [
+"Pcz_Btl_Skl_DashSpear02"
+],
+"5201": "Pcz_Btl_Skl_DashSpear01",
+"5201_all": [
+"Pcz_Btl_Skl_DashSpear01"
+],
+"5104": "Pcz_Btl_Skl_CircleMoon04",
+"5104_all": [
+"Pcz_Btl_Skl_CircleMoon04"
+],
+"5103": "Pcz_Btl_Skl_CircleMoon03",
+"5103_all": [
+"Pcz_Btl_Skl_CircleMoon03"
+],
+"5102": "Pcz_Btl_Skl_CircleMoon02",
+"5102_all": [
+"Pcz_Btl_Skl_CircleMoon02"
+],
+"5101": "Pcz_Btl_Skl_CircleMoon01",
+"5101_all": [
+"Pcz_Btl_Skl_CircleMoon01"
+],
+"50070": "Pcz_Btl_Atk07",
+"50070_all": [
+"Pcz_Btl_Std01",
+"Pcz_Btl_Atk07"
+],
+"50060": "Pcz_Btl_Atk06",
+"50060_all": [
+"Pcz_Btl_Atk06"
+],
+"50050": "Pcz_Btl_Atk05",
+"50050_all": [
+"Pcz_Btl_Atk05"
+],
+"50040": "Pcz_Btl_Atk04",
+"50040_all": [
+"Pcz_Btl_Atk04"
+],
+"50030": "Pcz_Btl_Atk03",
+"50030_all": [
+"Pcz_Btl_Atk03"
+],
+"50020": "Pcz_Btl_Atk02",
+"50020_all": [
+"Pcz_Btl_Atk02"
+],
+"50010": "Pcz_Btl_Atk01",
+"50010_all": [
+"Pcz_Btl_Atk01"
+],
+"51": "Pcz_Dmg_Stu01",
+"51_all": [
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Btl_Std01",
+"Pcz_Dmg_Stu01"
+],
+"41": "Pcz_Dmg_Stu01",
+"41_all": [
+"Pcz_Dmg_Stu01"
+],
+"33": "Pcz_Dmg_Dwn21",
+"33_all": [
+"Pcz_Dmg_Dwn21"
+],
+"21": "Pcz_Dmg_Stu01",
+"21_all": [
+"Pcz_Dmg_Stu01"
+],
+"13": "Pcz_Dmg_Hit01",
+"13_all": [
+"Pcz_Dmg_Hit01"
+],
+"32": "Pcz_Dmg_Dwn11",
+"32_all": [
+"Pcz_Dmg_Dwn11"
+],
+"31": "Pcz_Dmg_Dwn01",
+"31_all": [
+"Pcz_Dmg_Dwn01"
+],
+"12": "Pcz_Dmg_Hit02",
+"12_all": [
+"Pcz_Dmg_Hit02"
+],
+"11": "Pcz_Dmg_Hit01",
+"11_all": [
+"Pcz_Dmg_Hit01"
+]
+}
+}

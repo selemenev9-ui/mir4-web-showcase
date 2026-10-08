@@ -1,0 +1,1064 @@
+[
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/M_Bicheon_SY_middlegate_01_A",
+"pos": [
+0.0,
+9879.387,
+4133.8237
+],
+"rot": [
+0.0,
+-180.00006,
+0.0
+],
+"scale": [
+0.79716974,
+1.0,
+1.0200939
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/M_Bicheon_SY_Plantgard_01_B",
+"pos": [
+8380.281,
+-855.5621,
+1166.6344
+],
+"rot": [
+0.0,
+-175.00018,
+0.0
+],
+"scale": [
+2.477475,
+2.706522,
+2.264759
+]
+},
+{
+"mesh": "Engine/Content/BasicShapes/Plane",
+"pos": [
+-7273.843,
+-8973.821,
+1961.8905
+],
+"rot": [
+79.999886,
+45.00003,
+2.9500228e-05
+],
+"scale": [
+50.0,
+100.0,
+1.0
+]
+},
+{
+"mesh": "Engine/Content/BasicShapes/Plane",
+"pos": [
+-10997.665,
+190.53082,
+2035.9392
+],
+"rot": [
+79.99979,
+1.9073486e-06,
+5.7769797e-05
+],
+"scale": [
+40.96823,
+100.0,
+1.0
+]
+},
+{
+"mesh": "Engine/Content/BasicShapes/Plane",
+"pos": [
+0.0,
+0.0,
+-966.0935
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+75.0,
+75.0,
+1.0
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/Arena_Bicheon/SM_Arena_Bicheon_JY_Gong_001_A",
+"pos": [
+-15.149725,
+2637.988,
+1134.4062
+],
+"rot": [
+0.0,
+-180.00009,
+0.0
+],
+"scale": [
+0.5364972,
+0.5364972,
+0.5364972
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/Arena_Bicheon/SM_Arena_Bicheon_MK_floor_001_B",
+"pos": [
+0.0,
+0.0,
+866.59937
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/Arena_Bicheon/SM_Arena_Bicheon_MK_Gate_001_A",
+"pos": [
+0.0,
+-9811.13,
+1260.0992
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1.2655684,
+0.8182231,
+1.2025337
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/Arena_Bicheon/SM_Arena_Bicheon_MK_Prop_002_A",
+"pos": [
+0.00012207031,
+2659.695,
+1146.9536
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+0.80255634,
+0.8979505,
+0.72627825
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_Bicheon_SY_gate_01_B",
+"pos": [
+-16917.678,
+-49191.004,
+2033.1252
+],
+"rot": [
+0.0,
+90.00014,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_Bicheon_SY_gate_02_B",
+"pos": [
+-19574.537,
+-33962.395,
+964.64087
+],
+"rot": [
+0.0,
+-90.00014,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/Elite/SM_Elite_MK_Pillar_002_A",
+"pos": [
+5441.7207,
+4750.5215,
+991.73694
+],
+"rot": [
+0.0,
+-89.999565,
+0.0
+],
+"scale": [
+0.3607909,
+0.3607909,
+0.42612797
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/Elite/SM_Elite_MK_Pillar_002_A",
+"pos": [
+-5547.8867,
+4750.5215,
+990.84485
+],
+"rot": [
+0.0,
+-89.999565,
+0.0
+],
+"scale": [
+0.360791,
+0.360791,
+0.426128
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_001_A",
+"pos": [
+8184.8066,
+2857.774,
+1188.9636
+],
+"rot": [
+0.0,
+-229.99997,
+0.0
+],
+"scale": [
+1.552867,
+1.552867,
+1.552867
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_001_A",
+"pos": [
+-8005.901,
+1704.8823,
+1188.9636
+],
+"rot": [
+0.0,
+-64.9998,
+0.0
+],
+"scale": [
+1.552867,
+1.552867,
+1.552867
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_002_A",
+"pos": [
+8196.26,
+2778.4807,
+1184.2202
+],
+"rot": [
+0.0,
+-269.99994,
+0.0
+],
+"scale": [
+1.207944,
+1.207944,
+1.207944
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_002_A",
+"pos": [
+-7996.439,
+1784.4382,
+1184.2202
+],
+"rot": [
+0.0,
+-104.99985,
+0.0
+],
+"scale": [
+1.207944,
+1.207944,
+1.207944
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+8203.238,
+2697.1777,
+1188.9636
+],
+"rot": [
+0.0,
+-270.0,
+0.0
+],
+"scale": [
+0.560562,
+0.560562,
+0.560562
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+8176.4004,
+2721.6953,
+1188.9636
+],
+"rot": [
+0.0,
+-270.0,
+0.0
+],
+"scale": [
+0.423065,
+0.423065,
+0.423065
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+8146.2144,
+2806.4358,
+1188.9636
+],
+"rot": [
+0.0,
+-270.0,
+0.0
+],
+"scale": [
+0.560562,
+0.560562,
+0.560562
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+-7982.14,
+1864.7762,
+1188.9636
+],
+"rot": [
+0.0,
+-104.99991,
+0.0
+],
+"scale": [
+0.560562,
+0.560562,
+0.560562
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+-7962.559,
+1834.1493,
+1188.9636
+],
+"rot": [
+0.0,
+-104.99991,
+0.0
+],
+"scale": [
+0.423065,
+0.423065,
+0.423065
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG000/SM_FG000_MK_pot_003_A",
+"pos": [
+-7955.3345,
+1744.4824,
+1188.9636
+],
+"rot": [
+0.0,
+-104.99991,
+0.0
+],
+"scale": [
+0.560562,
+0.560562,
+0.560562
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_02_C",
+"pos": [
+-7935.625,
+2978.006,
+1188.5822
+],
+"rot": [
+0.0,
+-90.000084,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_A",
+"pos": [
+-8635.988,
+2283.3318,
+1192.286
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_A",
+"pos": [
+-2979.607,
+-9281.034,
+993.1863
+],
+"rot": [
+0.0,
+90.000114,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_B",
+"pos": [
+-8473.748,
+1072.1589,
+1192.286
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_B",
+"pos": [
+-1786.426,
+-9115.046,
+997.5504
+],
+"rot": [
+0.0,
+90.452644,
+0.0
+],
+"scale": [
+1.0000002,
+1.0000002,
+1.0
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_C",
+"pos": [
+-8454.705,
+2290.3738,
+1192.286
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_03_C",
+"pos": [
+-2942.3335,
+-9109.106,
+997.5082
+],
+"rot": [
+0.0,
+89.67016,
+0.0
+],
+"scale": [
+0.9999996,
+0.9999996,
+1.0
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_Bicheonhouse_06_A",
+"pos": [
+2647.847,
+-8946.875,
+982.98
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FG001_HK_Pot_001_A",
+"pos": [
+8427.518,
+707.24664,
+1181.4254
+],
+"rot": [
+0.0,
+-40.00006,
+0.0
+],
+"scale": [
+1.162242,
+1.162242,
+1.162242
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_FG001_is_cart001_A",
+"pos": [
+8322.668,
+4095.4634,
+1175.2206
+],
+"rot": [
+-0.021377496,
+-252.69063,
+5.0979834
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_FG001_is_cart001_A",
+"pos": [
+-6609.561,
+-4190.7344,
+984.8478
+],
+"rot": [
+-0.021377,
+-407.51862,
+5.098589
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_SY_sign_02_A",
+"pos": [
+-2694.631,
+-8467.06,
+1382.1511
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+0.601177,
+0.651133,
+0.85106
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_FG001_SY_tent_001_B",
+"pos": [
+-5064.0664,
+-7209.507,
+1100.7566
+],
+"rot": [
+0.0,
+-60.00005,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_FG001_SY_tent_001_B",
+"pos": [
+6977.28,
+-5276.281,
+1100.7566
+],
+"rot": [
+0.0,
+-135.00012,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/TW_New_asset/SM_FG001_TW_MK_Flag_01_C",
+"pos": [
+1331.6874,
+6442.736,
+3117.2874
+],
+"rot": [
+0.0,
+179.99991,
+0.0
+],
+"scale": [
+0.94539344,
+0.94539344,
+0.94539344
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/TW_New_asset/SM_FG001_TW_MK_Flag_01_D",
+"pos": [
+-1389.6198,
+6442.738,
+3108.831
+],
+"rot": [
+0.0,
+-179.99991,
+0.0
+],
+"scale": [
+0.9441199,
+0.9441199,
+0.9441199
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/TW_New_asset/SM_FG001_WY_StoneDecal_001_A",
+"pos": [
+0.00015258789,
+6175.962,
+2267.6697
+],
+"rot": [
+-9.536743e-05,
+179.99997,
+90.000084
+],
+"scale": [
+5.141439,
+5.141439,
+9.076047
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/ST_Wall/SM_FG001_YK_house_001_B",
+"pos": [
+0.0012207031,
+13060.012,
+4151.8687
+],
+"rot": [
+0.0,
+-180.00006,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/TW_Bicheon/SM_FG001_YK_wall_002_A",
+"pos": [
+-3.6872559,
+5673.739,
+1302.5748
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1.2800835,
+1.0,
+1.175053
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FG001_YN_poster_001_A",
+"pos": [
+4307.957,
+4684.05,
+1351.6749
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+0.34373522,
+0.34373522,
+0.34373522
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FG001_YN_poster_001_B",
+"pos": [
+4882.938,
+4686.9575,
+1357.1157
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+0.42868868,
+0.42868868,
+0.42868868
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FG001_YN_poster_001_C",
+"pos": [
+-4442.6,
+4686.7173,
+1377.5386
+],
+"rot": [
+-3.1801891,
+0.0,
+0.0
+],
+"scale": [
+0.58953685,
+0.58953685,
+0.58953685
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG009/FD_SabukWall/SM_FG009_HK_CowStatue_001_A",
+"pos": [
+-8505.907,
+-2003.2783,
+1986.8137
+],
+"rot": [
+0.0,
+-90.00006,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG009/FD_SabukWall/SM_FG009_MK_Bottom_001_A",
+"pos": [
+0,
+0,
+0
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+0.8071675,
+0.8071675,
+0.06412855
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FGMarket_MS_Tent_001_B",
+"pos": [
+-1338.7292,
+-8250.318,
+1278.9697
+],
+"rot": [
+0.0,
+90.00008,
+5.294162
+],
+"scale": [
+0.41298,
+0.333277,
+0.362941
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/Backstreet/SM_FGMarket_MS_Tent_001_B",
+"pos": [
+-7736.403,
+4612.1724,
+1478.2654
+],
+"rot": [
+0.0,
+-180.00009,
+5.2942324
+],
+"scale": [
+0.34015113,
+0.31048712,
+0.34015113
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_Forest_YJ_Table_001_A",
+"pos": [
+-7743.39,
+4596.7847,
+1188.5822
+],
+"rot": [
+0.0,
+-182.39107,
+0.0
+],
+"scale": [
+0.846299,
+0.846299,
+0.716135
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/FG001/SM_Forest_YJ_Table_001_A",
+"pos": [
+-1333.6482,
+-8239.145,
+989.2865
+],
+"rot": [
+0.0,
+269.05078,
+0.0
+],
+"scale": [
+0.846299,
+0.846299,
+0.716135
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/Public/whitetree/SM_MS_Whitetree_001_A",
+"pos": [
+-4152.009,
+5196.1836,
+1818.5731
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/Public/whitetree/SM_MS_Whitetree_001_C",
+"pos": [
+4266.3955,
+5115.5215,
+1865.8584
+],
+"rot": [
+-0.355359,
+0.405845,
+-9.984542
+],
+"scale": [
+1.176757,
+1.176757,
+1.2539123
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/SM_PVP_MK_BicheonStair_01_H",
+"pos": [
+-8.198914,
+-9338.704,
+787.59265
+],
+"rot": [
+0,
+0,
+0
+],
+"scale": [
+1.1743402,
+1.0250659,
+0.8256705
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVE/Siege/SM_siege_KY_dragonstatue_001_A",
+"pos": [
+8454.827,
+-1988.046,
+1977.965
+],
+"rot": [
+0.0,
+-180.00027,
+0.0
+],
+"scale": [
+1.9080389,
+1.9095359,
+2.100645
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/B06/SM_tem002_JH_Armory_001_B",
+"pos": [
+-6263.209,
+-6689.913,
+1088.2635
+],
+"rot": [
+0.0,
+-70.0001,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/B06/SM_tem002_JH_Armory_001_B",
+"pos": [
+6457.687,
+-6475.423,
+1088.2635
+],
+"rot": [
+0.0,
+19.99996,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PK/FG/SM_under_WY_trapdoor_002_A",
+"pos": [
+8.943677e-05,
+5762.8174,
+1076.9021
+],
+"rot": [
+0.0,
+-180.0001,
+0.0
+],
+"scale": [
+3.0140784,
+2.1636207,
+2.8512983
+]
+},
+{
+"mesh": "MirMobile/Content/BG/StaticMeshes/PVP/Arena_Bicheon/SM_Arena_Bicheon_MK_floor_001_A",
+"pos": [
+0,
+0,
+0
+],
+"rot": [
+0.0,
+5.722046e-06,
+0.0
+],
+"scale": [
+1,
+1,
+1
+]
+}
+]

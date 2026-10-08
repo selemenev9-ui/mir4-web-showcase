@@ -1,0 +1,1124 @@
+{
+ "Mon_Cerberus31_Btl_Atk01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Atk_Bite_3_Cue",
+   "t": 0.358,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth4_Cue",
+   "t": 0.407,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Bld_Swi_05_Cue",
+   "t": 0.487,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Btl_Atk02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand2_1_Cue",
+   "t": 0.123,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_1_Cue",
+   "t": 0.128,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_1_Cue",
+   "t": 0.201,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_2_Cue",
+   "t": 0.245,
+   "vol": 1.8
+  }
+ ],
+ "Mon_Cerberus31_Btl_Atk03": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 0.218,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Shot_Fire_Explo_1_Cue",
+   "t": 0.426,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Fire_Burn_1_Cue_Big",
+   "t": 0.55,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Btl_Patt01_Loop": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Atk_Bite_3_Cue",
+   "t": 0.088,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Bld_Swi_05_Cue",
+   "t": 0.195,
+   "vol": 1.5
+  }
+ ],
+ "Mon_Cerberus31_Btl_Patt01_Start": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/skill_rev_fire_3_Cue",
+   "t": 0.01,
+   "vol": 1.5
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_3_Cue",
+   "t": 0.211,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Shot_Fire_Explo_1_Cue",
+   "t": 0.917,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Fire_Burn_1_Cue_Big",
+   "t": 1.051,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_3_Cue",
+   "t": 1.104,
+   "vol": 1.6
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_11_Cue",
+   "t": 0.152,
+   "vol": 1.6
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_5_Cue",
+   "t": 0.796,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Fly_Whoosh_4_Cue",
+   "t": 0.898,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Ground_1_Big_Cue",
+   "t": 1.731,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explos_1_Cue_Big",
+   "t": 1.736,
+   "vol": 1.5
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl03": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_2_Cue",
+   "t": 0.269,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_5_Cue",
+   "t": 0.62,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/skill_rev_fire_3_Cue",
+   "t": 1.052,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 3.225,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explos_1_Cue_Big",
+   "t": 3.986,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_01_Cue",
+   "t": 4.068,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explos_1_Cue_Big",
+   "t": 4.493,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_01_Cue",
+   "t": 4.523,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explos_1_Cue_Big",
+   "t": 5.307,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_01_Cue",
+   "t": 5.344,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl04": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_Fire_12_Cue",
+   "t": 0.082,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_4_Cue",
+   "t": 0.154,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_fire_sizzle_4_Cue",
+   "t": 0.393,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Shot_Fire_Explo_1_Cue",
+   "t": 2.294,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Fire_Burn_1_Cue_Big",
+   "t": 2.457,
+   "vol": 1.8
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl05": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_Fire_12_Cue",
+   "t": 0.063,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 0.254,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_fire_sizzle_4_Cue",
+   "t": 0.282,
+   "vol": 1.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_5_Cue",
+   "t": 2.123,
+   "vol": 1.3
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explo_10_Cue",
+   "t": 2.252,
+   "vol": 2.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_Fire_10_Cue",
+   "t": 2.416,
+   "vol": 2.0
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl06": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 0.048,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_10_Cue",
+   "t": 0.371,
+   "vol": 2.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_4_Cue",
+   "t": 1.561,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand2_3_Cue",
+   "t": 1.571,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Ground_1_Big_Cue",
+   "t": 2.252,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explo_1_Big_Cue1",
+   "t": 2.268,
+   "vol": 1.6
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Die01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l9_Cue",
+   "t": 0.009,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_3_Cue",
+   "t": 0.08,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 2.328,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue_Big",
+   "t": 2.346,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_3_Cue",
+   "t": 2.435,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Fire_Sizzle_2_Cue",
+   "t": 6.993,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Dmg_DieDwn01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l9_Cue",
+   "t": 0.044,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_2_Cue",
+   "t": 0.118,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue_Big",
+   "t": 0.603,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_3_Cue",
+   "t": 0.647,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Fire_Sizzle_2_Cue",
+   "t": 4.18,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Dwn11": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l9_Cue",
+   "t": 0.011,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_1_Cue",
+   "t": 0.041,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue_Big",
+   "t": 0.501,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Dwn21": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l9_Cue",
+   "t": 0.017,
+   "vol": 1.6
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_1_Cue",
+   "t": 0.047,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue_Big",
+   "t": 0.233,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_3_Cue",
+   "t": 0.255,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cra_cloth_06_Cue",
+   "t": 1.075,
+   "vol": 1.6
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Hit01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.001,
+   "vol": 1.7
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Hit02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.004,
+   "vol": 1.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/BossGoat_atk_1_Cue",
+   "t": 0.008,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DragonA01_Btl_Atk01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Atk_Bite_3_Cue",
+   "t": 0.742,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth4_Cue",
+   "t": 0.77,
+   "vol": 1.2
+  }
+ ],
+ "Mon_DragonA01_Btl_Atk02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_07_Cue",
+   "t": 0.9,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_stick_Small_1_Cue",
+   "t": 0.986,
+   "vol": 1.6
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_gab5_Cue",
+   "t": 1.102,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DragonA01_Btl_Skl01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Dino_atk_2_Cue",
+   "t": 0.271,
+   "vol": 1.2
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth_sliding_1_Cue",
+   "t": 0.276,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand2_2_Cue",
+   "t": 1.231,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth4_Cue",
+   "t": 1.308,
+   "vol": 1.4
+  }
+ ],
+ "Mon_DragonA01_Btl_Skl02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth7_Cue",
+   "t": 1.384,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/mob_beast2_atk1_Cue2",
+   "t": 1.396,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Bld_Swi_05_Cue",
+   "t": 1.404,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_gab5_Cue",
+   "t": 1.486,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand2_2_Cue",
+   "t": 1.838,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth4_Cue",
+   "t": 1.941,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Atk_Bite_3_Cue",
+   "t": 2.567,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth4_Cue",
+   "t": 2.649,
+   "vol": 1.2
+  }
+ ],
+ "Mon_DragonA01_Dmg_Die01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/Hit_L_07_Cue",
+   "t": 0.0,
+   "vol": 1.2
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_07_Cue",
+   "t": 0.054,
+   "vol": 1.3
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Mon_Tiny_Atk_4_Cue",
+   "t": 0.088,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_09_Cue",
+   "t": 0.751,
+   "vol": 0.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_dwn_04_Cue",
+   "t": 0.771,
+   "vol": 1.6
+  }
+ ],
+ "Mon_DragonA01_Dmg_Dwn11": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/Hit_L_07_Cue",
+   "t": 0.013,
+   "vol": 1.2
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_07_Cue",
+   "t": 0.054,
+   "vol": 1.3
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_09_Cue",
+   "t": 0.728,
+   "vol": 0.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_3_Cue",
+   "t": 0.732,
+   "vol": 1.4
+  }
+ ],
+ "Mon_DragonA01_Dmg_Dwn21": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/Hit_L_07_Cue",
+   "t": 0.005,
+   "vol": 1.2
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Mon_Tiny_Atk_4_Cue",
+   "t": 0.043,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/Gore_Splash_07_Cue",
+   "t": 0.059,
+   "vol": 1.3
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_dwn_04_Cue",
+   "t": 0.375,
+   "vol": 1.7
+  }
+ ],
+ "Mon_DragonA01_Dmg_Hit01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.001,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Mon_Tiny_Atk_4_Cue",
+   "t": 0.004,
+   "vol": 1.4
+  }
+ ],
+ "Mon_DragonA01_Dmg_Hit02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.007,
+   "vol": 1.4
+  }
+ ],
+ "Mon_Golem01_Btl_Atk01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_atk_1_Cue",
+   "t": 0.687,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Ham_Swi_01_Cue",
+   "t": 0.725,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Btl_Atk02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_atk_1_Cue",
+   "t": 0.672,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Ham_Swi_02_Cue",
+   "t": 0.68,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.777,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Btl_Skl01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_11_Cue",
+   "t": 0.273,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_atk_5_Cue",
+   "t": 0.303,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_11_Cue",
+   "t": 0.611,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Whoosh_Trans_Bomb_Cue",
+   "t": 1.118,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 1.628,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Btl_Skl02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_atk_7_Cue",
+   "t": 0.0,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 0.489,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 0.896,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 1.289,
+   "vol": 0.86
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 1.718,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_atk_6_Cue",
+   "t": 2.3,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 2.39,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_M_3_Cue",
+   "t": 2.402,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Btl_Skl03": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Object/obje_door_stone_1_Cue",
+   "t": 0.0,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_3_Cue",
+   "t": 0.064,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Explo_1_Big_Cue1",
+   "t": 1.949,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 1.972,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Dmg_Die01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 0.0,
+   "vol": 0.7
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_die_1_Cue",
+   "t": 0.075,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.79,
+   "vol": 1.3
+  }
+ ],
+ "Mon_Golem01_Dmg_DieDwn01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.019,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 0.019,
+   "vol": 0.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_3_Cue",
+   "t": 0.049,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.526,
+   "vol": 1.3
+  }
+ ],
+ "Mon_Golem01_Dmg_Dwn11": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_3_Cue",
+   "t": 0.063,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.524,
+   "vol": 1.3
+  }
+ ],
+ "Mon_Golem01_Dmg_Dwn21": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.006,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Stone_Large1_Cue",
+   "t": 0.006,
+   "vol": 0.3
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_2_Cue",
+   "t": 0.065,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.385,
+   "vol": 1.3
+  }
+ ],
+ "Mon_Golem01_Dmg_Hit01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.002,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_1_Cue",
+   "t": 0.005,
+   "vol": 0.9
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_gab5_Cue",
+   "t": 0.016,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Golem01_Dmg_Hit02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Monster/Goat_dmg_2_Cue",
+   "t": 0.007,
+   "vol": 0.8
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_gab5_Cue",
+   "t": 0.031,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Btl_Atk02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk2_Cue",
+   "t": 0.295,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_1_Cue",
+   "t": 0.344,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Btl_Skl02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_2_Cue",
+   "t": 0.634,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk5_Cue",
+   "t": 0.928,
+   "vol": 1.6
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Fire_1_Cue",
+   "t": 1.066,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Btl_Skl04": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk6_Cue",
+   "t": 0.03,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_2_Cue",
+   "t": 0.283,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_10_Cue",
+   "t": 1.431,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Cloth_Leather_01_Cue",
+   "t": 1.507,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk4_Cue",
+   "t": 1.627,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Dmg_Dwn11": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.029,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_sword_07_Cue",
+   "t": 0.042,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg6_Cue",
+   "t": 0.077,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.499,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Dmg_Dwn21": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l3_Cue",
+   "t": 0.023,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg2_Cue",
+   "t": 0.071,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_l2_Cue",
+   "t": 0.328,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cra_cloth_02_Cue",
+   "t": 1.331,
+   "vol": 1.0
+  }
+ ],
+ "Mon_DanBo_Dmg_Hit02": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg1_Cue",
+   "t": 0.047,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Btl_Atk01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk3_Cue",
+   "t": 0.282,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_1_Cue",
+   "t": 0.331,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_2_Cue",
+   "t": 0.365,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Btl_Atk03": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_1_Cue",
+   "t": 0.211,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/cloth7_Cue",
+   "t": 0.237,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk4_Cue",
+   "t": 0.244,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_1_Cue",
+   "t": 0.341,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Cloth_Grab_1_Cue",
+   "t": 0.354,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Cloth_Leather_02_Cue",
+   "t": 0.766,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Weapon/Whoosh_Hand_Heavy_2_Cue",
+   "t": 0.921,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Btl_Skl01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk7_Cue",
+   "t": 0.066,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Ice_Freeze_3_Cue",
+   "t": 0.282,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Impact_Fire_1_Cue",
+   "t": 0.4,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Fire_1_Cue",
+   "t": 0.453,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_01_Cue",
+   "t": 0.664,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Btl_Skl03": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk7_Cue",
+   "t": 0.087,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Rev_11_Cue",
+   "t": 1.226,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Shot_11_Cue",
+   "t": 1.798,
+   "vol": 1.4
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk3_Cue",
+   "t": 1.961,
+   "vol": 1.4
+  }
+ ],
+ "Mon_Danbo_Btl_Skl11": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_atk7_Cue",
+   "t": 0.066,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Ice_Freeze_3_Cue",
+   "t": 0.282,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Skill_Impact_Fire_1_Cue",
+   "t": 0.4,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_Fire_1_Cue",
+   "t": 0.453,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Impact/Impact_01_Cue",
+   "t": 0.664,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Dmg_Die_01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg4_Cue",
+   "t": 0.0,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_sword_10_Cue",
+   "t": 0.045,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg3_Cue",
+   "t": 2.323,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_l2_Cue",
+   "t": 3.108,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/mob_drop_l1_Cue",
+   "t": 4.487,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Skill/Rev_Whoosh_L_1_Cue",
+   "t": 5.425,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Dmg_Dwn01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l3_Cue",
+   "t": 0.0,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_sword_07_Cue",
+   "t": 0.052,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg6_Cue",
+   "t": 0.077,
+   "vol": 1.0
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_DropnCloth/Drop_Heavy_1_Cue",
+   "t": 0.571,
+   "vol": 1.0
+  }
+ ],
+ "Mon_Danbo_Dmg_Hit01": [
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Hit/hit_l8_Cue",
+   "t": 0.0,
+   "vol": 1.5
+  },
+  {
+   "cue": "MirMobile/Content/Sound/Sound_Voice_Human/Danbo_dmg2_Cue",
+   "t": 0.009,
+   "vol": 1.0
+  }
+ ]
+}

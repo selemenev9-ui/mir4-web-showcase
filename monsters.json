@@ -1,0 +1,52 @@
+{
+ "cerberus": {
+  "label": "Cerberus",
+  "file": "cerberus_battle.glb",
+  "h": 3.4,
+  "x": 3.2,
+  "monsterId": "110100561",
+  "level": 165,
+  "realHP": 74448360,
+  "hp": 372241,
+  "atk": 4127,
+  "pdef": 5656,
+  "fit": "max"
+ },
+ "dragona01": {
+  "label": "Dragon A01",
+  "file": "dragona01_battle.glb",
+  "h": 4.4,
+  "x": 3.6,
+  "fit": "max",
+  "monsterId": "203130132",
+  "level": 160,
+  "realHP": 86625,
+  "hp": 86625,
+  "atk": 4012,
+  "pdef": 5533
+ },
+ "golem01": {
+  "label": "Golem",
+  "file": "golem01_battle.glb",
+  "h": 2.8,
+  "x": 1.9,
+  "monsterId": "210011022",
+  "level": 157,
+  "realHP": 28206,
+  "hp": 28206,
+  "atk": 3893,
+  "pdef": 5390
+ },
+ "danbo": {
+  "label": "Danbo",
+  "file": "danbo_battle.glb",
+  "h": 2.0,
+  "x": 1.8,
+  "monsterId": "109002013",
+  "level": 61,
+  "realHP": 50964,
+  "hp": 50964,
+  "atk": 860,
+  "pdef": 1500
+ }
+}

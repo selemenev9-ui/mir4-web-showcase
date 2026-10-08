@@ -1,0 +1,9293 @@
+{
+ "Pca_Btl_Attack01": [
+  {
+   "t": 0.126,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_2.ogg",
+    "Pca_atk_3.ogg"
+   ]
+  },
+  {
+   "t": 0.23,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  }
+ ],
+ "Pca_Btl_Attack02": [
+  {
+   "t": 0.185,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_1.ogg"
+   ]
+  },
+  {
+   "t": 0.194,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_3.ogg",
+    "Pca_atk_5.ogg"
+   ]
+  }
+ ],
+ "Pca_Btl_Attack03": [
+  {
+   "t": 0.044,
+   "vol": 1.2,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.36,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_31.ogg",
+    "Pca_atk_61.ogg"
+   ]
+  },
+  {
+   "t": 0.39,
+   "vol": 0.5,
+   "files": [
+    "Bow_Shot_6.ogg"
+   ]
+  },
+  {
+   "t": 0.401,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_1.ogg"
+   ]
+  },
+  {
+   "t": 0.692,
+   "vol": 0.5,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.703,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_1.ogg"
+   ]
+  }
+ ],
+ "Pca_Btl_Attack04": [
+  {
+   "t": 0.247,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_65.ogg"
+   ]
+  },
+  {
+   "t": 0.277,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  }
+ ],
+ "Pca_Btl_Attack05": [
+  {
+   "t": 0.391,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_10.ogg",
+    "Pca_atk_3.ogg"
+   ]
+  },
+  {
+   "t": 0.395,
+   "vol": 0.5,
+   "files": [
+    "Bow_Shot_3.ogg"
+   ]
+  },
+  {
+   "t": 0.415,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl01": [
+  {
+   "t": 0.037,
+   "vol": 1.0,
+   "files": [
+    "Pca_skill_1-1.ogg"
+   ]
+  },
+  {
+   "t": 0.046,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.277,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.505,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.697,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.906,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 1.094,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 1.096,
+   "vol": 1.3,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 1.123,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl02": [
+  {
+   "t": 0.042,
+   "vol": 1.5,
+   "files": [
+    "Pca_skill_4.ogg"
+   ]
+  },
+  {
+   "t": 0.072,
+   "vol": 1.0,
+   "files": [
+    "Ski_Bow_multishot_1.ogg"
+   ]
+  },
+  {
+   "t": 0.66,
+   "vol": 1.0,
+   "files": [
+    "Ski_Bow_multishot_1-1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl03": [
+  {
+   "t": 0.012,
+   "vol": 0.9,
+   "files": [
+    "cloth8.ogg"
+   ]
+  },
+  {
+   "t": 0.373,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_20.ogg"
+   ]
+  },
+  {
+   "t": 0.377,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 0.41,
+   "vol": 1.4,
+   "files": [
+    "Weapon_throw_1.ogg"
+   ]
+  },
+  {
+   "t": 0.569,
+   "vol": 1.0,
+   "files": [
+    "Drop_small_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl04": [
+  {
+   "t": 0.077,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_27.ogg"
+   ]
+  },
+  {
+   "t": 0.106,
+   "vol": 0.3,
+   "files": [
+    "Cloth_Umbrilla_1.ogg"
+   ]
+  },
+  {
+   "t": 0.198,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  },
+  {
+   "t": 0.559,
+   "vol": 1.0,
+   "files": [
+    "Pca_skill_4.ogg"
+   ]
+  },
+  {
+   "t": 0.644,
+   "vol": 1.6,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.665,
+   "vol": 0.3,
+   "files": [
+    "Fly_Whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 0.688,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_arrow_2.ogg"
+   ]
+  },
+  {
+   "t": 0.704,
+   "vol": 1.0,
+   "files": [
+    "skill_bomb_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl05": [
+  {
+   "t": 0.01,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_1.ogg"
+   ]
+  },
+  {
+   "t": 0.015,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_20.ogg"
+   ]
+  },
+  {
+   "t": 0.425,
+   "vol": 1.3,
+   "files": [
+    "Pca_atk_44.ogg"
+   ]
+  },
+  {
+   "t": 0.449,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.463,
+   "vol": 1.0,
+   "files": [
+    "skill_bomb_1.ogg"
+   ]
+  },
+  {
+   "t": 0.486,
+   "vol": 0.3,
+   "files": [
+    "Fly_Whoosh_4.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl06": [
+  {
+   "t": 0.007,
+   "vol": 0.8,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.017,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_27.ogg"
+   ]
+  },
+  {
+   "t": 0.036,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.284,
+   "vol": 1.3,
+   "files": [
+    "Shoot_Jangpung_Fire.ogg"
+   ]
+  },
+  {
+   "t": 0.353,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.373,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_44.ogg"
+   ]
+  },
+  {
+   "t": 0.411,
+   "vol": 1.0,
+   "files": [
+    "Hit_Kick_1.ogg"
+   ]
+  },
+  {
+   "t": 0.823,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl07": [
+  {
+   "t": 0.102,
+   "vol": 1.0,
+   "files": [
+    "Pca_breath_7.ogg"
+   ]
+  },
+  {
+   "t": 0.373,
+   "vol": 1.0,
+   "files": [
+    "Pca_skill_7.ogg"
+   ]
+  },
+  {
+   "t": 0.382,
+   "vol": 1.6,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.396,
+   "vol": 0.3,
+   "files": [
+    "Fly_Whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 0.442,
+   "vol": 2.0,
+   "files": [
+    "skill_bomb_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl08": [
+  {
+   "t": 0.102,
+   "vol": 1.0,
+   "files": [
+    "Pca_skill_8.ogg"
+   ]
+  },
+  {
+   "t": 0.229,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_arrow_2.ogg"
+   ]
+  },
+  {
+   "t": 0.248,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_8.ogg"
+   ]
+  },
+  {
+   "t": 0.309,
+   "vol": 1.0,
+   "files": [
+    "Bow_arrow_fly_1.ogg",
+    "Bow_arrow_fly_2.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl09": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Pca_atk_19.ogg"
+   ]
+  },
+  {
+   "t": 0.004,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.316,
+   "vol": 1.3,
+   "files": [
+    "Bow_Shot_4.ogg"
+   ]
+  },
+  {
+   "t": 0.339,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_arrow_2.ogg"
+   ]
+  },
+  {
+   "t": 0.377,
+   "vol": 1.4,
+   "files": [
+    "Pca_skill_9.ogg"
+   ]
+  },
+  {
+   "t": 0.407,
+   "vol": 1.0,
+   "files": [
+    "hit_arrow_1.ogg"
+   ]
+  },
+  {
+   "t": 0.497,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_arrow_1.ogg"
+   ]
+  },
+  {
+   "t": 0.53,
+   "vol": 0.7,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.577,
+   "vol": 1.0,
+   "files": [
+    "hit_arrow_2.ogg"
+   ]
+  },
+  {
+   "t": 0.842,
+   "vol": 1.0,
+   "files": [
+    "hit_arrow_4.ogg"
+   ]
+  },
+  {
+   "t": 0.955,
+   "vol": 1.0,
+   "files": [
+    "Drop_small_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl10": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "skill_rev_fire_3.ogg"
+   ]
+  },
+  {
+   "t": 0.02,
+   "vol": 1.3,
+   "files": [
+    "Pca_batk_10.ogg"
+   ]
+  },
+  {
+   "t": 0.841,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Bow_1.ogg"
+   ]
+  },
+  {
+   "t": 0.885,
+   "vol": 1.0,
+   "files": [
+    "Pca_skill_3.ogg"
+   ]
+  },
+  {
+   "t": 0.964,
+   "vol": 1.0,
+   "files": [
+    "Bow_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.975,
+   "vol": 0.6,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl11": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Rev_Whoosh_S_1.ogg"
+   ]
+  },
+  {
+   "t": 0.016,
+   "vol": 0.7,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.017,
+   "vol": 1.0,
+   "files": [
+    "Pca_batk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.185,
+   "vol": 1.2,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  }
+ ],
+ "PCA_Btl_Skl12": [
+  {
+   "t": 0.003,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.0,
+   "files": [
+    "Pca_atk_31.ogg",
+    "Pca_breath_3.ogg"
+   ]
+  },
+  {
+   "t": 0.12,
+   "vol": 1.0,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.181,
+   "vol": 0.8,
+   "files": [
+    "Drop_small_1.ogg"
+   ]
+  }
+ ],
+ "Pca_Btl_Skl_ChainSword05": [
+  {
+   "t": 0.409,
+   "vol": 1.2,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.454,
+   "vol": 1.5,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.581,
+   "vol": 1.2,
+   "files": [
+    "Weapon_ChainSword_05.ogg"
+   ]
+  },
+  {
+   "t": 1.234,
+   "vol": 0.7,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack01": [
+  {
+   "t": 0.011,
+   "vol": 1.2,
+   "files": [
+    "Chain_Mechanic_14.ogg"
+   ]
+  },
+  {
+   "t": 0.05,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 0.365,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_1.ogg",
+    "Pcd_atk_14.ogg"
+   ]
+  },
+  {
+   "t": 0.416,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_10.ogg"
+   ]
+  },
+  {
+   "t": 0.462,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack02": [
+  {
+   "t": 0.341,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_12.ogg",
+    "Pcd_atk_14.ogg"
+   ]
+  },
+  {
+   "t": 0.392,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.407,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_11.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack03": [
+  {
+   "t": 0.327,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_9.ogg",
+    "Pcd_skill_15.ogg"
+   ]
+  },
+  {
+   "t": 0.375,
+   "vol": 1.2,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.417,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_11.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack04": [
+  {
+   "t": 0.035,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.39,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_13.ogg"
+   ]
+  },
+  {
+   "t": 0.401,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_6.ogg",
+    "Pcd_skill_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack05": [
+  {
+   "t": 0.239,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.307,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_12.ogg",
+    "Pcd_atk_14.ogg"
+   ]
+  },
+  {
+   "t": 0.34,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_12.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack06": [
+  {
+   "t": 0.331,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_15.ogg"
+   ]
+  },
+  {
+   "t": 0.358,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.456,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_12.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack07": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_4.ogg"
+   ]
+  },
+  {
+   "t": 0.081,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 0.37,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_16.ogg"
+   ]
+  },
+  {
+   "t": 0.408,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 0.417,
+   "vol": 1.0,
+   "files": [
+    "Chain_Mechanic_10.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack08": [
+  {
+   "t": 0.031,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_2.ogg"
+   ]
+  },
+  {
+   "t": 0.439,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_12.ogg",
+    "Pcd_atk_14.ogg"
+   ]
+  },
+  {
+   "t": 0.468,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.483,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_11.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack51": [
+  {
+   "t": 0.173,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.229,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_12.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack52": [
+  {
+   "t": 0.248,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.265,
+   "vol": 1.3,
+   "files": [
+    "Chain_Mechanic_13.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack53": [
+  {
+   "t": 0.005,
+   "vol": 1.3,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.036,
+   "vol": 1.3,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Attack54": [
+  {
+   "t": 0.047,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.242,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.347,
+   "vol": 1.0,
+   "files": [
+    "Chain_Mechanic_11.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl01": [
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_1.ogg"
+   ]
+  },
+  {
+   "t": 0.04,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.131,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_24.ogg"
+   ]
+  },
+  {
+   "t": 0.146,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.232,
+   "vol": 0.7,
+   "files": [
+    "shot_arcane_2.ogg"
+   ]
+  },
+  {
+   "t": 0.638,
+   "vol": 1.8,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl02": [
+  {
+   "t": 0.009,
+   "vol": 1.7,
+   "files": [
+    "Chain_mechanic_3-1.ogg"
+   ]
+  },
+  {
+   "t": 0.021,
+   "vol": 0.0,
+   "files": [
+    "shot_dark_2.ogg"
+   ]
+  },
+  {
+   "t": 0.29,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_16.ogg"
+   ]
+  },
+  {
+   "t": 0.364,
+   "vol": 1.3,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.408,
+   "vol": 1.7,
+   "files": [
+    "Chain_mechanic_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl03": [
+  {
+   "t": 0.018,
+   "vol": 1.5,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.068,
+   "vol": 1.4,
+   "files": [
+    "Pcd_skill_20.ogg"
+   ]
+  },
+  {
+   "t": 0.209,
+   "vol": 1.8,
+   "files": [
+    "Shot_poison_1.ogg"
+   ]
+  },
+  {
+   "t": 0.247,
+   "vol": 1.6,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.307,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl04": [
+  {
+   "t": 0.008,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.011,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.087,
+   "vol": 1.5,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.098,
+   "vol": 2.0,
+   "files": [
+    "Chain_mechanic_1.ogg"
+   ]
+  },
+  {
+   "t": 0.403,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_3-1.ogg"
+   ]
+  },
+  {
+   "t": 0.614,
+   "vol": 2.0,
+   "files": [
+    "Chain_mechanic_4.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl05": [
+  {
+   "t": 0.027,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_17.ogg"
+   ]
+  },
+  {
+   "t": 0.232,
+   "vol": 1.5,
+   "files": [
+    "Shot_arcane_1.ogg"
+   ]
+  },
+  {
+   "t": 0.491,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_Big_10.ogg"
+   ]
+  },
+  {
+   "t": 0.546,
+   "vol": 2.0,
+   "files": [
+    "Chain_mechanic_7.ogg"
+   ]
+  },
+  {
+   "t": 0.696,
+   "vol": 1.5,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.844,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_18.ogg"
+   ]
+  },
+  {
+   "t": 0.848,
+   "vol": 0.0,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 1.317,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_3-1.ogg"
+   ]
+  },
+  {
+   "t": 1.718,
+   "vol": 0.5,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl06": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 1.6,
+   "files": [
+    "Impact_Explo_10.ogg"
+   ]
+  },
+  {
+   "t": 0.032,
+   "vol": 1.3,
+   "files": [
+    "Pcd_batk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.034,
+   "vol": 1.6,
+   "files": [
+    "Chain_mechanic_4-1.ogg"
+   ]
+  },
+  {
+   "t": 0.115,
+   "vol": 1.6,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  },
+  {
+   "t": 0.399,
+   "vol": 1.6,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 0.897,
+   "vol": 1.6,
+   "files": [
+    "Chain_mechanic_5-2.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl07": [
+  {
+   "t": 0.085,
+   "vol": 1.5,
+   "files": [
+    "obje_mechanic_1.ogg"
+   ]
+  },
+  {
+   "t": 0.437,
+   "vol": 1.6,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.505,
+   "vol": 2.0,
+   "files": [
+    "Skill_Blast_1.ogg"
+   ]
+  },
+  {
+   "t": 0.515,
+   "vol": 1.6,
+   "files": [
+    "Skill_Shot_Fire_10.ogg"
+   ]
+  },
+  {
+   "t": 0.526,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.65,
+   "vol": 1.6,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.789,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_5.ogg"
+   ]
+  },
+  {
+   "t": 1.555,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_3-1.ogg"
+   ]
+  },
+  {
+   "t": 2.03,
+   "vol": 1.3,
+   "files": [
+    "Pcd_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 2.079,
+   "vol": 1.6,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl08": [
+  {
+   "t": 0.011,
+   "vol": 2.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.051,
+   "vol": 1.6,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 0.097,
+   "vol": 1.6,
+   "files": [
+    "Pcd_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.126,
+   "vol": 1.5,
+   "files": [
+    "obje_mechanic_4.ogg"
+   ]
+  },
+  {
+   "t": 0.833,
+   "vol": 1.8,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 0.921,
+   "vol": 1.6,
+   "files": [
+    "Drop_Step_2.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl09": [
+  {
+   "t": 0.014,
+   "vol": 1.6,
+   "files": [
+    "Pcd_batk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.16,
+   "vol": 1.5,
+   "files": [
+    "obje_mechanic_5.ogg"
+   ]
+  },
+  {
+   "t": 0.181,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.478,
+   "vol": 1.6,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 0.935,
+   "vol": 1.6,
+   "files": [
+    "Pcd_skill_18.ogg"
+   ]
+  },
+  {
+   "t": 1.001,
+   "vol": 1.5,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 1.017,
+   "vol": 1.5,
+   "files": [
+    "Shoot_Jangpung_Fire.ogg"
+   ]
+  },
+  {
+   "t": 1.04,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 1.169,
+   "vol": 1.5,
+   "files": [
+    "obje_mechanic_1.ogg"
+   ]
+  },
+  {
+   "t": 1.264,
+   "vol": 1.0,
+   "files": [
+    "Chain_mechanic_5-2.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl10": [
+  {
+   "t": 0.039,
+   "vol": 2.0,
+   "files": [
+    "Chain_Mechanic_15.ogg"
+   ]
+  },
+  {
+   "t": 0.042,
+   "vol": 1.5,
+   "files": [
+    "Skill_fire_sizzle_4.ogg"
+   ]
+  },
+  {
+   "t": 0.071,
+   "vol": 1.5,
+   "files": [
+    "skill_magic_evil_1.ogg"
+   ]
+  },
+  {
+   "t": 0.155,
+   "vol": 1.5,
+   "files": [
+    "Pcd_batk_4.ogg"
+   ]
+  },
+  {
+   "t": 1.54,
+   "vol": 1.6,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 1.901,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_24.ogg"
+   ]
+  },
+  {
+   "t": 1.947,
+   "vol": 0.8,
+   "files": [
+    "Chain_mechanic_7.ogg"
+   ]
+  },
+  {
+   "t": 1.983,
+   "vol": 2.0,
+   "files": [
+    "Chain_Mechanic_16.ogg"
+   ]
+  },
+  {
+   "t": 2.051,
+   "vol": 1.5,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 2.254,
+   "vol": 2.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl11": [
+  {
+   "t": 0.091,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_1.ogg"
+   ]
+  },
+  {
+   "t": 0.178,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.191,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_18.ogg"
+   ]
+  },
+  {
+   "t": 0.54,
+   "vol": 1.7,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  },
+  {
+   "t": 0.839,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_7.ogg"
+   ]
+  },
+  {
+   "t": 1.047,
+   "vol": 1.5,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  },
+  {
+   "t": 1.268,
+   "vol": 1.7,
+   "files": [
+    "Weapon_ChainSword_04.ogg"
+   ]
+  }
+ ],
+ "PCD_Btl_Skl12": [
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Chain_Mechanic_15.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.111,
+   "vol": 1.5,
+   "files": [
+    "Chain_Mechanic_14.ogg"
+   ]
+  },
+  {
+   "t": 0.215,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_3.ogg"
+   ]
+  },
+  {
+   "t": 0.776,
+   "vol": 1.5,
+   "files": [
+    "Shot_arcane_1.ogg"
+   ]
+  },
+  {
+   "t": 0.955,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_5-1.ogg"
+   ]
+  },
+  {
+   "t": 0.991,
+   "vol": 1.5,
+   "files": [
+    "Chain_mechanic_7-1.ogg"
+   ]
+  },
+  {
+   "t": 1.044,
+   "vol": 1.3,
+   "files": [
+    "Pcd_skill_16.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack01": [
+  {
+   "t": 0.233,
+   "vol": 0.8,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.248,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_1.ogg",
+    "Pcf_atk_2_1.ogg"
+   ]
+  },
+  {
+   "t": 0.273,
+   "vol": 1.0,
+   "files": [
+    "Punch_Atk_1.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack02": [
+  {
+   "t": 0.145,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_1_2.ogg"
+   ]
+  },
+  {
+   "t": 0.151,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_1.ogg"
+   ]
+  },
+  {
+   "t": 0.163,
+   "vol": 1.0,
+   "files": [
+    "Punch_Atk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.421,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_2.ogg"
+   ]
+  },
+  {
+   "t": 0.429,
+   "vol": 1.0,
+   "files": [
+    "Punch_Atk_3.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack03": [
+  {
+   "t": 0.149,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_3_2.ogg"
+   ]
+  },
+  {
+   "t": 0.168,
+   "vol": 0.5,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.315,
+   "vol": 1.0,
+   "files": [
+    "Punch_Atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.343,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_7.ogg"
+   ]
+  },
+  {
+   "t": 0.397,
+   "vol": 1.2,
+   "files": [
+    "Hit_Punch_14.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack04": [
+  {
+   "t": 0.166,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_2_2.ogg",
+    "Pcf_atk_3_1.ogg"
+   ]
+  },
+  {
+   "t": 0.167,
+   "vol": 0.5,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.176,
+   "vol": 1.0,
+   "files": [
+    "Punch_Atk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.268,
+   "vol": 1.0,
+   "files": [
+    "Hit_Punch_13.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack05": [
+  {
+   "t": 0.264,
+   "vol": 0.8,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.269,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_4_2.ogg"
+   ]
+  },
+  {
+   "t": 0.435,
+   "vol": 0.7,
+   "files": [
+    "Hit_Punch_15.ogg"
+   ]
+  },
+  {
+   "t": 0.454,
+   "vol": 1.2,
+   "files": [
+    "Punch_Atk_6.ogg"
+   ]
+  },
+  {
+   "t": 0.553,
+   "vol": 0.6,
+   "files": [
+    "Cloth_drop_1.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack06": [
+  {
+   "t": 0.188,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_5_1.ogg"
+   ]
+  },
+  {
+   "t": 0.248,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.405,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_7.ogg"
+   ]
+  },
+  {
+   "t": 0.435,
+   "vol": 0.7,
+   "files": [
+    "Punch_Atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.463,
+   "vol": 0.6,
+   "files": [
+    "hit_l7.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Attack07": [
+  {
+   "t": 0.022,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.151,
+   "vol": 1.2,
+   "files": [
+    "Pcf_atk_5_2.ogg",
+    "Pcf_skill_2_3.ogg"
+   ]
+  },
+  {
+   "t": 0.396,
+   "vol": 0.7,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.51,
+   "vol": 1.2,
+   "files": [
+    "Punch_Atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.537,
+   "vol": 1.2,
+   "files": [
+    "Impact_Ground_tu_1.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl01": [
+  {
+   "t": 0.129,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_1_1.ogg"
+   ]
+  },
+  {
+   "t": 0.172,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_6.ogg"
+   ]
+  },
+  {
+   "t": 0.228,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_6.ogg"
+   ]
+  },
+  {
+   "t": 0.556,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_1_2.ogg"
+   ]
+  },
+  {
+   "t": 0.624,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_7.ogg"
+   ]
+  },
+  {
+   "t": 0.665,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_7.ogg"
+   ]
+  },
+  {
+   "t": 0.798,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_3.ogg"
+   ]
+  },
+  {
+   "t": 1.056,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_1_3.ogg"
+   ]
+  },
+  {
+   "t": 1.078,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_8.ogg"
+   ]
+  },
+  {
+   "t": 1.114,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_8.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl02": [
+  {
+   "t": 0.104,
+   "vol": 1.2,
+   "files": [
+    "Punch_Atk_13.ogg"
+   ]
+  },
+  {
+   "t": 0.111,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_2_1.ogg"
+   ]
+  },
+  {
+   "t": 0.132,
+   "vol": 1.3,
+   "files": [
+    "Hit_Punch_10.ogg"
+   ]
+  },
+  {
+   "t": 0.355,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_14.ogg"
+   ]
+  },
+  {
+   "t": 0.383,
+   "vol": 1.3,
+   "files": [
+    "Hit_Punch_11.ogg"
+   ]
+  },
+  {
+   "t": 0.968,
+   "vol": 1.3,
+   "files": [
+    "Hit_Punch_12.ogg"
+   ]
+  },
+  {
+   "t": 0.971,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_14.ogg"
+   ]
+  },
+  {
+   "t": 1.346,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_2_2.ogg"
+   ]
+  },
+  {
+   "t": 1.426,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_11.ogg"
+   ]
+  },
+  {
+   "t": 1.447,
+   "vol": 1.3,
+   "files": [
+    "Hit_Punch_12.ogg"
+   ]
+  },
+  {
+   "t": 1.724,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_2_3.ogg"
+   ]
+  },
+  {
+   "t": 1.732,
+   "vol": 1.3,
+   "files": [
+    "Punch_Atk_13.ogg"
+   ]
+  },
+  {
+   "t": 1.742,
+   "vol": 1.3,
+   "files": [
+    "Hit_Punch_13.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl03": [
+  {
+   "t": 0.327,
+   "vol": 1.0,
+   "files": [
+    "Pcf_skill_3_1.ogg"
+   ]
+  },
+  {
+   "t": 0.429,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 0.631,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_2.ogg"
+   ]
+  },
+  {
+   "t": 0.751,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_2.ogg"
+   ]
+  },
+  {
+   "t": 1.035,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 1.263,
+   "vol": 1.0,
+   "files": [
+    "Pcf_skill_3_2.ogg"
+   ]
+  },
+  {
+   "t": 1.277,
+   "vol": 1.2,
+   "files": [
+    "Shot_flower_2.ogg"
+   ]
+  },
+  {
+   "t": 1.388,
+   "vol": 1.2,
+   "files": [
+    "skill_bomb_1.ogg"
+   ]
+  },
+  {
+   "t": 1.442,
+   "vol": 1.7,
+   "files": [
+    "Tiger_Growl_1.ogg"
+   ]
+  },
+  {
+   "t": 1.766,
+   "vol": 1.0,
+   "files": [
+    "Drop_small_1.ogg"
+   ]
+  },
+  {
+   "t": 2.309,
+   "vol": 0.5,
+   "files": [
+    "Punch_Cloth_8.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl04": [
+  {
+   "t": 0.281,
+   "vol": 1.0,
+   "files": [
+    "Pcf_skill_4_1.ogg"
+   ]
+  },
+  {
+   "t": 0.357,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_1.ogg"
+   ]
+  },
+  {
+   "t": 0.393,
+   "vol": 1.2,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 0.755,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_2.ogg"
+   ]
+  },
+  {
+   "t": 0.776,
+   "vol": 1.3,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.143,
+   "vol": 1.2,
+   "files": [
+    "Pcf_skill_4_2.ogg"
+   ]
+  },
+  {
+   "t": 1.146,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_3.ogg"
+   ]
+  },
+  {
+   "t": 1.182,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.608,
+   "vol": 1.0,
+   "files": [
+    "Punch_Cloth_7.ogg"
+   ]
+  },
+  {
+   "t": 1.638,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_4.ogg"
+   ]
+  },
+  {
+   "t": 1.649,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl05": [
+  {
+   "t": 0.252,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_5.ogg"
+   ]
+  },
+  {
+   "t": 0.454,
+   "vol": 1.0,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.722,
+   "vol": 1.5,
+   "files": [
+    "Tiger_Growl_1.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl06_01": [
+  {
+   "t": 0.003,
+   "vol": 1.2,
+   "files": [
+    "Skill_sliding_1.ogg"
+   ]
+  },
+  {
+   "t": 0.004,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_6_1.ogg"
+   ]
+  },
+  {
+   "t": 0.004,
+   "vol": 0.7,
+   "files": [
+    "Punch_Atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.018,
+   "vol": 0.5,
+   "files": [
+    "cloth4.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl06_02": [
+  {
+   "t": 0.005,
+   "vol": 0.5,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_6_2.ogg"
+   ]
+  },
+  {
+   "t": 0.052,
+   "vol": 0.5,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 0.167,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl07": [
+  {
+   "t": 0.016,
+   "vol": 0.8,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  },
+  {
+   "t": 0.03,
+   "vol": 0.8,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.069,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_7_1.ogg"
+   ]
+  },
+  {
+   "t": 1.148,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.158,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_7_2.ogg"
+   ]
+  },
+  {
+   "t": 1.401,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.47,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_7_3.ogg"
+   ]
+  },
+  {
+   "t": 1.942,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.969,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_7_4.ogg"
+   ]
+  },
+  {
+   "t": 2.421,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_7_5.ogg"
+   ]
+  },
+  {
+   "t": 2.531,
+   "vol": 1.0,
+   "files": [
+    "Impact_tu_6.ogg"
+   ]
+  },
+  {
+   "t": 2.537,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_5.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl08": [
+  {
+   "t": 0.046,
+   "vol": 1.0,
+   "files": [
+    "Rev_Thunder_2.ogg"
+   ]
+  },
+  {
+   "t": 0.118,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_8_1.ogg"
+   ]
+  },
+  {
+   "t": 1.923,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_8_2.ogg"
+   ]
+  },
+  {
+   "t": 1.992,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_3.ogg"
+   ]
+  },
+  {
+   "t": 1.998,
+   "vol": 0.7,
+   "files": [
+    "Impact_tu_6.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl09": [
+  {
+   "t": 0.179,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_10.ogg"
+   ]
+  },
+  {
+   "t": 0.247,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_9_1.ogg"
+   ]
+  },
+  {
+   "t": 0.343,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_Fire_10.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl10": [
+  {
+   "t": 0.159,
+   "vol": 1.0,
+   "files": [
+    "Shot_Magic_8.ogg"
+   ]
+  },
+  {
+   "t": 0.213,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_10.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl11": [
+  {
+   "t": 0.009,
+   "vol": 1.3,
+   "files": [
+    "Shot_Shield_1.ogg"
+   ]
+  },
+  {
+   "t": 0.075,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_11.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl12": [
+  {
+   "t": 0.03,
+   "vol": 1.3,
+   "files": [
+    "Shot_Dash_3.ogg"
+   ]
+  },
+  {
+   "t": 0.048,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_12_1.ogg"
+   ]
+  },
+  {
+   "t": 0.729,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_12_2.ogg"
+   ]
+  },
+  {
+   "t": 0.802,
+   "vol": 1.3,
+   "files": [
+    "Impact_tu_7.ogg"
+   ]
+  },
+  {
+   "t": 1.054,
+   "vol": 1.3,
+   "files": [
+    "Impact_Ground_tu_5.ogg"
+   ]
+  },
+  {
+   "t": 1.074,
+   "vol": 1.3,
+   "files": [
+    "Impact_Explo_2.ogg"
+   ]
+  }
+ ],
+ "PCF_Btl_Skl13": [
+  {
+   "t": 0.38,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_13_1.ogg"
+   ]
+  },
+  {
+   "t": 0.715,
+   "vol": 1.3,
+   "files": [
+    "Shot_Arcane_5.ogg"
+   ]
+  },
+  {
+   "t": 0.878,
+   "vol": 1.2,
+   "files": [
+    "Shot_Arcane_6.ogg"
+   ]
+  },
+  {
+   "t": 1.132,
+   "vol": 1.3,
+   "files": [
+    "Shot_Arcane_5.ogg"
+   ]
+  },
+  {
+   "t": 1.309,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_13_2.ogg"
+   ]
+  },
+  {
+   "t": 1.309,
+   "vol": 1.2,
+   "files": [
+    "Shot_Arcane_6.ogg"
+   ]
+  },
+  {
+   "t": 1.366,
+   "vol": 1.0,
+   "files": [
+    "rev_skill_tu_1.ogg"
+   ]
+  },
+  {
+   "t": 1.963,
+   "vol": 1.3,
+   "files": [
+    "Pcf_skill_13_3.ogg"
+   ]
+  },
+  {
+   "t": 2.007,
+   "vol": 1.0,
+   "files": [
+    "Shot_Arcane_5.ogg"
+   ]
+  },
+  {
+   "t": 2.031,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_tu_5.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Attack01": [
+  {
+   "t": 0.158,
+   "vol": 1.2,
+   "files": [
+    "Pcm_atk_47.ogg",
+    "pcm_atk1.ogg",
+    "pcm_atk14.ogg",
+    "pcm_atk5.ogg"
+   ]
+  },
+  {
+   "t": 0.174,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.189,
+   "vol": 1.5,
+   "files": [
+    "Shoot_Jangpung_Fire.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Attack02": [
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.077,
+   "vol": 1.1,
+   "files": [
+    "Pcm_batk_41.ogg",
+    "Pcm_breath_9.ogg",
+    "pcm_atk15.ogg"
+   ]
+  },
+  {
+   "t": 0.177,
+   "vol": 1.1,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.365,
+   "vol": 1.2,
+   "files": [
+    "shot_30.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Attack03": [
+  {
+   "t": 0.137,
+   "vol": 1.5,
+   "files": [
+    "Whoosh_Fire_4.ogg"
+   ]
+  },
+  {
+   "t": 0.191,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.215,
+   "vol": 1.3,
+   "files": [
+    "pcm_atk5.ogg",
+    "pcm_skill7.ogg"
+   ]
+  },
+  {
+   "t": 0.426,
+   "vol": 2.0,
+   "files": [
+    "Shoot_Jangpung_Fire.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear01": [
+  {
+   "t": 0.185,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.232,
+   "vol": 1.1,
+   "files": [
+    "Pcm_atk_47.ogg",
+    "pcm_atk1.ogg",
+    "pcm_atk14.ogg",
+    "pcm_atk5.ogg"
+   ]
+  },
+  {
+   "t": 0.261,
+   "vol": 2.0,
+   "files": [
+    "Stick_Swing_5.ogg"
+   ]
+  },
+  {
+   "t": 0.274,
+   "vol": 0.9,
+   "files": [
+    "Sword_BigWhoosh_01.ogg"
+   ]
+  },
+  {
+   "t": 0.279,
+   "vol": 1.7,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear02": [
+  {
+   "t": 0.047,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.089,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.143,
+   "vol": 1.2,
+   "files": [
+    "Pcm_batk_41.ogg",
+    "Pcm_breath_9.ogg",
+    "pcm_atk15.ogg"
+   ]
+  },
+  {
+   "t": 0.158,
+   "vol": 0.9,
+   "files": [
+    "Sword_BigWhoosh_01.ogg"
+   ]
+  },
+  {
+   "t": 0.206,
+   "vol": 1.7,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear03": [
+  {
+   "t": 0.058,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.163,
+   "vol": 1.2,
+   "files": [
+    "pcm_skill6.ogg",
+    "pcm_skill7.ogg"
+   ]
+  },
+  {
+   "t": 0.362,
+   "vol": 0.7,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear04": [
+  {
+   "t": 0.078,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.136,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_7.ogg"
+   ]
+  },
+  {
+   "t": 0.22,
+   "vol": 1.3,
+   "files": [
+    "pcm_skill3.ogg",
+    "pcm_skill5.ogg"
+   ]
+  },
+  {
+   "t": 0.246,
+   "vol": 0.9,
+   "files": [
+    "Sword_BigWhoosh_01.ogg"
+   ]
+  },
+  {
+   "t": 0.295,
+   "vol": 1.7,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear05": [
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.062,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.225,
+   "vol": 1.4,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.381,
+   "vol": 1.2,
+   "files": [
+    "pcm_atk4.ogg",
+    "pcm_skill13.ogg",
+    "pcm_skill22.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear06": [
+  {
+   "t": 0.051,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.14,
+   "vol": 1.5,
+   "files": [
+    "Rev_Whoosh_S_1.ogg"
+   ]
+  },
+  {
+   "t": 0.173,
+   "vol": 1.3,
+   "files": [
+    "pcm_atk5.ogg"
+   ]
+  },
+  {
+   "t": 0.251,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_AttackNear07": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.022,
+   "vol": 0.0,
+   "files": [
+    "pcm_atk1.ogg"
+   ]
+  },
+  {
+   "t": 0.317,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.404,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.427,
+   "vol": 1.4,
+   "files": [
+    "Sword_BigWhoosh_01.ogg"
+   ]
+  },
+  {
+   "t": 0.457,
+   "vol": 1.3,
+   "files": [
+    "pcm_skill3.ogg"
+   ]
+  },
+  {
+   "t": 0.475,
+   "vol": 1.7,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Blizzard": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.014,
+   "vol": 1.6,
+   "files": [
+    "Rev_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.065,
+   "vol": 1.1,
+   "files": [
+    "pcm_skill11.ogg"
+   ]
+  },
+  {
+   "t": 0.164,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_02.ogg"
+   ]
+  },
+  {
+   "t": 0.323,
+   "vol": 0.7,
+   "files": [
+    "Skill_shot_ice_2.ogg"
+   ]
+  },
+  {
+   "t": 0.773,
+   "vol": 1.6,
+   "files": [
+    "Ice_Freeze_2.ogg"
+   ]
+  },
+  {
+   "t": 0.999,
+   "vol": 1.2,
+   "files": [
+    "Obje-glass_2.ogg"
+   ]
+  },
+  {
+   "t": 1.232,
+   "vol": 1.3,
+   "files": [
+    "Obje-glass_2.ogg"
+   ]
+  },
+  {
+   "t": 1.434,
+   "vol": 1.3,
+   "files": [
+    "Obje-glass_2.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_ChainLightning": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Spark_Rev_1.ogg"
+   ]
+  },
+  {
+   "t": 0.038,
+   "vol": 1.0,
+   "files": [
+    "pcm_atk2.ogg",
+    "pcm_batk15.ogg"
+   ]
+  },
+  {
+   "t": 0.136,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.537,
+   "vol": 1.3,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.775,
+   "vol": 1.0,
+   "files": [
+    "pcm_skill9.ogg"
+   ]
+  },
+  {
+   "t": 0.824,
+   "vol": 1.5,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 1.589,
+   "vol": 1.0,
+   "files": [
+    "pcm_breath10.ogg"
+   ]
+  },
+  {
+   "t": 1.672,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Enchant": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "pcm_batk1.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_2.ogg"
+   ]
+  },
+  {
+   "t": 0.067,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.562,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.579,
+   "vol": 1.1,
+   "files": [
+    "pcm_skill12.ogg"
+   ]
+  },
+  {
+   "t": 0.752,
+   "vol": 0.8,
+   "files": [
+    "Impact_Explo_10.ogg"
+   ]
+  },
+  {
+   "t": 0.77,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_3.ogg"
+   ]
+  },
+  {
+   "t": 0.826,
+   "vol": 1.4,
+   "files": [
+    "Impact_M_5.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_FireBall": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Pcm_atk_47.ogg",
+    "pcm_atk1.ogg",
+    "pcm_atk14.ogg",
+    "pcm_atk5.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.408,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_03.ogg"
+   ]
+  },
+  {
+   "t": 0.47,
+   "vol": 1.0,
+   "files": [
+    "pcm_skill6.ogg"
+   ]
+  },
+  {
+   "t": 0.496,
+   "vol": 2.0,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Freezing": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Rev_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.124,
+   "vol": 1.3,
+   "files": [
+    "pcm_batk1.ogg"
+   ]
+  },
+  {
+   "t": 0.391,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_02.ogg"
+   ]
+  },
+  {
+   "t": 0.511,
+   "vol": 1.0,
+   "files": [
+    "Ice_Freeze_1.ogg"
+   ]
+  },
+  {
+   "t": 2.671,
+   "vol": 1.3,
+   "files": [
+    "Ice_Freeze_3.ogg"
+   ]
+  },
+  {
+   "t": 2.691,
+   "vol": 1.3,
+   "files": [
+    "pcm_skill9.ogg"
+   ]
+  },
+  {
+   "t": 2.791,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 2.818,
+   "vol": 1.3,
+   "files": [
+    "Ice_Crash_1.ogg"
+   ]
+  },
+  {
+   "t": 2.879,
+   "vol": 0.9,
+   "files": [
+    "Obje_break_ice_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_IceArmor": [
+  {
+   "t": 0.076,
+   "vol": 1.0,
+   "files": [
+    "pcm_batk3.ogg"
+   ]
+  },
+  {
+   "t": 0.16,
+   "vol": 0.8,
+   "files": [
+    "Fly_Whoosh_3.ogg"
+   ]
+  },
+  {
+   "t": 0.713,
+   "vol": 1.5,
+   "files": [
+    "Whoosh_Trans_Bomb.ogg"
+   ]
+  },
+  {
+   "t": 0.722,
+   "vol": 2.0,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.797,
+   "vol": 1.2,
+   "files": [
+    "pcm_atk14.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_IceBall": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Whoosh_Fire_6.ogg"
+   ]
+  },
+  {
+   "t": 0.006,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.33,
+   "vol": 0.7,
+   "files": [
+    "Skill_shot_ice_2.ogg"
+   ]
+  },
+  {
+   "t": 0.42,
+   "vol": 1.0,
+   "files": [
+    "pcm_skill12.ogg"
+   ]
+  },
+  {
+   "t": 0.527,
+   "vol": 1.4,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  },
+  {
+   "t": 0.531,
+   "vol": 1.2,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Laser": [
+  {
+   "t": 0.041,
+   "vol": 1.0,
+   "files": [
+    "cloth8.ogg"
+   ]
+  },
+  {
+   "t": 0.101,
+   "vol": 1.2,
+   "files": [
+    "pcm_batk11.ogg"
+   ]
+  },
+  {
+   "t": 0.331,
+   "vol": 1.3,
+   "files": [
+    "Skill_fire_sizzle_4.ogg"
+   ]
+  },
+  {
+   "t": 0.583,
+   "vol": 1.5,
+   "files": [
+    "Skill_Impact_Fire_1.ogg"
+   ]
+  },
+  {
+   "t": 0.718,
+   "vol": 1.4,
+   "files": [
+    "Shot_Sizzle-Lazer-1.ogg"
+   ]
+  },
+  {
+   "t": 2.064,
+   "vol": 1.0,
+   "files": [
+    "pcm_breath34.ogg"
+   ]
+  },
+  {
+   "t": 2.139,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_ManaShield": [
+  {
+   "t": 0.013,
+   "vol": 1.3,
+   "files": [
+    "pcm_atk2.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.314,
+   "vol": 1.2,
+   "files": [
+    "Ice_Freeze_3.ogg"
+   ]
+  },
+  {
+   "t": 0.574,
+   "vol": 1.5,
+   "files": [
+    "Magic_01.ogg"
+   ]
+  },
+  {
+   "t": 0.932,
+   "vol": 0.8,
+   "files": [
+    "Cloth_B_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Meteor": [
+  {
+   "t": 0.013,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.284,
+   "vol": 1.2,
+   "files": [
+    "pcm_skill12.ogg"
+   ]
+  },
+  {
+   "t": 0.443,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.497,
+   "vol": 1.0,
+   "files": [
+    "Impact_Explo_2.ogg"
+   ]
+  },
+  {
+   "t": 0.512,
+   "vol": 1.5,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Special": [
+  {
+   "t": 0.021,
+   "vol": 1.2,
+   "files": [
+    "pcm_batk7.ogg"
+   ]
+  },
+  {
+   "t": 0.107,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.953,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.956,
+   "vol": 1.3,
+   "files": [
+    "pcm_skill_yongseunpung2.ogg"
+   ]
+  },
+  {
+   "t": 1.024,
+   "vol": 1.4,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 1.095,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 1.184,
+   "vol": 2.0,
+   "files": [
+    "Skill_Shot_Wind_Long_1.ogg"
+   ]
+  },
+  {
+   "t": 1.244,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Long_1.ogg"
+   ]
+  },
+  {
+   "t": 1.54,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_Wind_Long_1.ogg"
+   ]
+  },
+  {
+   "t": 2.086,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  },
+  {
+   "t": 2.399,
+   "vol": 1.2,
+   "files": [
+    "Skill_Shot_Wind_Long_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Strike": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "skill_rev_fire_3.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.539,
+   "vol": 1.0,
+   "files": [
+    "pcm_skill6.ogg"
+   ]
+  },
+  {
+   "t": 0.673,
+   "vol": 1.5,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.683,
+   "vol": 1.5,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  },
+  {
+   "t": 1.254,
+   "vol": 0.8,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Thunder": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Spark_Rev_2.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.049,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 0.068,
+   "vol": 1.0,
+   "files": [
+    "pcm_batk15.ogg"
+   ]
+  },
+  {
+   "t": 0.231,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_3.ogg"
+   ]
+  },
+  {
+   "t": 0.489,
+   "vol": 1.4,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.522,
+   "vol": 1.5,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.669,
+   "vol": 0.5,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  }
+ ],
+ "Pcm_Btl_Skl_Tornado": [
+  {
+   "t": 0.014,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 0.055,
+   "vol": 1.6,
+   "files": [
+    "shot_weapon1.ogg"
+   ]
+  },
+  {
+   "t": 0.232,
+   "vol": 1.5,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.281,
+   "vol": 1.0,
+   "files": [
+    "pcm_skill9.ogg"
+   ]
+  },
+  {
+   "t": 0.297,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.303,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Fire_10.ogg"
+   ]
+  },
+  {
+   "t": 0.6,
+   "vol": 0.0,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.69,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack01": [
+  {
+   "t": 0.251,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_1.ogg"
+   ]
+  },
+  {
+   "t": 0.291,
+   "vol": 1.2,
+   "files": [
+    "Pcs_atk_13.ogg",
+    "Pcs_atk_6.ogg",
+    "Pcs_atk_9.ogg"
+   ]
+  },
+  {
+   "t": 0.307,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack02": [
+  {
+   "t": 0.015,
+   "vol": 0.3,
+   "files": [
+    "Cloth_B_1.ogg"
+   ]
+  },
+  {
+   "t": 0.041,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_17.ogg",
+    "Pcs_atk_18.ogg",
+    "Pcs_atk_8.ogg"
+   ]
+  },
+  {
+   "t": 0.055,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_3.ogg"
+   ]
+  },
+  {
+   "t": 0.111,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack03": [
+  {
+   "t": 0.025,
+   "vol": 0.2,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.046,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_13.ogg",
+    "Pcs_atk_7.ogg",
+    "Pcs_atk_8.ogg"
+   ]
+  },
+  {
+   "t": 0.061,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_3.ogg"
+   ]
+  },
+  {
+   "t": 0.149,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack04": [
+  {
+   "t": 0.048,
+   "vol": 0.2,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.141,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_14.ogg",
+    "Pcs_atk_18.ogg"
+   ]
+  },
+  {
+   "t": 0.146,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_4.ogg"
+   ]
+  },
+  {
+   "t": 0.173,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack05": [
+  {
+   "t": 0.037,
+   "vol": 1.5,
+   "files": [
+    "Whip_swish_1.ogg"
+   ]
+  },
+  {
+   "t": 0.075,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_12.ogg",
+    "Pcs_atk_8.ogg"
+   ]
+  },
+  {
+   "t": 0.148,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack06": [
+  {
+   "t": 0.248,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_12.ogg",
+    "Pcs_skill_9.ogg"
+   ]
+  },
+  {
+   "t": 0.365,
+   "vol": 1.5,
+   "files": [
+    "Whip_swish_2.ogg"
+   ]
+  },
+  {
+   "t": 0.375,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Attack07": [
+  {
+   "t": 0.021,
+   "vol": 0.3,
+   "files": [
+    "Cloth_B_4.ogg"
+   ]
+  },
+  {
+   "t": 0.124,
+   "vol": 1.3,
+   "files": [
+    "Pcs_atk_14.ogg",
+    "Pcs_atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.175,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_4.ogg"
+   ]
+  },
+  {
+   "t": 0.253,
+   "vol": 1.2,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl01": [
+  {
+   "t": 0.009,
+   "vol": 1.2,
+   "files": [
+    "Magic_Shot_sum_4.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 0.0,
+   "files": [
+    "Magic_rev_s_Sum_2.ogg"
+   ]
+  },
+  {
+   "t": 0.019,
+   "vol": 1.2,
+   "files": [
+    "Pcs_batk_7.ogg"
+   ]
+  },
+  {
+   "t": 0.019,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_2.ogg"
+   ]
+  },
+  {
+   "t": 0.025,
+   "vol": 1.2,
+   "files": [
+    "Water_Splash_big_2.ogg"
+   ]
+  },
+  {
+   "t": 0.029,
+   "vol": 0.0,
+   "files": [
+    "Water_Splash_big_1.ogg"
+   ]
+  },
+  {
+   "t": 0.318,
+   "vol": 1.2,
+   "files": [
+    "Water_Whoosh_big_2.ogg"
+   ]
+  },
+  {
+   "t": 0.387,
+   "vol": 0.7,
+   "files": [
+    "Water_Whoosh_big_1.ogg"
+   ]
+  },
+  {
+   "t": 0.576,
+   "vol": 1.5,
+   "files": [
+    "Pcs_skill_1.ogg",
+    "Pcs_skill_19.ogg"
+   ]
+  },
+  {
+   "t": 0.636,
+   "vol": 1.5,
+   "files": [
+    "Whip_swish_2.ogg"
+   ]
+  },
+  {
+   "t": 1.397,
+   "vol": 1.2,
+   "files": [
+    "Spirit_Voice_cute_2.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl02": [
+  {
+   "t": 0.045,
+   "vol": 1.0,
+   "files": [
+    "Magic_Shot_sum_5.ogg"
+   ]
+  },
+  {
+   "t": 0.057,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_1.ogg"
+   ]
+  },
+  {
+   "t": 0.079,
+   "vol": 1.2,
+   "files": [
+    "Spark_Shot_1.ogg"
+   ]
+  },
+  {
+   "t": 0.152,
+   "vol": 0.5,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  },
+  {
+   "t": 0.173,
+   "vol": 1.2,
+   "files": [
+    "Pcs_batk_18.ogg",
+    "Pcs_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.352,
+   "vol": 1.2,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 0.514,
+   "vol": 1.2,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.599,
+   "vol": 1.2,
+   "files": [
+    "Whip_swish_3.ogg"
+   ]
+  },
+  {
+   "t": 0.626,
+   "vol": 1.2,
+   "files": [
+    "Spark_Shot_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl03": [
+  {
+   "t": 0.007,
+   "vol": 1.4,
+   "files": [
+    "Magic_rev_s_Sum_2.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.2,
+   "files": [
+    "Pcs_batk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.033,
+   "vol": 1.0,
+   "files": [
+    "Magic_Shot_sum_4.ogg"
+   ]
+  },
+  {
+   "t": 0.209,
+   "vol": 1.2,
+   "files": [
+    "Shot_arcane_1.ogg"
+   ]
+  },
+  {
+   "t": 0.528,
+   "vol": 1.3,
+   "files": [
+    "Shot_Small_Sum_2.ogg",
+    "Shot_Small_Sum_3.ogg",
+    "Shot_Small_Sum_4.ogg"
+   ]
+  },
+  {
+   "t": 0.554,
+   "vol": 1.3,
+   "files": [
+    "Pcs_skill_14.ogg"
+   ]
+  },
+  {
+   "t": 0.717,
+   "vol": 1.0,
+   "files": [
+    "Shot_Magic_Sum_2.ogg"
+   ]
+  },
+  {
+   "t": 0.88,
+   "vol": 1.2,
+   "files": [
+    "Drop_Step_2.ogg"
+   ]
+  },
+  {
+   "t": 2.243,
+   "vol": 1.2,
+   "files": [
+    "Cloth_movement_2.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl04": [
+  {
+   "t": 0.004,
+   "vol": 1.2,
+   "files": [
+    "Magic_rev_s_Sum_6.ogg"
+   ]
+  },
+  {
+   "t": 0.163,
+   "vol": 1.2,
+   "files": [
+    "Pcs_batk_9.ogg"
+   ]
+  },
+  {
+   "t": 0.816,
+   "vol": 1.2,
+   "files": [
+    "Magic_Positive_sum_Big_1.ogg"
+   ]
+  },
+  {
+   "t": 0.824,
+   "vol": 1.2,
+   "files": [
+    "Shot_Magic_Sum_3.ogg"
+   ]
+  },
+  {
+   "t": 0.914,
+   "vol": 1.2,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl05": [
+  {
+   "t": 0.013,
+   "vol": 1.4,
+   "files": [
+    "Magic_rev_s_Sum_3.ogg"
+   ]
+  },
+  {
+   "t": 0.017,
+   "vol": 1.3,
+   "files": [
+    "Pcs_batk_23.ogg",
+    "Pcs_batk_7.ogg"
+   ]
+  },
+  {
+   "t": 0.338,
+   "vol": 1.3,
+   "files": [
+    "Whip_swish_3.ogg"
+   ]
+  },
+  {
+   "t": 0.399,
+   "vol": 1.3,
+   "files": [
+    "Magic_rev_s_Sum_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl06": [
+  {
+   "t": 0.015,
+   "vol": 1.3,
+   "files": [
+    "Magic_rev_s_Sum_2.ogg"
+   ]
+  },
+  {
+   "t": 0.027,
+   "vol": 1.3,
+   "files": [
+    "Pcs_batk_35.ogg",
+    "Pcs_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.18,
+   "vol": 1.3,
+   "files": [
+    "Cloth_small_2.ogg"
+   ]
+  },
+  {
+   "t": 0.308,
+   "vol": 0.8,
+   "files": [
+    "Skill_Shot_Wind_Long_1.ogg"
+   ]
+  },
+  {
+   "t": 0.348,
+   "vol": 1.3,
+   "files": [
+    "Whip_swish_1.ogg"
+   ]
+  },
+  {
+   "t": 0.386,
+   "vol": 1.3,
+   "files": [
+    "Whoosh_Wind_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl07": [
+  {
+   "t": 0.018,
+   "vol": 1.4,
+   "files": [
+    "Impact_Thunder_sum_1.ogg"
+   ]
+  },
+  {
+   "t": 0.053,
+   "vol": 1.4,
+   "files": [
+    "Pcs_skill_18.ogg"
+   ]
+  },
+  {
+   "t": 0.302,
+   "vol": 1.2,
+   "files": [
+    "Spark_Shot_5.ogg"
+   ]
+  },
+  {
+   "t": 0.452,
+   "vol": 1.7,
+   "files": [
+    "Wyvern_Atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.618,
+   "vol": 1.2,
+   "files": [
+    "Shot_Spark_1.ogg"
+   ]
+  },
+  {
+   "t": 1.337,
+   "vol": 1.4,
+   "files": [
+    "Bomb_sum_s_1.ogg"
+   ]
+  },
+  {
+   "t": 1.406,
+   "vol": 1.4,
+   "files": [
+    "skill_bomb_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl08": [
+  {
+   "t": 0.007,
+   "vol": 1.3,
+   "files": [
+    "Pcs_batk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.0,
+   "files": [
+    "skill_rev_fire_3.ogg"
+   ]
+  },
+  {
+   "t": 0.021,
+   "vol": 1.3,
+   "files": [
+    "Shot_Magic_8.ogg"
+   ]
+  },
+  {
+   "t": 0.108,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_Fire_11.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl09": [
+  {
+   "t": 0.004,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.005,
+   "vol": 0.5,
+   "files": [
+    "Magic_rev_s_Sum_5.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 1.3,
+   "files": [
+    "Magic_toon_sum_1.ogg"
+   ]
+  },
+  {
+   "t": 0.091,
+   "vol": 1.5,
+   "files": [
+    "Pcs_skill_5.ogg",
+    "Pcs_skill_7.ogg"
+   ]
+  },
+  {
+   "t": 0.361,
+   "vol": 2.0,
+   "files": [
+    "Shot_Magic_Sum_2.ogg"
+   ]
+  },
+  {
+   "t": 0.891,
+   "vol": 1.3,
+   "files": [
+    "Magic_toon_sum_2.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl10": [
+  {
+   "t": 0.013,
+   "vol": 1.4,
+   "files": [
+    "Pcs_batk_6.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Fire_10.ogg"
+   ]
+  },
+  {
+   "t": 0.067,
+   "vol": 1.4,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.287,
+   "vol": 1.4,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.402,
+   "vol": 1.4,
+   "files": [
+    "weapon_Whip_1.ogg"
+   ]
+  },
+  {
+   "t": 0.543,
+   "vol": 1.4,
+   "files": [
+    "Pcs_skill_14.ogg",
+    "Pcs_skill_16.ogg"
+   ]
+  },
+  {
+   "t": 0.548,
+   "vol": 1.4,
+   "files": [
+    "Whip_swish_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl11": [
+  {
+   "t": 0.023,
+   "vol": 1.4,
+   "files": [
+    "Pcs_skill_15.ogg",
+    "Pcs_skill_20.ogg",
+    "Pcs_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.05,
+   "vol": 1.4,
+   "files": [
+    "weapon_Whip_1.ogg"
+   ]
+  },
+  {
+   "t": 0.054,
+   "vol": 2.0,
+   "files": [
+    "Shot_Small_Sum_1.ogg"
+   ]
+  },
+  {
+   "t": 0.185,
+   "vol": 1.4,
+   "files": [
+    "shot_water_3.ogg"
+   ]
+  },
+  {
+   "t": 0.548,
+   "vol": 1.4,
+   "files": [
+    "Water_Splash_big_1.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl12": [
+  {
+   "t": 0.012,
+   "vol": 1.3,
+   "files": [
+    "Magic_rev_s_Sum_3.ogg"
+   ]
+  },
+  {
+   "t": 0.012,
+   "vol": 1.3,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 0.035,
+   "vol": 1.4,
+   "files": [
+    "Pcs_batk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.09,
+   "vol": 0.5,
+   "files": [
+    "Magic_rev_toon_1.ogg"
+   ]
+  },
+  {
+   "t": 0.376,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_4.ogg"
+   ]
+  }
+ ],
+ "PCS_Btl_Skl13": [
+  {
+   "t": 0.017,
+   "vol": 1.3,
+   "files": [
+    "Magic_toon_sum_1.ogg"
+   ]
+  },
+  {
+   "t": 0.117,
+   "vol": 1.3,
+   "files": [
+    "Pcs_batk_37.ogg",
+    "Pcs_batk_49.ogg"
+   ]
+  },
+  {
+   "t": 0.225,
+   "vol": 1.0,
+   "files": [
+    "Magic_rev_spell_sum_1.ogg"
+   ]
+  },
+  {
+   "t": 0.471,
+   "vol": 1.3,
+   "files": [
+    "Magic_rev_toon_1.ogg"
+   ]
+  },
+  {
+   "t": 0.482,
+   "vol": 0.6,
+   "files": [
+    "Magic_Shot_sum_5.ogg"
+   ]
+  },
+  {
+   "t": 0.775,
+   "vol": 0.6,
+   "files": [
+    "Cloth_small_2.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack01": [
+  {
+   "t": 0.198,
+   "vol": 0.5,
+   "files": [
+    "Stick_Swing_5.ogg"
+   ]
+  },
+  {
+   "t": 0.264,
+   "vol": 1.2,
+   "files": [
+    "Weapon_Sword_Small_3.ogg"
+   ]
+  },
+  {
+   "t": 0.306,
+   "vol": 0.6,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.315,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk2.ogg",
+    "pct_atk18.ogg",
+    "pct_atk19.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack02": [
+  {
+   "t": 0.04,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.088,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.302,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk16.ogg",
+    "pct_atk17.ogg",
+    "pct_atk20.ogg"
+   ]
+  },
+  {
+   "t": 0.306,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.37,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack03": [
+  {
+   "t": 0.149,
+   "vol": 0.6,
+   "files": [
+    "Stick_Swing_7.ogg"
+   ]
+  },
+  {
+   "t": 0.189,
+   "vol": 1.7,
+   "files": [
+    "Weapon_Sword_Small_1.ogg"
+   ]
+  },
+  {
+   "t": 0.29,
+   "vol": 0.7,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.305,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk10.ogg",
+    "pct_atk22.ogg",
+    "pct_atk26.ogg"
+   ]
+  },
+  {
+   "t": 0.698,
+   "vol": 0.4,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack04": [
+  {
+   "t": 0.0,
+   "vol": 0.7,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.019,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_Swing_2.ogg"
+   ]
+  },
+  {
+   "t": 0.045,
+   "vol": 0.8,
+   "files": [
+    "pct_atk23.ogg",
+    "pct_atk27.ogg"
+   ]
+  },
+  {
+   "t": 0.262,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_5.ogg"
+   ]
+  },
+  {
+   "t": 0.448,
+   "vol": 1.3,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.506,
+   "vol": 1.5,
+   "files": [
+    "Weapon_Sword_Small_8.ogg"
+   ]
+  },
+  {
+   "t": 0.957,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_Small_5.ogg"
+   ]
+  },
+  {
+   "t": 1.307,
+   "vol": 0.5,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack05": [
+  {
+   "t": 0.009,
+   "vol": 0.7,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.219,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.356,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack06": [
+  {
+   "t": 0.02,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.351,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_9.ogg"
+   ]
+  },
+  {
+   "t": 0.63,
+   "vol": 0.4,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.717,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk3.ogg",
+    "pct_atk20.ogg"
+   ]
+  },
+  {
+   "t": 0.749,
+   "vol": 0.8,
+   "files": [
+    "Weapon_Sword_Swing_2.ogg"
+   ]
+  },
+  {
+   "t": 0.803,
+   "vol": 1.2,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Attack07": [
+  {
+   "t": 0.026,
+   "vol": 1.5,
+   "files": [
+    "Weapon_Sword_Small_5.ogg"
+   ]
+  },
+  {
+   "t": 0.598,
+   "vol": 1.2,
+   "files": [
+    "Stick_Swing_6.ogg"
+   ]
+  },
+  {
+   "t": 0.734,
+   "vol": 1.6,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  },
+  {
+   "t": 0.798,
+   "vol": 1.0,
+   "files": [
+    "pct_atk23.ogg",
+    "pct_atk27.ogg"
+   ]
+  },
+  {
+   "t": 0.848,
+   "vol": 0.7,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 1.026,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_2.ogg"
+   ]
+  },
+  {
+   "t": 1.347,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 1.578,
+   "vol": 0.8,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 1.707,
+   "vol": 1.0,
+   "files": [
+    "pct_breath16.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_AttackLong01": [
+  {
+   "t": 0.04,
+   "vol": 0.6,
+   "files": [
+    "Stick_Swing_6.ogg"
+   ]
+  },
+  {
+   "t": 0.069,
+   "vol": 0.5,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.104,
+   "vol": 1.4,
+   "files": [
+    "Weapon_ChainSword_07.ogg"
+   ]
+  },
+  {
+   "t": 0.133,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk2.ogg",
+    "pct_atk18.ogg",
+    "pct_atk19.ogg"
+   ]
+  },
+  {
+   "t": 0.398,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Sword_1.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_AttackLong02": [
+  {
+   "t": 0.168,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_5.ogg"
+   ]
+  },
+  {
+   "t": 0.194,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk16.ogg",
+    "pct_atk17.ogg",
+    "pct_atk20.ogg"
+   ]
+  },
+  {
+   "t": 0.226,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_02.ogg"
+   ]
+  },
+  {
+   "t": 0.229,
+   "vol": 0.7,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.47,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Sword_1.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_AttackLong03": [
+  {
+   "t": 0.044,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.314,
+   "vol": 1.5,
+   "files": [
+    "Stick_Swing_5.ogg"
+   ]
+  },
+  {
+   "t": 0.36,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk1.ogg",
+    "Pct_atk10.ogg"
+   ]
+  },
+  {
+   "t": 0.368,
+   "vol": 0.5,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.395,
+   "vol": 1.5,
+   "files": [
+    "Weapon_Sword_Small_3.ogg"
+   ]
+  },
+  {
+   "t": 0.572,
+   "vol": 1.0,
+   "files": [
+    "shot_30.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_Bless": [
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.009,
+   "vol": 1.3,
+   "files": [
+    "Pct_batk6.ogg"
+   ]
+  },
+  {
+   "t": 0.058,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.206,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.253,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.426,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.462,
+   "vol": 1.2,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  },
+  {
+   "t": 0.612,
+   "vol": 3.0,
+   "files": [
+    "Rev_Whoosh_S_1.ogg"
+   ]
+  },
+  {
+   "t": 0.626,
+   "vol": 1.4,
+   "files": [
+    "Skill_magic_7.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_DarkBurst": [
+  {
+   "t": 0.016,
+   "vol": 1.0,
+   "files": [
+    "Pct_atk2.ogg"
+   ]
+  },
+  {
+   "t": 0.031,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.59,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.6,
+   "vol": 1.3,
+   "files": [
+    "pct_atk23.ogg"
+   ]
+  },
+  {
+   "t": 0.602,
+   "vol": 1.0,
+   "files": [
+    "Hit_Kick_1.ogg"
+   ]
+  },
+  {
+   "t": 0.736,
+   "vol": 1.5,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 0.753,
+   "vol": 2.0,
+   "files": [
+    "Magic_01.ogg"
+   ]
+  },
+  {
+   "t": 0.782,
+   "vol": 2.0,
+   "files": [
+    "Whoosh_Wind_1.ogg"
+   ]
+  },
+  {
+   "t": 1.099,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_GrandHeal": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 2.2,
+   "files": [
+    "Rev_Whoosh_S_1.ogg"
+   ]
+  },
+  {
+   "t": 0.017,
+   "vol": 0.8,
+   "files": [
+    "pct_breath6.ogg"
+   ]
+  },
+  {
+   "t": 0.296,
+   "vol": 2.5,
+   "files": [
+    "Skill_magic_7.ogg"
+   ]
+  },
+  {
+   "t": 0.591,
+   "vol": 1.5,
+   "files": [
+    "Pct_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.805,
+   "vol": 2.0,
+   "files": [
+    "Magic_Ungi_2.ogg"
+   ]
+  },
+  {
+   "t": 1.055,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 1.128,
+   "vol": 1.2,
+   "files": [
+    "Stick_Swing_6.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_Heal": [
+  {
+   "t": 0.064,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.266,
+   "vol": 1.7,
+   "files": [
+    "Skill_magic_7.ogg"
+   ]
+  },
+  {
+   "t": 0.299,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.357,
+   "vol": 0.8,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.361,
+   "vol": 1.4,
+   "files": [
+    "pct_skill_1.ogg"
+   ]
+  },
+  {
+   "t": 0.597,
+   "vol": 1.0,
+   "files": [
+    "Magic_Ungi_2.ogg"
+   ]
+  },
+  {
+   "t": 0.873,
+   "vol": 0.8,
+   "files": [
+    "Drop_Step_2.ogg"
+   ]
+  },
+  {
+   "t": 0.963,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_MoonOrb": [
+  {
+   "t": 0.015,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.027,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.226,
+   "vol": 1.5,
+   "files": [
+    "Pct_skill_2.ogg"
+   ]
+  },
+  {
+   "t": 0.416,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.525,
+   "vol": 1.3,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.138,
+   "vol": 0.8,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 1.231,
+   "vol": 0.8,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_MoonWave": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.024,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.302,
+   "vol": 2.0,
+   "files": [
+    "Pct_skill_9.ogg"
+   ]
+  },
+  {
+   "t": 0.356,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.42,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.507,
+   "vol": 0.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 0.791,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.836,
+   "vol": 0.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.158,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 1.185,
+   "vol": 0.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.303,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 1.735,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_2.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_PiercingAtk": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Pct_batk6.ogg"
+   ]
+  },
+  {
+   "t": 0.055,
+   "vol": 1.4,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.209,
+   "vol": 1.2,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  },
+  {
+   "t": 0.218,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.234,
+   "vol": 2.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.668,
+   "vol": 2.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.675,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 1.02,
+   "vol": 1.6,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 1.14,
+   "vol": 1.0,
+   "files": [
+    "pct_atk24.ogg"
+   ]
+  },
+  {
+   "t": 1.202,
+   "vol": 1.4,
+   "files": [
+    "Weapon_ChainSword_05.ogg"
+   ]
+  },
+  {
+   "t": 1.403,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_Resist": [
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.006,
+   "vol": 1.1,
+   "files": [
+    "pct_batk12.ogg"
+   ]
+  },
+  {
+   "t": 0.051,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.108,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 0.233,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.413,
+   "vol": 2.0,
+   "files": [
+    "Skill_magic_7.ogg"
+   ]
+  },
+  {
+   "t": 0.446,
+   "vol": 1.4,
+   "files": [
+    "Whoosh_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.84,
+   "vol": 0.8,
+   "files": [
+    "cloth12.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_Special": [
+  {
+   "t": 0.022,
+   "vol": 1.6,
+   "files": [
+    "Rev_Whoosh_L_1.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.7,
+   "files": [
+    "Pct_skill_ilyangji.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.415,
+   "vol": 2.3,
+   "files": [
+    "Skill_Shot_Long_1.ogg"
+   ]
+  },
+  {
+   "t": 0.944,
+   "vol": 1.7,
+   "files": [
+    "Impact_M_5.ogg"
+   ]
+  },
+  {
+   "t": 1.587,
+   "vol": 2.3,
+   "files": [
+    "Shot_ice_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 3.263,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 3.297,
+   "vol": 1.2,
+   "files": [
+    "pct_breath16.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_SunLight": [
+  {
+   "t": 0.146,
+   "vol": 1.4,
+   "files": [
+    "Pct_batk_24.ogg",
+    "Pct_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.184,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 0.188,
+   "vol": 2.0,
+   "files": [
+    "Weapon_ChainSword_05.ogg"
+   ]
+  },
+  {
+   "t": 0.34,
+   "vol": 1.0,
+   "files": [
+    "Weapon_ChainSword_05.ogg"
+   ]
+  },
+  {
+   "t": 0.521,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_long.ogg"
+   ]
+  },
+  {
+   "t": 0.575,
+   "vol": 1.0,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  },
+  {
+   "t": 1.316,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_SwordBlast": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Pct_batk10.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.512,
+   "vol": 0.0,
+   "files": [
+    "Stick_Swing_6.ogg"
+   ]
+  },
+  {
+   "t": 0.523,
+   "vol": 1.2,
+   "files": [
+    "pct_skill_16.ogg"
+   ]
+  },
+  {
+   "t": 0.553,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.594,
+   "vol": 1.6,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.717,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.819,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.923,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.053,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.122,
+   "vol": 0.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.206,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.326,
+   "vol": 1.0,
+   "files": [
+    "Stick_Swing_8.ogg"
+   ]
+  },
+  {
+   "t": 1.449,
+   "vol": 0.6,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_SwordRain": [
+  {
+   "t": 0.007,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.008,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.23,
+   "vol": 1.0,
+   "files": [
+    "Pct_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.363,
+   "vol": 0.7,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.477,
+   "vol": 1.4,
+   "files": [
+    "Weapon_ChainSword_07.ogg"
+   ]
+  },
+  {
+   "t": 0.684,
+   "vol": 1.0,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  }
+ ],
+ "Pct_Btl_Skl_Taegeuk": [
+  {
+   "t": 0.0,
+   "vol": 1.6,
+   "files": [
+    "Magic_Ungi_2.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.0,
+   "files": [
+    "pct_batk16.ogg"
+   ]
+  },
+  {
+   "t": 0.04,
+   "vol": 1.6,
+   "files": [
+    "Rev_Whoosh_L_1.ogg"
+   ]
+  },
+  {
+   "t": 0.525,
+   "vol": 1.4,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.759,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.77,
+   "vol": 1.6,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.961,
+   "vol": 1.6,
+   "files": [
+    "Skill_magic_7.ogg"
+   ]
+  },
+  {
+   "t": 1.313,
+   "vol": 1.1,
+   "files": [
+    "pct_skill_4.ogg"
+   ]
+  },
+  {
+   "t": 1.337,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Change_1.ogg"
+   ]
+  },
+  {
+   "t": 1.337,
+   "vol": 1.2,
+   "files": [
+    "Impact_M_5.ogg"
+   ]
+  },
+  {
+   "t": 1.337,
+   "vol": 1.0,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack01": [
+  {
+   "t": 0.268,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.287,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Basic_01.ogg",
+    "PcmJ_Attack_Basic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.312,
+   "vol": 1.2,
+   "files": [
+    "Weapon_Sword_03.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack02": [
+  {
+   "t": 0.127,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 0.135,
+   "vol": 0.8,
+   "files": [
+    "Ham_Swi_02.ogg"
+   ]
+  },
+  {
+   "t": 0.166,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Basic_09.ogg",
+    "PcmJ_Attack_Basic_11.ogg",
+    "PcmJ_Attack_Basic_12.ogg"
+   ]
+  },
+  {
+   "t": 0.183,
+   "vol": 1.0,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.525,
+   "vol": 0.7,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.539,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_01.ogg"
+   ]
+  },
+  {
+   "t": 0.546,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack03": [
+  {
+   "t": 0.01,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Rev_02.ogg"
+   ]
+  },
+  {
+   "t": 0.036,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  },
+  {
+   "t": 0.458,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.475,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_2.ogg"
+   ]
+  },
+  {
+   "t": 0.494,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Basic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.494,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_02.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack04": [
+  {
+   "t": 0.015,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_1.ogg"
+   ]
+  },
+  {
+   "t": 0.033,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Basic_09.ogg"
+   ]
+  },
+  {
+   "t": 0.448,
+   "vol": 0.6,
+   "files": [
+    "weapon_spear_1.ogg"
+   ]
+  },
+  {
+   "t": 0.508,
+   "vol": 0.8,
+   "files": [
+    "Weapon_Sword_02.ogg"
+   ]
+  },
+  {
+   "t": 0.573,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Strong_03.ogg"
+   ]
+  },
+  {
+   "t": 0.598,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_2.ogg"
+   ]
+  },
+  {
+   "t": 0.605,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  },
+  {
+   "t": 0.651,
+   "vol": 1.0,
+   "files": [
+    "Impact_M_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack05": [
+  {
+   "t": 0.099,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.663,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.684,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.729,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Strong_01.ogg"
+   ]
+  },
+  {
+   "t": 0.902,
+   "vol": 1.0,
+   "files": [
+    "Impact_M_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack06": [
+  {
+   "t": 0.081,
+   "vol": 1.6,
+   "files": [
+    "Whoosh_B_Axe_L3.ogg"
+   ]
+  },
+  {
+   "t": 0.165,
+   "vol": 0.7,
+   "files": [
+    "Cloth_B_5.ogg"
+   ]
+  },
+  {
+   "t": 0.87,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.887,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Strong_02.ogg"
+   ]
+  },
+  {
+   "t": 0.887,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 0.903,
+   "vol": 1.6,
+   "files": [
+    "Ham_Swi_02.ogg"
+   ]
+  },
+  {
+   "t": 0.922,
+   "vol": 0.5,
+   "files": [
+    "weapon_spear_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Attack07": [
+  {
+   "t": 0.15,
+   "vol": 1.2,
+   "files": [
+    "Weapon_ChainSword_05.ogg"
+   ]
+  },
+  {
+   "t": 0.184,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.192,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Basic_06.ogg"
+   ]
+  },
+  {
+   "t": 0.764,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Basic_05.ogg"
+   ]
+  },
+  {
+   "t": 0.773,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.806,
+   "vol": 1.5,
+   "files": [
+    "Hit_Kick_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_AirSlash": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.011,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.039,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Swing_2.ogg"
+   ]
+  },
+  {
+   "t": 0.11,
+   "vol": 0.0,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  },
+  {
+   "t": 0.412,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Fire_6.ogg"
+   ]
+  },
+  {
+   "t": 0.468,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 0.683,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 0.921,
+   "vol": 1.5,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 0.934,
+   "vol": 0.5,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.243,
+   "vol": 2.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 1.243,
+   "vol": 2.0,
+   "files": [
+    "Whoosh_B_Axe_L3.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Berserker": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Rev_02.ogg"
+   ]
+  },
+  {
+   "t": 0.016,
+   "vol": 0.3,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.144,
+   "vol": 1.0,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_BodySlam": [
+  {
+   "t": 0.0,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_01.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.11,
+   "vol": 1.8,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.15,
+   "vol": 1.0,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  },
+  {
+   "t": 0.705,
+   "vol": 0.5,
+   "files": [
+    "Whoosh_B_Axe_L3.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Counter": [
+  {
+   "t": 0.042,
+   "vol": 1.4,
+   "files": [
+    "Skill_Shot_Shape_1.ogg"
+   ]
+  },
+  {
+   "t": 0.045,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Strong_09.ogg"
+   ]
+  },
+  {
+   "t": 0.098,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.174,
+   "vol": 1.2,
+   "files": [
+    "Whoosh_Fire_2.ogg"
+   ]
+  },
+  {
+   "t": 0.297,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 0.838,
+   "vol": 0.8,
+   "files": [
+    "Drop_Step_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_CounterReady": [
+  {
+   "t": 0.005,
+   "vol": 1.4,
+   "files": [
+    "Magic_01.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.2,
+   "files": [
+    "Rev_Magic_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_CrossSlash": [
+  {
+   "t": 0.021,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Basic_01.ogg",
+    "PcmJ_Attack_Breath_01.ogg",
+    "PcmJ_Attack_Breath_02.ogg"
+   ]
+  },
+  {
+   "t": 0.074,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.393,
+   "vol": 1.2,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.551,
+   "vol": 1.4,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.618,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_03.ogg"
+   ]
+  },
+  {
+   "t": 0.767,
+   "vol": 1.5,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 1.269,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_02.ogg"
+   ]
+  },
+  {
+   "t": 1.329,
+   "vol": 0.0,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Cutter": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.013,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_12.ogg"
+   ]
+  },
+  {
+   "t": 0.126,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.163,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_Shape_1.ogg"
+   ]
+  },
+  {
+   "t": 0.197,
+   "vol": 0.8,
+   "files": [
+    "Whoosh_Fire_2.ogg"
+   ]
+  },
+  {
+   "t": 0.289,
+   "vol": 0.7,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  },
+  {
+   "t": 0.299,
+   "vol": 1.0,
+   "files": [
+    "shot_30.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_EarthBlast": [
+  {
+   "t": 0.0,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Small_5.ogg"
+   ]
+  },
+  {
+   "t": 0.058,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_09.ogg"
+   ]
+  },
+  {
+   "t": 0.079,
+   "vol": 1.5,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.405,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.445,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.495,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Fire_6.ogg"
+   ]
+  },
+  {
+   "t": 0.531,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  },
+  {
+   "t": 0.607,
+   "vol": 0.4,
+   "files": [
+    "Impact_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.731,
+   "vol": 0.5,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 1.149,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_HalfMoon": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.172,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_08.ogg"
+   ]
+  },
+  {
+   "t": 0.204,
+   "vol": 1.3,
+   "files": [
+    "Whoosh_Hand2_3.ogg"
+   ]
+  },
+  {
+   "t": 0.304,
+   "vol": 1.6,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  },
+  {
+   "t": 0.37,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.43,
+   "vol": 1.4,
+   "files": [
+    "cloth6.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_IronChain": [
+  {
+   "t": 0.032,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Basic_09.ogg",
+    "PcmJ_Attack_Basic_11.ogg",
+    "PcmJ_Attack_Basic_12.ogg"
+   ]
+  },
+  {
+   "t": 0.154,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.223,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Chain_1.ogg"
+   ]
+  },
+  {
+   "t": 0.778,
+   "vol": 1.6,
+   "files": [
+    "Cloth_Throw_1.ogg"
+   ]
+  },
+  {
+   "t": 0.882,
+   "vol": 1.3,
+   "files": [
+    "Weapon_Chain_2.ogg"
+   ]
+  },
+  {
+   "t": 1.148,
+   "vol": 1.3,
+   "files": [
+    "PcmJ_Attack_Strong_12.ogg"
+   ]
+  },
+  {
+   "t": 1.172,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 1.215,
+   "vol": 0.0,
+   "files": [
+    "PcmJ_Attack_Strong_02.ogg"
+   ]
+  },
+  {
+   "t": 1.254,
+   "vol": 1.6,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  },
+  {
+   "t": 1.387,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 1.437,
+   "vol": 0.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_LionRoar": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Rev_Whoosh_L_1.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Rev_08.ogg",
+    "Pcmw_Skill_Sajahu.ogg"
+   ]
+  },
+  {
+   "t": 0.169,
+   "vol": 1.4,
+   "files": [
+    "Whoosh_Wind_1.ogg"
+   ]
+  },
+  {
+   "t": 0.231,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.333,
+   "vol": 1.8,
+   "files": [
+    "Impact_M_5.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_MadWind": [
+  {
+   "t": 0.19,
+   "vol": 1.5,
+   "files": [
+    "PcmJ_Attack_Strong_11.ogg"
+   ]
+  },
+  {
+   "t": 0.243,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  },
+  {
+   "t": 0.245,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 0.354,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 0.561,
+   "vol": 1.3,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 0.735,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.839,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_04.ogg"
+   ]
+  },
+  {
+   "t": 1.228,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 1.296,
+   "vol": 1.5,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 1.718,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Sword_Small_5.ogg"
+   ]
+  },
+  {
+   "t": 1.746,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_05.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Mutae": [
+  {
+   "t": 0.018,
+   "vol": 1.2,
+   "files": [
+    "PcmJ_Attack_Rev_03.ogg"
+   ]
+  },
+  {
+   "t": 0.057,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.124,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Chain_1.ogg"
+   ]
+  },
+  {
+   "t": 0.528,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.562,
+   "vol": 1.4,
+   "files": [
+    "Weapon_Chain_2.ogg"
+   ]
+  },
+  {
+   "t": 0.988,
+   "vol": 1.7,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  },
+  {
+   "t": 1.002,
+   "vol": 1.4,
+   "files": [
+    "PcmJ_Attack_Basic_05.ogg"
+   ]
+  },
+  {
+   "t": 1.033,
+   "vol": 1.5,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 1.052,
+   "vol": 1.0,
+   "files": [
+    "Weapon_Chain_3.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_OverDrive": [
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "PcmJ_Attack_Rev_03.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.276,
+   "vol": 1.3,
+   "files": [
+    "Fly_Whoosh_3.ogg"
+   ]
+  },
+  {
+   "t": 0.395,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.414,
+   "vol": 1.2,
+   "files": [
+    "Whoosh_Ice_1.ogg"
+   ]
+  },
+  {
+   "t": 0.455,
+   "vol": 1.0,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  },
+  {
+   "t": 0.621,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Saja_02": [
+  {
+   "t": 0.181,
+   "vol": 0.7,
+   "files": [
+    "Skill_Shot_10.ogg"
+   ]
+  },
+  {
+   "t": 0.199,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.385,
+   "vol": 1.2,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.465,
+   "vol": 1.0,
+   "files": [
+    "PcmJ_Attack_Strong_03.ogg"
+   ]
+  },
+  {
+   "t": 0.51,
+   "vol": 1.0,
+   "files": [
+    "Hit_Kick_1.ogg"
+   ]
+  }
+ ],
+ "Pcw_Btl_Skl_Special": [
+  {
+   "t": 0.0,
+   "vol": 1.3,
+   "files": [
+    "Shot_EgiSword_1.ogg",
+    "Shot_EgiSword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.11,
+   "vol": 2.0,
+   "files": [
+    "Pcmw_skillspecial.ogg"
+   ]
+  },
+  {
+   "t": 0.495,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.586,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.652,
+   "vol": 1.2,
+   "files": [
+    "Impact_M_3.ogg"
+   ]
+  },
+  {
+   "t": 0.973,
+   "vol": 1.6,
+   "files": [
+    "Mon_Dragon_Atk_5.ogg"
+   ]
+  },
+  {
+   "t": 1.181,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 1.985,
+   "vol": 1.3,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 2.245,
+   "vol": 1.2,
+   "files": [
+    "Impact_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 2.288,
+   "vol": 1.3,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_CircleMoon01": [
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 2.0,
+   "files": [
+    "weapon_whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 0.08,
+   "vol": 1.5,
+   "files": [
+    "Pcmz_batk12.ogg"
+   ]
+  },
+  {
+   "t": 0.174,
+   "vol": 2.0,
+   "files": [
+    "Whoosh_B_Axe_L1.ogg"
+   ]
+  },
+  {
+   "t": 0.188,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_Shape_1.ogg"
+   ]
+  },
+  {
+   "t": 0.267,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.361,
+   "vol": 1.0,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  },
+  {
+   "t": 0.667,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Umbrilla_1.ogg"
+   ]
+  },
+  {
+   "t": 0.856,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.957,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Swing_3.ogg"
+   ]
+  },
+  {
+   "t": 0.96,
+   "vol": 1.5,
+   "files": [
+    "Pcmz_skill_12.ogg"
+   ]
+  },
+  {
+   "t": 1.153,
+   "vol": 1.0,
+   "files": [
+    "Weapon_ChainSword_07.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_CircleMoon02": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "cloth12.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.058,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Swing_2.ogg"
+   ]
+  },
+  {
+   "t": 0.098,
+   "vol": 1.5,
+   "files": [
+    "Pcmz_skill_21.ogg"
+   ]
+  },
+  {
+   "t": 0.295,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.444,
+   "vol": 1.2,
+   "files": [
+    "Weapon_Sword_10.ogg"
+   ]
+  },
+  {
+   "t": 0.451,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 1.118,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_04.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_CircleMoon03": [
+  {
+   "t": 0.017,
+   "vol": 1.2,
+   "files": [
+    "Pcmz_batk29.ogg"
+   ]
+  },
+  {
+   "t": 0.125,
+   "vol": 1.6,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.333,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.479,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.497,
+   "vol": 1.6,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.671,
+   "vol": 0.8,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.807,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.958,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 1.112,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 1.193,
+   "vol": 1.3,
+   "files": [
+    "Pcmz_skill_14.ogg"
+   ]
+  },
+  {
+   "t": 1.239,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.638,
+   "vol": 0.8,
+   "files": [
+    "Drop_small_1.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_CircleMoon04": [
+  {
+   "t": 0.0,
+   "vol": 1.6,
+   "files": [
+    "Cloth_B_3.ogg"
+   ]
+  },
+  {
+   "t": 0.017,
+   "vol": 1.4,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.035,
+   "vol": 1.2,
+   "files": [
+    "Pcmz_skill_28.ogg"
+   ]
+  },
+  {
+   "t": 0.118,
+   "vol": 1.4,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.166,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.305,
+   "vol": 1.5,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.377,
+   "vol": 1.0,
+   "files": [
+    "hit_bone9.ogg"
+   ]
+  },
+  {
+   "t": 0.935,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_CircleMoon05": [
+  {
+   "t": 0.0,
+   "vol": 1.3,
+   "files": [
+    "Pcmz_breath2.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.4,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.244,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.274,
+   "vol": 1.5,
+   "files": [
+    "Pcmz_skill_22.ogg"
+   ]
+  },
+  {
+   "t": 0.495,
+   "vol": 1.3,
+   "files": [
+    "Weapon_Sword_Small_3.ogg"
+   ]
+  },
+  {
+   "t": 0.505,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.559,
+   "vol": 2.0,
+   "files": [
+    "Drop_dwn_04.ogg"
+   ]
+  },
+  {
+   "t": 0.881,
+   "vol": 1.0,
+   "files": [
+    "weapon_whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 1.035,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_DashSpear01": [
+  {
+   "t": 0.066,
+   "vol": 1.3,
+   "files": [
+    "Pcmz_skill_21.ogg"
+   ]
+  },
+  {
+   "t": 0.244,
+   "vol": 0.8,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.344,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.48,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.618,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.866,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.986,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.135,
+   "vol": 1.3,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.424,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_05.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_DashSpear02": [
+  {
+   "t": 0.009,
+   "vol": 1.6,
+   "files": [
+    "cloth6.ogg"
+   ]
+  },
+  {
+   "t": 0.145,
+   "vol": 1.2,
+   "files": [
+    "Pcmz_skill_15.ogg"
+   ]
+  },
+  {
+   "t": 0.348,
+   "vol": 1.0,
+   "files": [
+    "Impact_Explo_9.ogg"
+   ]
+  },
+  {
+   "t": 0.352,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.383,
+   "vol": 1.6,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.493,
+   "vol": 2.0,
+   "files": [
+    "Weapon_Sword_Small_3.ogg"
+   ]
+  },
+  {
+   "t": 0.61,
+   "vol": 1.0,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.074,
+   "vol": 1.5,
+   "files": [
+    "cra_cloth_03.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_DashSpear03": [
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "Pcmz_skill_speacial.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.115,
+   "vol": 1.5,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 1.008,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 1.116,
+   "vol": 1.5,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 1.167,
+   "vol": 1.6,
+   "files": [
+    "Weapon_Sword_05.ogg"
+   ]
+  },
+  {
+   "t": 1.234,
+   "vol": 0.3,
+   "files": [
+    "shot_30.ogg"
+   ]
+  },
+  {
+   "t": 1.3,
+   "vol": 1.6,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 1.743,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_34.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_DashSpear06": [
+  {
+   "t": 0.016,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.038,
+   "vol": 1.2,
+   "files": [
+    "Pcmz_batk29.ogg"
+   ]
+  },
+  {
+   "t": 0.111,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 0.12,
+   "vol": 1.5,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.205,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Equip_1.ogg"
+   ]
+  },
+  {
+   "t": 0.477,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 0.479,
+   "vol": 1.0,
+   "files": [
+    "Weapon_ChainSword_03.ogg"
+   ]
+  },
+  {
+   "t": 0.583,
+   "vol": 1.2,
+   "files": [
+    "Impact_M_1.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_Tornado_01": [
+  {
+   "t": 0.008,
+   "vol": 1.5,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.026,
+   "vol": 1.0,
+   "files": [
+    "weapon_whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 0.072,
+   "vol": 1.4,
+   "files": [
+    "Pcmz_batk23.ogg"
+   ]
+  },
+  {
+   "t": 0.104,
+   "vol": 2.0,
+   "files": [
+    "shot_weapon1.ogg"
+   ]
+  },
+  {
+   "t": 0.298,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.647,
+   "vol": 1.2,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.717,
+   "vol": 1.8,
+   "files": [
+    "Impact_M_5.ogg"
+   ]
+  },
+  {
+   "t": 0.719,
+   "vol": 1.5,
+   "files": [
+    "Impact_Explo_9.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_Tornado_03": [
+  {
+   "t": 0.016,
+   "vol": 1.6,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.022,
+   "vol": 1.0,
+   "files": [
+    "Pcmz_skill_21.ogg"
+   ]
+  },
+  {
+   "t": 0.156,
+   "vol": 0.7,
+   "files": [
+    "Weapon_Sword_long.ogg"
+   ]
+  },
+  {
+   "t": 0.162,
+   "vol": 0.7,
+   "files": [
+    "weapon_spear_1.ogg"
+   ]
+  },
+  {
+   "t": 0.334,
+   "vol": 0.8,
+   "files": [
+    "weapon_spear_1.ogg"
+   ]
+  },
+  {
+   "t": 0.4,
+   "vol": 0.7,
+   "files": [
+    "Weapon_Sword_long.ogg"
+   ]
+  },
+  {
+   "t": 0.527,
+   "vol": 0.8,
+   "files": [
+    "weapon_spear_1.ogg"
+   ]
+  },
+  {
+   "t": 0.577,
+   "vol": 0.7,
+   "files": [
+    "Weapon_Sword_long.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_TurnSpear01": [
+  {
+   "t": 0.023,
+   "vol": 1.3,
+   "files": [
+    "Pcmz_batk43.ogg"
+   ]
+  },
+  {
+   "t": 0.067,
+   "vol": 1.8,
+   "files": [
+    "Trap_Axe_Whoosh_1.ogg"
+   ]
+  },
+  {
+   "t": 0.092,
+   "vol": 1.0,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.217,
+   "vol": 1.0,
+   "files": [
+    "weapon_whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 0.347,
+   "vol": 1.0,
+   "files": [
+    "skill_sword_2.ogg"
+   ]
+  },
+  {
+   "t": 0.395,
+   "vol": 1.2,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 0.564,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.633,
+   "vol": 1.5,
+   "files": [
+    "Weapon_ChainSword_09.ogg"
+   ]
+  },
+  {
+   "t": 0.839,
+   "vol": 1.0,
+   "files": [
+    "Pcmz_skill_28.ogg"
+   ]
+  },
+  {
+   "t": 0.887,
+   "vol": 0.0,
+   "files": [
+    "Trap_Axe_Whoosh_1.ogg"
+   ]
+  },
+  {
+   "t": 0.962,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 1.05,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 1.361,
+   "vol": 1.0,
+   "files": [
+    "cloth10.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_TurnSpear03": [
+  {
+   "t": 0.0,
+   "vol": 1.3,
+   "files": [
+    "Skill_Rev_01.ogg"
+   ]
+  },
+  {
+   "t": 0.022,
+   "vol": 1.0,
+   "files": [
+    "Cloth_B_12.ogg"
+   ]
+  },
+  {
+   "t": 0.041,
+   "vol": 1.2,
+   "files": [
+    "Pcmz_batk29.ogg"
+   ]
+  },
+  {
+   "t": 0.194,
+   "vol": 1.3,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.328,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.429,
+   "vol": 1.0,
+   "files": [
+    "cloth13.ogg"
+   ]
+  },
+  {
+   "t": 0.499,
+   "vol": 1.5,
+   "files": [
+    "Skill_Shot_13.ogg"
+   ]
+  },
+  {
+   "t": 0.607,
+   "vol": 1.6,
+   "files": [
+    "Skill_Shot_12.ogg"
+   ]
+  },
+  {
+   "t": 0.682,
+   "vol": 1.5,
+   "files": [
+    "Impact_Ground_4.ogg"
+   ]
+  }
+ ],
+ "Pcz_Btl_Skl_TurnSpear04": [
+  {
+   "t": 0.145,
+   "vol": 1.2,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 0.2,
+   "vol": 1.0,
+   "files": [
+    "Rev_Whoosh_S_1.ogg"
+   ]
+  },
+  {
+   "t": 0.35,
+   "vol": 1.0,
+   "files": [
+    "Magic_Ungi_2.ogg"
+   ]
+  },
+  {
+   "t": 0.474,
+   "vol": 1.3,
+   "files": [
+    "Pcmz_skill_28.ogg"
+   ]
+  },
+  {
+   "t": 0.691,
+   "vol": 2.0,
+   "files": [
+    "Magic_02.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Atk01": [
+  {
+   "t": 0.358,
+   "vol": 1.7,
+   "files": [
+    "Atk_Bite_3.ogg"
+   ]
+  },
+  {
+   "t": 0.407,
+   "vol": 1.7,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 0.487,
+   "vol": 1.7,
+   "files": [
+    "Bld_Swi_05.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Atk02": [
+  {
+   "t": 0.123,
+   "vol": 1.7,
+   "files": [
+    "Whoosh_Hand2_1.ogg"
+   ]
+  },
+  {
+   "t": 0.128,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.201,
+   "vol": 1.7,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.245,
+   "vol": 1.8,
+   "files": [
+    "Whoosh_Hand_Heavy_2.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Atk03": [
+  {
+   "t": 0.218,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.426,
+   "vol": 1.8,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 0.55,
+   "vol": 1.7,
+   "files": [
+    "Fire_Burn_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Patt01_Loop": [
+  {
+   "t": 0.088,
+   "vol": 1.5,
+   "files": [
+    "Atk_Bite_3.ogg"
+   ]
+  },
+  {
+   "t": 0.195,
+   "vol": 1.5,
+   "files": [
+    "Bld_Swi_05.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Patt01_Start": [
+  {
+   "t": 0.01,
+   "vol": 1.5,
+   "files": [
+    "skill_rev_fire_3.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl01": [
+  {
+   "t": 0.211,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_3.ogg"
+   ]
+  },
+  {
+   "t": 0.917,
+   "vol": 1.8,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 1.051,
+   "vol": 1.8,
+   "files": [
+    "Fire_Burn_1.ogg"
+   ]
+  },
+  {
+   "t": 1.104,
+   "vol": 1.6,
+   "files": [
+    "Drop_Heavy_3.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl02": [
+  {
+   "t": 0.152,
+   "vol": 1.6,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 0.796,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.898,
+   "vol": 1.8,
+   "files": [
+    "Fly_Whoosh_4.ogg"
+   ]
+  },
+  {
+   "t": 1.731,
+   "vol": 1.4,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 1.736,
+   "vol": 1.5,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl03": [
+  {
+   "t": 0.269,
+   "vol": 1.7,
+   "files": [
+    "Skill_Rev_2.ogg"
+   ]
+  },
+  {
+   "t": 0.62,
+   "vol": 1.7,
+   "files": [
+    "Boss_goat_atk_5.ogg"
+   ]
+  },
+  {
+   "t": 1.052,
+   "vol": 1.7,
+   "files": [
+    "skill_rev_fire_3.ogg"
+   ]
+  },
+  {
+   "t": 3.225,
+   "vol": 1.7,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 3.986,
+   "vol": 1.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 4.068,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  },
+  {
+   "t": 4.493,
+   "vol": 1.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 4.523,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  },
+  {
+   "t": 5.307,
+   "vol": 1.7,
+   "files": [
+    "Impact_Explos_1.ogg"
+   ]
+  },
+  {
+   "t": 5.344,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl04": [
+  {
+   "t": 0.082,
+   "vol": 1.8,
+   "files": [
+    "Skill_Shot_Fire_12.ogg"
+   ]
+  },
+  {
+   "t": 0.154,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.393,
+   "vol": 1.8,
+   "files": [
+    "Skill_fire_sizzle_4.ogg"
+   ]
+  },
+  {
+   "t": 2.294,
+   "vol": 1.8,
+   "files": [
+    "Shot_Fire_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 2.457,
+   "vol": 1.8,
+   "files": [
+    "Fire_Burn_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl05": [
+  {
+   "t": 0.063,
+   "vol": 1.8,
+   "files": [
+    "Skill_Shot_Fire_12.ogg"
+   ]
+  },
+  {
+   "t": 0.254,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.282,
+   "vol": 1.8,
+   "files": [
+    "Skill_fire_sizzle_4.ogg"
+   ]
+  },
+  {
+   "t": 2.123,
+   "vol": 1.3,
+   "files": [
+    "Boss_goat_atk_5.ogg"
+   ]
+  },
+  {
+   "t": 2.252,
+   "vol": 2.0,
+   "files": [
+    "Impact_Explo_10.ogg"
+   ]
+  },
+  {
+   "t": 2.416,
+   "vol": 2.0,
+   "files": [
+    "Skill_Shot_Fire_10.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Btl_Skl06": [
+  {
+   "t": 0.048,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.371,
+   "vol": 2.0,
+   "files": [
+    "Skill_Rev_10.ogg"
+   ]
+  },
+  {
+   "t": 1.561,
+   "vol": 1.5,
+   "files": [
+    "Boss_goat_atk_4.ogg"
+   ]
+  },
+  {
+   "t": 1.571,
+   "vol": 1.5,
+   "files": [
+    "Whoosh_Hand2_3.ogg"
+   ]
+  },
+  {
+   "t": 2.252,
+   "vol": 1.5,
+   "files": [
+    "Impact_Ground_1.ogg"
+   ]
+  },
+  {
+   "t": 2.268,
+   "vol": 1.6,
+   "files": [
+    "Impact_Explo_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Die01": [
+  {
+   "t": 0.009,
+   "vol": 1.7,
+   "files": [
+    "hit_l9.ogg"
+   ]
+  },
+  {
+   "t": 0.08,
+   "vol": 1.0,
+   "files": [
+    "Boss_goat_atk_3.ogg"
+   ]
+  },
+  {
+   "t": 2.328,
+   "vol": 1.0,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 2.346,
+   "vol": 1.7,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 2.435,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_3.ogg"
+   ]
+  },
+  {
+   "t": 6.993,
+   "vol": 1.7,
+   "files": [
+    "Skill_Fire_Sizzle_2.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Dmg_DieDwn01": [
+  {
+   "t": 0.044,
+   "vol": 1.7,
+   "files": [
+    "hit_l9.ogg"
+   ]
+  },
+  {
+   "t": 0.118,
+   "vol": 1.0,
+   "files": [
+    "Boss_goat_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.603,
+   "vol": 1.7,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.647,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_3.ogg"
+   ]
+  },
+  {
+   "t": 4.18,
+   "vol": 1.7,
+   "files": [
+    "Skill_Fire_Sizzle_2.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Dwn11": [
+  {
+   "t": 0.011,
+   "vol": 1.7,
+   "files": [
+    "hit_l9.ogg"
+   ]
+  },
+  {
+   "t": 0.041,
+   "vol": 1.0,
+   "files": [
+    "Boss_goat_atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.501,
+   "vol": 1.7,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Cerberus31_Dmg_Dwn21": [
+  {
+   "t": 0.017,
+   "vol": 1.6,
+   "files": [
+    "hit_l9.ogg"
+   ]
+  },
+  {
+   "t": 0.047,
+   "vol": 1.0,
+   "files": [
+    "Boss_goat_atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.233,
+   "vol": 1.7,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.255,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_3.ogg"
+   ]
+  },
+  {
+   "t": 1.075,
+   "vol": 1.6,
+   "files": [
+    "cra_cloth_06.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Btl_Atk01": [
+  {
+   "t": 0.742,
+   "vol": 1.4,
+   "files": [
+    "Atk_Bite_3.ogg"
+   ]
+  },
+  {
+   "t": 0.77,
+   "vol": 1.2,
+   "files": [
+    "cloth4.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Btl_Atk02": [
+  {
+   "t": 0.9,
+   "vol": 1.5,
+   "files": [
+    "Gore_Splash_07.ogg"
+   ]
+  },
+  {
+   "t": 0.986,
+   "vol": 1.6,
+   "files": [
+    "Whoosh_stick_Small_1.ogg"
+   ]
+  },
+  {
+   "t": 1.102,
+   "vol": 1.0,
+   "files": [
+    "hit_gab5.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Btl_Skl01": [
+  {
+   "t": 0.271,
+   "vol": 1.2,
+   "files": [
+    "Dino_atk_2.ogg"
+   ]
+  },
+  {
+   "t": 0.276,
+   "vol": 1.4,
+   "files": [
+    "cloth_sliding_1.ogg"
+   ]
+  },
+  {
+   "t": 1.231,
+   "vol": 1.4,
+   "files": [
+    "Whoosh_Hand2_2.ogg"
+   ]
+  },
+  {
+   "t": 1.308,
+   "vol": 1.4,
+   "files": [
+    "cloth4.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Btl_Skl02": [
+  {
+   "t": 1.384,
+   "vol": 1.5,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 1.396,
+   "vol": 1.0,
+   "files": [
+    "mob_beast2_atk1.ogg"
+   ]
+  },
+  {
+   "t": 1.404,
+   "vol": 1.4,
+   "files": [
+    "Bld_Swi_05.ogg"
+   ]
+  },
+  {
+   "t": 1.486,
+   "vol": 1.0,
+   "files": [
+    "hit_gab5.ogg"
+   ]
+  },
+  {
+   "t": 1.838,
+   "vol": 1.4,
+   "files": [
+    "Whoosh_Hand2_2.ogg"
+   ]
+  },
+  {
+   "t": 1.941,
+   "vol": 1.4,
+   "files": [
+    "cloth4.ogg"
+   ]
+  },
+  {
+   "t": 2.567,
+   "vol": 1.4,
+   "files": [
+    "Atk_Bite_3.ogg"
+   ]
+  },
+  {
+   "t": 2.649,
+   "vol": 1.2,
+   "files": [
+    "cloth4.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Dmg_Die01": [
+  {
+   "t": 0.0,
+   "vol": 1.2,
+   "files": [
+    "Hit_L_07.ogg"
+   ]
+  },
+  {
+   "t": 0.054,
+   "vol": 1.3,
+   "files": [
+    "Gore_Splash_07.ogg"
+   ]
+  },
+  {
+   "t": 0.088,
+   "vol": 1.4,
+   "files": [
+    "Mon_Tiny_Atk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.751,
+   "vol": 0.7,
+   "files": [
+    "Gore_Splash_09.ogg"
+   ]
+  },
+  {
+   "t": 0.771,
+   "vol": 1.6,
+   "files": [
+    "Drop_dwn_04.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Dmg_Dwn11": [
+  {
+   "t": 0.013,
+   "vol": 1.2,
+   "files": [
+    "Hit_L_07.ogg"
+   ]
+  },
+  {
+   "t": 0.054,
+   "vol": 1.3,
+   "files": [
+    "Gore_Splash_07.ogg"
+   ]
+  },
+  {
+   "t": 0.728,
+   "vol": 0.7,
+   "files": [
+    "Gore_Splash_09.ogg"
+   ]
+  },
+  {
+   "t": 0.732,
+   "vol": 1.4,
+   "files": [
+    "Drop_Heavy_3.ogg"
+   ]
+  }
+ ],
+ "Mon_DragonA01_Dmg_Dwn21": [
+  {
+   "t": 0.005,
+   "vol": 1.2,
+   "files": [
+    "Hit_L_07.ogg"
+   ]
+  },
+  {
+   "t": 0.043,
+   "vol": 1.4,
+   "files": [
+    "Mon_Tiny_Atk_4.ogg"
+   ]
+  },
+  {
+   "t": 0.059,
+   "vol": 1.3,
+   "files": [
+    "Gore_Splash_07.ogg"
+   ]
+  },
+  {
+   "t": 0.375,
+   "vol": 1.7,
+   "files": [
+    "Drop_dwn_04.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Btl_Atk01": [
+  {
+   "t": 0.687,
+   "vol": 0.8,
+   "files": [
+    "Goat_atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.725,
+   "vol": 1.0,
+   "files": [
+    "Ham_Swi_01.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Btl_Atk02": [
+  {
+   "t": 0.672,
+   "vol": 0.8,
+   "files": [
+    "Goat_atk_1.ogg"
+   ]
+  },
+  {
+   "t": 0.68,
+   "vol": 1.0,
+   "files": [
+    "Ham_Swi_02.ogg"
+   ]
+  },
+  {
+   "t": 0.777,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Btl_Skl01": [
+  {
+   "t": 0.273,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 0.303,
+   "vol": 1.4,
+   "files": [
+    "Goat_atk_5.ogg"
+   ]
+  },
+  {
+   "t": 0.611,
+   "vol": 1.0,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 1.118,
+   "vol": 1.4,
+   "files": [
+    "Whoosh_Trans_Bomb.ogg"
+   ]
+  },
+  {
+   "t": 1.628,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Btl_Skl02": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Goat_atk_7.ogg"
+   ]
+  },
+  {
+   "t": 0.489,
+   "vol": 1.0,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 0.896,
+   "vol": 0.8,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 1.289,
+   "vol": 0.86,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 1.718,
+   "vol": 0.8,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 2.3,
+   "vol": 1.0,
+   "files": [
+    "Goat_atk_6.ogg"
+   ]
+  },
+  {
+   "t": 2.39,
+   "vol": 1.0,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 2.402,
+   "vol": 1.0,
+   "files": [
+    "Impact_M_3.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Btl_Skl03": [
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "obje_door_stone_1.ogg"
+   ]
+  },
+  {
+   "t": 0.064,
+   "vol": 1.5,
+   "files": [
+    "Goat_dmg_3.ogg"
+   ]
+  },
+  {
+   "t": 1.949,
+   "vol": 0.8,
+   "files": [
+    "Impact_Explo_1.ogg"
+   ]
+  },
+  {
+   "t": 1.972,
+   "vol": 1.0,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Dmg_Die01": [
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 0.7,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 0.075,
+   "vol": 0.8,
+   "files": [
+    "Goat_die_1.ogg"
+   ]
+  },
+  {
+   "t": 0.79,
+   "vol": 1.3,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Dmg_DieDwn01": [
+  {
+   "t": 0.019,
+   "vol": 0.8,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.019,
+   "vol": 0.5,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 0.049,
+   "vol": 0.8,
+   "files": [
+    "Goat_dmg_3.ogg"
+   ]
+  },
+  {
+   "t": 0.526,
+   "vol": 1.3,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Dmg_Dwn11": [
+  {
+   "t": 0.0,
+   "vol": 0.8,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.063,
+   "vol": 0.8,
+   "files": [
+    "Goat_dmg_3.ogg"
+   ]
+  },
+  {
+   "t": 0.524,
+   "vol": 1.3,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Golem01_Dmg_Dwn21": [
+  {
+   "t": 0.006,
+   "vol": 0.8,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.006,
+   "vol": 0.3,
+   "files": [
+    "Impact_Stone_Large1.ogg"
+   ]
+  },
+  {
+   "t": 0.065,
+   "vol": 1.0,
+   "files": [
+    "Goat_dmg_2.ogg"
+   ]
+  },
+  {
+   "t": 0.385,
+   "vol": 1.3,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_DanBo_Btl_Atk02": [
+  {
+   "t": 0.295,
+   "vol": 1.0,
+   "files": [
+    "Danbo_atk2.ogg"
+   ]
+  },
+  {
+   "t": 0.344,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_DanBo_Btl_Skl02": [
+  {
+   "t": 0.634,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_2.ogg"
+   ]
+  },
+  {
+   "t": 0.928,
+   "vol": 1.6,
+   "files": [
+    "Danbo_atk5.ogg"
+   ]
+  },
+  {
+   "t": 1.066,
+   "vol": 1.0,
+   "files": [
+    "Impact_Fire_1.ogg"
+   ]
+  }
+ ],
+ "Mon_DanBo_Btl_Skl04": [
+  {
+   "t": 0.03,
+   "vol": 1.4,
+   "files": [
+    "Danbo_atk6.ogg"
+   ]
+  },
+  {
+   "t": 0.283,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_2.ogg"
+   ]
+  },
+  {
+   "t": 1.431,
+   "vol": 1.4,
+   "files": [
+    "Skill_Shot_10.ogg"
+   ]
+  },
+  {
+   "t": 1.507,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Leather_01.ogg"
+   ]
+  },
+  {
+   "t": 1.627,
+   "vol": 1.0,
+   "files": [
+    "Danbo_atk4.ogg"
+   ]
+  }
+ ],
+ "Mon_DanBo_Dmg_Dwn11": [
+  {
+   "t": 0.029,
+   "vol": 1.0,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.042,
+   "vol": 1.0,
+   "files": [
+    "hit_sword_07.ogg"
+   ]
+  },
+  {
+   "t": 0.077,
+   "vol": 1.0,
+   "files": [
+    "Danbo_dmg6.ogg"
+   ]
+  },
+  {
+   "t": 0.499,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ],
+ "Mon_DanBo_Dmg_Dwn21": [
+  {
+   "t": 0.023,
+   "vol": 1.0,
+   "files": [
+    "hit_l3.ogg"
+   ]
+  },
+  {
+   "t": 0.071,
+   "vol": 1.0,
+   "files": [
+    "Danbo_dmg2.ogg"
+   ]
+  },
+  {
+   "t": 0.328,
+   "vol": 1.0,
+   "files": [
+    "Drop_l2.ogg"
+   ]
+  },
+  {
+   "t": 1.331,
+   "vol": 1.0,
+   "files": [
+    "cra_cloth_02.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Btl_Atk01": [
+  {
+   "t": 0.282,
+   "vol": 1.5,
+   "files": [
+    "Danbo_atk3.ogg"
+   ]
+  },
+  {
+   "t": 0.331,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.365,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_2.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Btl_Atk03": [
+  {
+   "t": 0.211,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.237,
+   "vol": 1.0,
+   "files": [
+    "cloth7.ogg"
+   ]
+  },
+  {
+   "t": 0.244,
+   "vol": 1.4,
+   "files": [
+    "Danbo_atk4.ogg"
+   ]
+  },
+  {
+   "t": 0.341,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_1.ogg"
+   ]
+  },
+  {
+   "t": 0.354,
+   "vol": 1.0,
+   "files": [
+    "Cloth_Grab_1.ogg"
+   ]
+  },
+  {
+   "t": 0.766,
+   "vol": 1.5,
+   "files": [
+    "Cloth_Leather_02.ogg"
+   ]
+  },
+  {
+   "t": 0.921,
+   "vol": 1.0,
+   "files": [
+    "Whoosh_Hand_Heavy_2.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Btl_Skl01": [
+  {
+   "t": 0.066,
+   "vol": 1.0,
+   "files": [
+    "Danbo_atk7.ogg"
+   ]
+  },
+  {
+   "t": 0.282,
+   "vol": 1.0,
+   "files": [
+    "Ice_Freeze_3.ogg"
+   ]
+  },
+  {
+   "t": 0.4,
+   "vol": 1.0,
+   "files": [
+    "Skill_Impact_Fire_1.ogg"
+   ]
+  },
+  {
+   "t": 0.453,
+   "vol": 1.0,
+   "files": [
+    "Impact_Fire_1.ogg"
+   ]
+  },
+  {
+   "t": 0.664,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Btl_Skl03": [
+  {
+   "t": 0.087,
+   "vol": 1.0,
+   "files": [
+    "Danbo_atk7.ogg"
+   ]
+  },
+  {
+   "t": 1.226,
+   "vol": 1.0,
+   "files": [
+    "Skill_Rev_11.ogg"
+   ]
+  },
+  {
+   "t": 1.798,
+   "vol": 1.4,
+   "files": [
+    "Skill_Shot_11.ogg"
+   ]
+  },
+  {
+   "t": 1.961,
+   "vol": 1.4,
+   "files": [
+    "Danbo_atk3.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Btl_Skl11": [
+  {
+   "t": 0.066,
+   "vol": 1.0,
+   "files": [
+    "Danbo_atk7.ogg"
+   ]
+  },
+  {
+   "t": 0.282,
+   "vol": 1.0,
+   "files": [
+    "Ice_Freeze_3.ogg"
+   ]
+  },
+  {
+   "t": 0.4,
+   "vol": 1.0,
+   "files": [
+    "Skill_Impact_Fire_1.ogg"
+   ]
+  },
+  {
+   "t": 0.453,
+   "vol": 1.0,
+   "files": [
+    "Impact_Fire_1.ogg"
+   ]
+  },
+  {
+   "t": 0.664,
+   "vol": 1.0,
+   "files": [
+    "Impact_01.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Dmg_Die_01": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "Danbo_dmg4.ogg"
+   ]
+  },
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "hit_l8.ogg"
+   ]
+  },
+  {
+   "t": 0.045,
+   "vol": 1.0,
+   "files": [
+    "hit_sword_10.ogg"
+   ]
+  },
+  {
+   "t": 2.323,
+   "vol": 1.0,
+   "files": [
+    "Danbo_dmg3.ogg"
+   ]
+  },
+  {
+   "t": 3.108,
+   "vol": 1.0,
+   "files": [
+    "Drop_l2.ogg"
+   ]
+  },
+  {
+   "t": 4.487,
+   "vol": 1.0,
+   "files": [
+    "mob_drop_l1.ogg"
+   ]
+  },
+  {
+   "t": 5.425,
+   "vol": 1.0,
+   "files": [
+    "Rev_Whoosh_L_1.ogg"
+   ]
+  }
+ ],
+ "Mon_Danbo_Dmg_Dwn01": [
+  {
+   "t": 0.0,
+   "vol": 1.0,
+   "files": [
+    "hit_l3.ogg"
+   ]
+  },
+  {
+   "t": 0.052,
+   "vol": 1.0,
+   "files": [
+    "hit_sword_07.ogg"
+   ]
+  },
+  {
+   "t": 0.077,
+   "vol": 1.0,
+   "files": [
+    "Danbo_dmg6.ogg"
+   ]
+  },
+  {
+   "t": 0.571,
+   "vol": 1.0,
+   "files": [
+    "Drop_Heavy_1.ogg"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1380 @@
+{
+  "2010002": {
+    "id": "2010002",
+    "ps": "P_Pcw_hit_Atk_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_11.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010011": {
+    "id": "2010011",
+    "ps": "P_PcM_hit_Atk_01_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          0.7,
+          0.3
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_16.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010012": {
+    "id": "2010012",
+    "ps": "pc_fire_basic_hit_002",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Fire_02.png",
+        "color": [
+          1.0,
+          0.4,
+          0.1
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_16.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010013": {
+    "id": "2010013",
+    "ps": "pc_ice_basic_hit_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_20.png",
+        "color": [
+          0.3,
+          0.7,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Tile_021.png",
+        "color": [
+          0.3,
+          0.7,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_iCE_07.png",
+        "color": [
+          0.3,
+          0.7,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010015": {
+    "id": "2010015",
+    "ps": "pc_elct_basic_hit_002",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_109.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Electric_008_16",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ]
+  },
+  "2010016": {
+    "id": "2010016",
+    "ps": "P_Pct_hit_Atk_01_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_78.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2010020": {
+    "id": "2010020",
+    "ps": "P_Pct_SwordRain_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_78.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2010022": {
+    "id": "2010022",
+    "ps": "P_Pct_MoonOrb_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_Z_009_192",
+        "tex": "P_TEX_Tile_78.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2010023": {
+    "id": "2010023",
+    "ps": "P_Pca_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_17.png",
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_99.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2010033": {
+    "id": "2010033",
+    "ps": "PC_Pcz_atk_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_78.png",
+        "color": [
+          0.8,
+          0.3,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010040": {
+    "id": "2010040",
+    "ps": "P_Mon_hit_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_Z_015_252",
+        "tex": "P_TEX_Flare_26.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2010043": {
+    "id": "2010043",
+    "ps": "pc_ice_basic_hit_002",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Line_58.png",
+        "color": [
+          0.0,
+          0.0,
+          5.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Tile_021.png",
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "2010093": {
+    "id": "2010093",
+    "ps": "P_PcM_hit_Atk_01_02",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          0.7,
+          0.3
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_16.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010095": {
+    "id": "2010095",
+    "ps": "P_Pcm_laser_Hit_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_93.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Plan_015_4",
+        "tex": "P_TEX_Flare_14.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010096": {
+    "id": "2010096",
+    "ps": "P_Pct_Heal_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Gradient_Spherical_01.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_Z_025_212",
+        "tex": "P_tex_MeshShockWave_01.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2010097": {
+    "id": "2010097",
+    "ps": "pc_elct_basic_hit_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Gradient_19.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_109.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Electric_008_16",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ]
+  },
+  "2010098": {
+    "id": "2010098",
+    "ps": "PCZ_in_blood_Hit",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_75.png",
+        "color": [
+          0.9,
+          0.1,
+          0.1
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_17.png",
+        "color": [
+          1.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cone_002_640",
+        "tex": "P_TEX_Tile_31.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2010099": {
+    "id": "2010099",
+    "ps": "P_Pca_Skl10_Hit",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          0.7,
+          0.3
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_16.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2011003": {
+    "id": "2011003",
+    "ps": "P_Pcm_skill_03_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_07.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Electric_005_84",
+        "tex": "P_tex_MeshShockWave_01.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2011005": {
+    "id": "2011005",
+    "ps": "P_pcm_skill05_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_82.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_iCE_004_48",
+        "tex": "P_TEX_Tile_21.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2011010": {
+    "id": "2011010",
+    "ps": "P_Pct_DarkBurst_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_78.png",
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Twist_008_50",
+        "tex": "P_tex_flare_f001.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2011013": {
+    "id": "2011013",
+    "ps": "P_pcm_thunder_hon_projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_59.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_30.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Electric_006_160",
+        "tex": "P_TEX_Flare_14.png",
+        "color": [
+          0.4,
+          0.6,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2011015": {
+    "id": "2011015",
+    "ps": "p_pcm_iceball_hit_ice_ground_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Spread_03.png",
+        "color": [
+          1.5,
+          1.5,
+          3.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Spread_03.png",
+        "color": [
+          1.5,
+          1.5,
+          3.0
+        ]
+      }
+    ]
+  },
+  "2011016": {
+    "id": "2011016",
+    "ps": "P_Pcm_fire_Burst_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_21.png",
+        "color": [
+          3.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_21.png",
+        "color": [
+          3.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Sphere_003_704",
+        "tex": "P_TEX_Gradient_10.png",
+        "color": [
+          1.0,
+          0.45,
+          0.1
+        ]
+      }
+    ]
+  },
+  "2011018": {
+    "id": "2011018",
+    "ps": "P_Pca_Skl01_Hit_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_11.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_56.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2020003": {
+    "id": "2020003",
+    "ps": "P_pcm_laser_001",
+    "sock": "Hand_L",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_13.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_13.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2020014": {
+    "id": "2020014",
+    "ps": "P_PCM_BeamTrail_thunder",
+    "sock": "spine_01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_17.png",
+        "color": [
+          0.5,
+          0.7,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_16.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2040001": {
+    "id": "2040001",
+    "ps": "Pcm_Btl_Attack01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_59.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Sphere_002_112",
+        "tex": "P_TEX_Tile_17.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2040003": {
+    "id": "2040003",
+    "ps": "pc_shoot_fire_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Sphere_003_704",
+        "tex": "P_TEX_Tile_67.png",
+        "color": [
+          1.0,
+          0.45,
+          0.1
+        ]
+      }
+    ]
+  },
+  "2040032": {
+    "id": "2040032",
+    "ps": "P_pr_Bigice",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_21.png",
+        "color": [
+          0.3,
+          0.7,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_78.png",
+        "color": [
+          0.3,
+          0.7,
+          1.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_X_011_1056",
+        "tex": "P_Tex_Circle_13.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "2040033": {
+    "id": "2040033",
+    "ps": "P_pct_V_Skl_magicBarrier04_prj",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_tex_flare_f001.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Sphere_003_704",
+        "tex": "P_TEX_Flare_52.png",
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "2040034": {
+    "id": "2040034",
+    "ps": "P_Pct_DarkBurst_Prj_01",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Twist_008_50",
+        "tex": "P_TEX_Seq_97.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2040037": {
+    "id": "2040037",
+    "ps": "P_Pct_AttackLong_001_Projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_tex_tile_003.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_Y_008_216",
+        "tex": "P_tex_MeshShockWave_01.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2040038": {
+    "id": "2040038",
+    "ps": "P_Pct_AttackLong_003_Projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_tex_tile_003.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Cylinder_X_011_1056",
+        "tex": "P_TEX_Tile_11.png",
+        "color": [
+          0.4,
+          0.9,
+          0.6
+        ]
+      }
+    ]
+  },
+  "2040045": {
+    "id": "2040045",
+    "ps": "P_pcm_strike_shoot_001",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_53.png",
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "2040069": {
+    "id": "2040069",
+    "ps": "P_PCA_PoisonSac_Projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "mesh",
+        "mesh": "OBJ_Package",
+        "tex": "P_TEX_Gradient_10.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2040070": {
+    "id": "2040070",
+    "ps": "P_Pca_Skl10_projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_97.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_67.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Circle_08.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Other_026.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Twist_008_50",
+        "tex": "P_TEX_Tile_67.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2040071": {
+    "id": "2040071",
+    "ps": "P_Pca_Skl7_projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_101.png",
+        "color": [
+          3.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_97.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Other_002_204",
+        "tex": "P_Tex_Other_026.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2040073": {
+    "id": "2040073",
+    "ps": "P_Pca_Skl05_projectile",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Tile_101.png",
+        "color": [
+          3.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Seq_97.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Ice_003.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_TEX_Flare_12.png",
+        "color": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "type": "mesh",
+        "mesh": "P_SM_iCE_004_48",
+        "tex": "P_Tex_Other_026.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      }
+    ]
+  },
+  "2040074": {
+    "id": "2040074",
+    "ps": "P_Pca_arrow_shoot_03",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "mesh",
+        "mesh": "P_SM_Sphere_002_112",
+        "tex": "P_TEX_Tile_11.png",
+        "color": [
+          1.0,
+          1.0,
+          10.0
+        ]
+      }
+    ]
+  },
+  "2050120": {
+    "id": "2050120",
+    "ps": "Buff01_Keep",
+    "sock": "spine01",
+    "attach": false,
+    "emitters": [
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Tile_021.png",
+        "color": [
+          1.0,
+          0.8,
+          0.4
+        ]
+      },
+      {
+        "type": "sprite",
+        "mesh": "",
+        "tex": "P_Tex_Gradient_Spherical_01.png",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  }
+}
